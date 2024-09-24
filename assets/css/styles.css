@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'CocoGothic_trial';
+    src: url("../fonts/CocoGothic_trial.ttf");
+}
+@font-face {
+    font-family: 'CocoGothic-Bold_trial';
+    src: url("../fonts/CocoGothic-Bold_trial.ttf");
+}
+@font-face {
+    font-family: 'CocoGothic-Fat_trial';
+    src: url("../fonts/CocoGothic-Fat_trial.ttf");
+}
+@font-face {
+    font-family: 'CocoGothic-BoldItalic_trial';
+    src: url("../fonts/CocoGothic-BoldItalic_trial.ttf");
+}
+@font-face {
+    font-family: 'CocoGothic-FatItalic_trial';
+    src: url("../fonts/CocoGothic-FatItalic_trial.ttf");
+}
+@font-face {
+    font-family: 'CocoGothic-Heavy_trial';
+    src: url("../fonts/CocoGothic-Heavy_trial.ttf");
+}
+@font-face {
+    font-family: 'CocoGothic-HeavyItalic_trial';
+    src: url("../fonts/CocoGothic-HeavyItalic_trial.ttf");
+}
+@font-face {
+    font-family: 'CocoGothic-Italic_trial';
+    src: url("../fonts/CocoGothic-Italic_trial.ttf");
+}
+@font-face {
+    font-family: 'CocoGothic-Light_trial';
+    src: url("../fonts/CocoGothic-Light_trial.ttf");
+}
+@font-face {
+    font-family: 'CocoGothic-LightItalic_trial';
+    src: url("../fonts/CocoGothic-LightItalic_trial.ttf");
+}
+@font-face {
+    font-family: 'CocoGothic-UltraLight_trial';
+    src: url("../fonts/CocoGothic-UltraLight_trial.ttf");
+}
+@font-face {
+    font-family: 'CocoGothic-UltraLightItalic_trial';
+    src: url("../fonts/CocoGothic-UltraLightItalic_trial.ttf");
+}
+@font-face {
+    font-family: 'catchy-mager';
+    src: url("../fonts/catchy-mager.otf") format("otf");
+}
+
+.body {
+    color: #000;
+    font-family: 'Coco Gothic trial', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+}
+h1 {
+    font-family: 'Catchy Mager', sans-serif;
+    font-size: 32px;
+    line-height: 1.2;
+}
+h2 {
+    font-family: 'Catchy Mager', sans-serif;
+    font-size: 28px;
+    line-height: 1.5;
+}
+h3 {
+    font-family: 'Catchy Mager', sans-serif;
+    font-size: 24px;
+    line-height: 1.6;
+}
+h4 {
+    font-family: 'Catchy Mager', sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+}
+h5 {
+    font-family: 'Catchy Mager', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+}
+h6 {
+    font-family: 'Catchy Mager', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+}
