@@ -33,7 +33,7 @@
             <li>
               <a
                 href="#"
-                class="text-white hover:text-gray-400 px-3 py-2 font-cocoBold font-bold tracking-[.25em]"
+                class="text-white hover:text-gray-400 px-3 py-2 font-cocoBold font-bold tracking-[.15em]"
                 id="homeLink"
                 >Home</a
               >
@@ -43,13 +43,13 @@
             <li class="relative group">
               <a
                 href="#history"
-                class="text-white hover:text-gray-400 px-3 py-2 font-cocoBold font-bold tracking-[.25em]"
+                class="text-white hover:text-gray-400 px-3 py-2 font-cocoBold font-bold tracking-[.15em]"
                 id="historyLink"
                 >History</a
               >
               <!-- Dropdown Menu -->
               <ul
-                class="dropdown-menu bg-gray-800 text-white py-2 absolute mt-2 rounded-md shadow-lg font-cocoBold font-bold tracking-[.25em]"
+                class="dropdown-menu bg-gray-800 text-white py-2 absolute mt-2 rounded-md shadow-lg font-cocoBold font-bold w-max tracking-[.15em]"
               >
                 <li>
                   <a href="#" class="block px-4 py-2 hover:bg-gray-700"
@@ -78,12 +78,12 @@
             <li class="relative group text-center flex">
               <a
                 href="#jantar-mantar"
-                class="text-white flex-wrap hover:text-gray-400 px-3 py-2 font-cocoBold font-bold tracking-[.25em]"
+                class="text-white flex-wrap hover:text-gray-400 px-3 py-2 font-cocoBold font-bold tracking-[.15em]"
                 >Jantar
                 <p>Mantar</p></a
               >
               <ul
-                class="dropdown-menu bg-gray-800 text-white py-2 absolute mt-2 rounded-md shadow-lg font-cocoBold font-bold tracking-[.25em]"
+                class="dropdown-menu text-left bg-gray-800 text-white py-2 absolute lg:mt-16 left-0 rounded-md shadow-lg font-cocoBold font-bold tracking-[.15em] w-max"
               >
                 <li>
                   <a href="#" class="block px-4 py-2 hover:bg-gray-700"
@@ -107,7 +107,7 @@
             <li>
               <a
                 href="#"
-                class="text-white hover:text-gray-400 px-3 py-2 font-cocoBold font-bold tracking-[.25em]"
+                class="text-white hover:text-gray-400 px-3 py-2 font-cocoBold font-bold tracking-[.15em]"
                 id="galleryLink"
                 >Gallery</a
               >
@@ -117,7 +117,7 @@
             <li>
               <a
                 href="#"
-                class="text-white hover:text-gray-400 px-3 py-2 font-cocoBold font-bold tracking-[.25em]"
+                class="text-white hover:text-gray-400 px-3 py-2 font-cocoBold font-bold tracking-[.15em]"
                 id="visitLink"
                 >Visit</a
               >
@@ -127,11 +127,11 @@
             <li class="relative group">
               <a
                 href="#preserving-heritage"
-                class="text-white hover:text-gray-400 px-3 py-2 font-cocoBold font-bold tracking-[.25em]"
+                class="text-white hover:text-gray-400 px-3 py-2 font-cocoBold font-bold tracking-[.15em]"
                 >Preserving Heritage</a
               >
               <ul
-                class="dropdown-menu bg-gray-800 text-white py-2 absolute mt-2 rounded-md shadow-lg font-cocoBold font-bold tracking-[.25em]"
+                class="dropdown-menu bg-gray-800 text-white py-2 absolute mt-2 rounded-md shadow-lg font-cocoBold font-bold w-max tracking-[.15em] top-8"
               >
                 <li>
                   <a href="#" class="block px-4 py-2 hover:bg-gray-700"
@@ -178,65 +178,134 @@
           </div>
         </div>
       </section>
-     <section class="rajaji">
-  <div class="relative flex justify-center items-center h-[90vh] bg-no-repeat bg-cover bg-bottom" 
-       style="background-image: url('./assets/images/destination.png');">
+      <section class="rajaji">
+  <div
+    class="relative flex justify-center items-center h-[90vh] bg-no-repeat bg-cover bg-bottom"
+    style="background-image: url('./assets/images/destination.png')"
+  >
     <!-- Main character in the center -->
-    <div class="relative z-10 rajaji">
-      <img src="/assets/images/Rajaji.png" alt="Main Character" class="w-[300px] h-auto" />
+    <div class="relative z-10 flex flex-col items-center">
+      <p class="text-white text-xl font-cocoBold font-medium mb-4 text-center">
+        Click on a destination to go to an activity. <br />Come back here if you want to do more. Have fun!
+      </p>
+      <img
+        src="/assets/images/Rajaji.png"
+        alt="Main Character"
+        class="w-[300px] h-auto"
+      />
     </div>
 
     <!-- Destination 1 -->
-    <div class="absolute top-[15%] left-[20%] rounded-full overflow-hidden flex justify-center items-center cursor-pointer border-4 border-transparent transition-colors duration-300 ease-in-out hover:border-white">
-      <img src="/assets/images/jaipur.png" alt="Jaipur's Royal Heritage" class="w-[200px] h-[200px] rounded-full" />
+    <div
+      class="absolute top-[15%] left-[20%] rounded-full overflow-hidden flex justify-center items-center cursor-pointer border-4 border-transparent transition-colors duration-300 ease-in-out hover:border-white"
+    >
+      <img
+        src="/assets/images/jaipur.png"
+        alt="Jaipur's Royal Heritage"
+        class="w-[200px] h-[200px] rounded-full"
+      />
       <div class="absolute bottom-[-20px] whitespace-nowrap font-bold text-[1.1rem]">
         Jaipur's Royal Heritage
       </div>
     </div>
 
     <!-- Destination 2 -->
-    <div class="absolute top-[10%] right-[20%] rounded-full overflow-hidden flex justify-center items-center cursor-pointer border-4 border-transparent transition-colors duration-300 ease-in-out hover:border-white">
-      <img src="/assets/images/thevisionary.png" alt="The Visionary" class="w-[200px] h-[200px] rounded-full" />
+    <div
+      class="absolute top-[10%] right-[20%] rounded-full overflow-hidden flex justify-center items-center cursor-pointer border-4 border-transparent transition-colors duration-300 ease-in-out hover:border-white"
+    >
+      <img
+        src="/assets/images/thevisionary.png"
+        alt="The Visionary"
+        class="w-[200px] h-[200px] rounded-full"
+      />
       <div class="absolute bottom-[-20px] whitespace-nowrap font-bold text-[1.1rem]">
         The Visionary
       </div>
     </div>
 
     <!-- Destination 3 -->
-    <div class="absolute bottom-[15%] left-[25%] rounded-full overflow-hidden flex justify-center items-center cursor-pointer border-4 border-transparent transition-colors duration-300 ease-in-out hover:border-white">
-      <img src="/assets/images/cosmic.png" alt="Cosmic Chronicles" class="w-[200px] h-[200px] rounded-full" />
+    <div
+      class="absolute bottom-[15%] left-[25%] rounded-full overflow-hidden flex justify-center items-center cursor-pointer border-4 border-transparent transition-colors duration-300 ease-in-out hover:border-white"
+    >
+      <img
+        src="/assets/images/cosmic.png"
+        alt="Cosmic Chronicles"
+        class="w-[200px] h-[200px] rounded-full"
+      />
       <div class="absolute bottom-[-20px] whitespace-nowrap font-bold text-[1.1rem]">
         Cosmic Chronicles
       </div>
     </div>
 
     <!-- Destination 4 -->
-    <div class="absolute bottom-[15%] right-[25%] rounded-full overflow-hidden flex justify-center items-center cursor-pointer border-4 border-transparent transition-colors duration-300 ease-in-out hover:border-white">
-      <img src="/assets/images/chief.png" alt="Chief Architect" class="w-[200px] h-[200px] rounded-full" />
+    <div
+      class="absolute bottom-[15%] right-[25%] rounded-full overflow-hidden flex justify-center items-center cursor-pointer border-4 border-transparent transition-colors duration-300 ease-in-out hover:border-white"
+    >
+      <img
+        src="/assets/images/chief.png"
+        alt="Chief Architect"
+        class="w-[200px] h-[200px] rounded-full"
+      />
       <div class="absolute bottom-[-20px] whitespace-nowrap font-bold text-[1.1rem]">
         Chief Architect
       </div>
     </div>
 
     <!-- Curved Dotted lines using SVG -->
-    <!-- Line 1 -->
-    <svg class="absolute top-[28%] left-[36%] z-0" width="180" height="180">
-      <path d="M0,0 C80,0 100,120 180,120" stroke="white" stroke-width="2" stroke-dasharray="5,5" fill="none" />
+    <svg
+      class="absolute top-[28%] left-[36%] z-0"
+      width="180"
+      height="180"
+    >
+      <path
+        d="M0,0 C80,0 100,120 180,120"
+        stroke="white"
+        stroke-width="2"
+        stroke-dasharray="5,5"
+        fill="none"
+      />
     </svg>
-    
-    <!-- Line 2 -->
-    <svg class="absolute top-[28%] right-[36%] z-0" width="180" height="180">
-      <path d="M180,0 C100,0 80,120 0,120" stroke="white" stroke-width="2" stroke-dasharray="5,5" fill="none" />
+
+    <svg
+      class="absolute top-[28%] right-[36%] z-0"
+      width="180"
+      height="180"
+    >
+      <path
+        d="M180,0 C100,0 80,120 0,120"
+        stroke="white"
+        stroke-width="2"
+        stroke-dasharray="5,5"
+        fill="none"
+      />
     </svg>
-    
-    <!-- Line 3 -->
-    <svg class="absolute bottom-[28%] left-[36%] z-0" width="180" height="180">
-      <path d="M0,120 C80,120 100,0 180,0" stroke="white" stroke-width="2" stroke-dasharray="5,5" fill="none" />
+
+    <svg
+      class="absolute bottom-[28%] left-[36%] z-0"
+      width="180"
+      height="180"
+    >
+      <path
+        d="M0,120 C80,120 100,0 180,0"
+        stroke="white"
+        stroke-width="2"
+        stroke-dasharray="5,5"
+        fill="none"
+      />
     </svg>
-    
-    <!-- Line 4 -->
-    <svg class="absolute bottom-[28%] right-[36%] z-0" width="180" height="180">
-      <path d="M180,120 C100,120 80,0 0,0" stroke="white" stroke-width="2" stroke-dasharray="5,5" fill="none" />
+
+    <svg
+      class="absolute bottom-[28%] right-[36%] z-0"
+      width="180"
+      height="180"
+    >
+      <path
+        d="M180,120 C100,120 80,0 0,0"
+        stroke="white"
+        stroke-width="2"
+        stroke-dasharray="5,5"
+        fill="none"
+      />
     </svg>
   </div>
 </section>
