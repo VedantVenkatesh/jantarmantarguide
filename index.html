@@ -6,117 +6,173 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Jantra Mantra</title>
 
-    <!-- External CSS -->
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- Tailwind CSS -->
+    <!-- <link rel="stylesheet" href="assets/css/tailwind.min.css" /> -->
+    <link rel="stylesheet" href="dist/styles.css" />
+    <!-- <link rel="stylesheet" href="assets/css/styles.css"> -->
+    <style>
+      /* Show dropdown on hover */
+      .group:hover .dropdown-menu {
+        display: block;
+      }
+      .dropdown-menu {
+        display: none;
+        position: absolute;
+        z-index: 10;
+      }
+    </style>
   </head>
-  <body class="body">
-    <header class="header bg-dark p-4 text-uppercase" role="header">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg text-white" data-bs-theme="dark">
-          <div class="container-fluid">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul
-                class="navbar-nav d-flex justify-content-between items-center mb-2 mb-lg-0 text-white w-100"
+  <body class="bg-gray-100">
+    <header class="bg-gray-900 p-8">
+      <div class="container mx-auto ">
+        <nav class="flex items-center justify-between text-white uppercase">
+          <!-- Main Navbar -->
+          <ul class="space-x-6 items-center flex justify-between w-full text-lg">
+            <li>
+              <a
+                href="#"
+                class="text-white hover:text-gray-400 px-3 py-2 font-cocoBold font-bold tracking-[.25em]"
+                id="homeLink"
+                >Home</a
               >
-                <li class="nav-item me-3">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    id="homeLink"
-                    href="#"
-                    >Home</a
+            </li>
+
+            <!-- History with Dropdown -->
+            <li class="relative group">
+              <a
+                href="#history"
+                class="text-white hover:text-gray-400 px-3 py-2 font-cocoBold font-bold tracking-[.25em]"
+                id="historyLink"
+                >History</a
+              >
+              <!-- Dropdown Menu -->
+              <ul
+                class="dropdown-menu bg-gray-800 text-white py-2 absolute mt-2 rounded-md shadow-lg"
+              >
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-700"
+                    >Jaipur’s Royal Heritage</a
                   >
                 </li>
-                <li class="nav-item dropdown me-3 text-white">
-                  <a class="nav-link" href="#history">History</a>
-                  <ul class="dropdown-menu" id="historyDropdownMenu">
-                    <li>
-                      <a class="dropdown-item" href="#"
-                        >Jaipur’s Royal Heritage</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">COSMIC CHRONICLES</a>
-                    </li>
-                    <li><a class="dropdown-item" href="#">The VISIONARY</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Chief Architect</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown me-3">
-                  <a class="nav-link" href="#jantar-mantar">Jantar Mantar</a>
-                  <ul class="dropdown-menu" id="jantarMantarDropdownMenu">
-                    <li>
-                      <a class="dropdown-item" href="#"
-                        >STORY OF THE JANTAR MANTAR</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Astronomy in 1700</a>
-                    </li>
-                    <li><a class="dropdown-item" href="#">INSTRUMENTS</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item me-3">
-                  <a class="nav-link" id="galleryLink" href="#">Gallery</a>
-                </li>
-                <li class="nav-item me-3">
-                  <a class="nav-link" id="visitLink" href="#">Visit</a>
-                </li>
-                <li class="nav-item dropdown me-3">
-                  <a class="nav-link" href="#preserving-heritage"
-                    >Preserving Heritage</a
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-700"
+                    >COSMIC CHRONICLES</a
                   >
-                  <ul class="dropdown-menu" id="preservingHeritageDropdownMenu">
-                    <li>
-                      <a class="dropdown-item" href="#">Experts Explain</a>
-                    </li>
-                    <li><a class="dropdown-item" href="#">Credits</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Explore Jaipur</a>
-                    </li>
-                    <li><a class="dropdown-item" href="#">About Us</a></li>
-                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-700"
+                    >The VISIONARY</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-700"
+                    >Chief Architect</a
+                  >
                 </li>
               </ul>
-            </div>
-          </div>
+            </li>
+
+            <!-- Jantar Mantar with Dropdown -->
+            <li class="relative group">
+              <a
+                href="#jantar-mantar"
+                class="text-white hover:text-gray-400 px-3 py-2 font-cocoBold font-bold tracking-[.25em]"
+                >Jantar Mantar</a
+              >
+              <ul
+                class="dropdown-menu bg-gray-800 text-white py-2 absolute mt-2 rounded-md shadow-lg"
+              >
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-700"
+                    >STORY OF THE JANTAR MANTAR</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-700"
+                    >Astronomy in 1700</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-700"
+                    >INSTRUMENTS</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <!-- Gallery -->
+            <li>
+              <a
+                href="#"
+                class="text-white hover:text-gray-400 px-3 py-2 font-cocoBold font-bold tracking-[.25em]"
+                id="galleryLink"
+                >Gallery</a
+              >
+            </li>
+
+            <!-- Visit -->
+            <li>
+              <a
+                href="#"
+                class="text-white hover:text-gray-400 px-3 py-2 font-cocoBold font-bold tracking-[.25em] "
+                id="visitLink"
+                >Visit</a
+              >
+            </li>
+
+            <!-- Preserving Heritage with Dropdown -->
+            <li class="relative group">
+              <a
+                href="#preserving-heritage"
+                class="text-white hover:text-gray-400 px-3 py-2 font-cocoBold font-bold tracking-[.25em] "
+                >Preserving Heritage</a
+              >
+              <ul
+                class="dropdown-menu bg-gray-800 text-white py-2 absolute mt-2 rounded-md shadow-lg"
+              >
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-700"
+                    >Experts Explain</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-700"
+                    >Credits</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-700"
+                    >Explore Jaipur</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-700"
+                    >About Us</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
 
-    <main class="main" role="main">
-      <h1>Home Page</h1>
+    <main class="main">
+      <!-- Hero Banner -->
+      <section
+        class="hero-banner h-[80vh] bg-no-repeat bg-cover "
+        style="
+          background-image: url('./assets/images/banners/Homepagebanner.webp');
+          background-position: bottom;
+        "
+      >
+        <div class="container mx-auto h-full flex justify-center items-center">
+          <div class="text-center">
+            <h1 class="text-la font-cocoBold text-6xl font-light">Jantar Mantar</h1>
+            <p class="text-la text-lg mt-2">Jaipur</p>
+          </div>
+        </div>
+      </section>
     </main>
-
-    <!-- External JavaScript -->
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script>
-      // Function to handle active class
-      document.querySelectorAll('.nav-link').forEach((link) => {
-        link.addEventListener('click', function () {
-          // Remove active class from all links
-          document
-            .querySelectorAll('.nav-link')
-            .forEach((nav) => nav.classList.remove('active'))
-
-          // Add active class to the clicked link
-          this.classList.add('active')
-        })
-      })
-    </script>
   </body>
 </html>
