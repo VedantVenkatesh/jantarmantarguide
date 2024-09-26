@@ -1,0 +1,14 @@
+/* Preserving Heritage */
+h1 {
+    font-size: 57px !important;
+}
+.preserving-heritage-main-bg-image {
+    background-image: url('../images/backgrounds/History Page.jpg');
+}
+/* Experts Explain */
+.expert-detail-card-background {
+    background-image: url('../images/backgrounds/History-BG.jpg');
+}
+.experts-explain-bg-image {
+    background-image: url('../images/backgrounds/History Page.jpg');
+}
