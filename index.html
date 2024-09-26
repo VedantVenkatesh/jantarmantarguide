@@ -23,12 +23,38 @@
     </style>
   </head>
   <body class="bg-gray-100">
-    <header class="bg-gray-900 p-8">
+    <header class="bg-gray-900 p-4">
       <div class="container mx-auto">
-        <nav class="flex items-center justify-center text-white uppercase">
-          <!-- Main Navbar -->
+        <!-- Mobile Menu Button -->
+        <div class="flex items-center justify-between md:hidden">
+          <div class="lg:hidden flex text-2xl text-white">Jantr mantr</div>
+          <button
+            id="mobile-menu-button"
+            class="text-white focus:outline-none"
+            aria-label="Toggle navigation"
+          >
+            <svg
+              class="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Navigation Links -->
+        <nav class="md:flex items-center justify-center text-white uppercase">
           <ul
-            class="space-x-6 items-center flex justify-between w-full text-lg"
+            id="navbar-menu"
+            class="hidden md:flex md:items-center md:justify-between items-start w-full text-lg flex-col md:flex-row space-y-4 md:space-y-0"
           >
             <li>
               <a
@@ -48,8 +74,9 @@
                 >History</a
               >
               <!-- Dropdown Menu -->
+              <button class="mobile-submenu-toggle md:hidden">></button>
               <ul
-                class="dropdown-menu bg-gray-800 text-white py-2 absolute mt-2 rounded-md shadow-lg font-cocoBold font-bold w-max tracking-[.15em]"
+                class="dropdown-menu hidden group-hover:block bg-gray-800 text-white py-2 absolute mt-1 rounded-md shadow-lg font-cocoBold font-bold w-max tracking-[.15em]"
               >
                 <li>
                   <a href="#" class="block px-4 py-2 hover:bg-gray-700"
@@ -75,15 +102,16 @@
             </li>
 
             <!-- Jantar Mantar with Dropdown -->
-            <li class="relative group text-center flex">
+            <li class="relative group flex">
               <a
                 href="#jantar-mantar"
                 class="text-white flex-wrap hover:text-gray-400 px-3 py-2 font-cocoBold font-bold tracking-[.15em]"
                 >Jantar
                 <p>Mantar</p></a
               >
+              <button class="mobile-submenu-toggle md:hidden">></button>
               <ul
-                class="dropdown-menu text-left bg-gray-800 text-white py-2 absolute lg:mt-16 left-0 rounded-md shadow-lg font-cocoBold font-bold tracking-[.15em] w-max"
+                class="dropdown-menu hidden group-hover:block bg-gray-800 text-white mt-16 py-2 absolute left-0 rounded-md shadow-lg font-cocoBold font-bold tracking-[.15em] w-max"
               >
                 <li>
                   <a href="#" class="block px-4 py-2 hover:bg-gray-700"
@@ -130,8 +158,9 @@
                 class="text-white hover:text-gray-400 px-3 py-2 font-cocoBold font-bold tracking-[.15em]"
                 >Preserving Heritage</a
               >
+              <button class="mobile-submenu-toggle md:hidden">></button>
               <ul
-                class="dropdown-menu bg-gray-800 text-white py-2 absolute mt-2 rounded-md shadow-lg font-cocoBold font-bold w-max tracking-[.15em] top-8"
+                class="dropdown-menu hidden group-hover:block bg-gray-800 text-white py-2 absolute rounded-md shadow-lg font-cocoBold font-bold mt-1 w-max tracking-[.15em]"
               >
                 <li>
                   <a href="#" class="block px-4 py-2 hover:bg-gray-700"
@@ -162,154 +191,293 @@
     <main class="main h-full">
       <!-- Hero Banner -->
       <section
-        class="hero-banner h-[90vh] bg-no-repeat bg-cover bg-bottom"
+        class="hero-banner lg:h-[90vh] h-[80vh] bg-no-repeat bg-cover bg-bottom"
         style="
           background-image: url('./assets/images/banners/Homepagebanner.webp');
         "
       >
         <div class="container text-end">
           <div class="text-center relative top-24">
-            <h1 class="text-white text-end text-8xl font-cocoBold font-medium">
+            <h1
+              class="text-white text-end lg:text-8xl text-2xl font-cocoBold font-medium"
+            >
               Jantar Mantar
             </h1>
-            <p class="text-white text-3xl absolute right-0 bottom-[-30px]">
+            <p
+              class="text-white lg:text-3xl text-1xl absolute right-0 bottom-[-30px]"
+            >
               Jaipur
             </p>
           </div>
         </div>
       </section>
       <section class="rajaji">
-  <div
-    class="relative flex justify-center items-center h-[90vh] bg-no-repeat bg-cover bg-bottom"
-    style="background-image: url('./assets/images/destination.png')"
-  >
-    <!-- Main character in the center -->
-    <div class="relative z-10 flex flex-col items-center">
-      <p class="text-white text-xl font-cocoBold font-medium mb-4 text-center">
-        Click on a destination to go to an activity. <br />Come back here if you want to do more. Have fun!
-      </p>
-      <img
-        src="/assets/images/Rajaji.png"
-        alt="Main Character"
-        class="w-[300px] h-auto"
-      />
-    </div>
+        <div
+          class="relative flex justify-center items-center h-[90vh] bg-no-repeat bg-cover bg-bottom"
+          style="background-image: url('./assets/images/backgrounds/Cosmic.jpg')"
+        >
+          <!-- Main character in the center -->
+          <div class="relative z-10 flex flex-col items-center">
+            <p
+              class="text-white text-xl font-cocoBold font-medium mb-4 text-center"
+            >
+              Click on a destination to go to an activity. <br />Come back here
+              if you want to do more. Have fun!
+            </p>
+            <img
+              src="/assets/images/Rajaji.png"
+              alt="Main Character"
+              class="w-[300px] h-auto"
+            />
+          </div>
 
-    <!-- Destination 1 -->
-    <div
-      class="absolute top-[15%] left-[20%] rounded-full overflow-hidden flex justify-center items-center cursor-pointer border-4 border-transparent transition-colors duration-300 ease-in-out hover:border-white"
-    >
-      <img
-        src="/assets/images/jaipur.png"
-        alt="Jaipur's Royal Heritage"
-        class="w-[200px] h-[200px] rounded-full"
-      />
-      <div class="absolute bottom-[-20px] whitespace-nowrap font-bold text-[1.1rem]">
-        Jaipur's Royal Heritage
-      </div>
-    </div>
+          <!-- Destination 1 -->
+          <div
+            class="absolute top-[15%] left-[20%] rounded-full overflow-hidden flex justify-center items-center cursor-pointer border-4 border-transparent transition-colors duration-300 ease-in-out hover:border-white"
+          >
+            <img
+              src="/assets/images/jaipur.png"
+              alt="Jaipur's Royal Heritage"
+              class="w-[200px] h-[200px] rounded-full"
+            />
+            <div
+              class="absolute bottom-[-20px] whitespace-nowrap font-bold text-[1.1rem]"
+            >
+              Jaipur's Royal Heritage
+            </div>
+          </div>
 
-    <!-- Destination 2 -->
-    <div
-      class="absolute top-[10%] right-[20%] rounded-full overflow-hidden flex justify-center items-center cursor-pointer border-4 border-transparent transition-colors duration-300 ease-in-out hover:border-white"
-    >
-      <img
-        src="/assets/images/thevisionary.png"
-        alt="The Visionary"
-        class="w-[200px] h-[200px] rounded-full"
-      />
-      <div class="absolute bottom-[-20px] whitespace-nowrap font-bold text-[1.1rem]">
-        The Visionary
-      </div>
-    </div>
+          <!-- Destination 2 -->
+          <div
+            class="absolute top-[10%] right-[20%] rounded-full overflow-hidden flex justify-center items-center cursor-pointer border-4 border-transparent transition-colors duration-300 ease-in-out hover:border-white"
+          >
+            <img
+              src="/assets/images/thevisionary.png"
+              alt="The Visionary"
+              class="w-[200px] h-[200px] rounded-full"
+            />
+            <div
+              class="absolute bottom-[-20px] whitespace-nowrap font-bold text-[1.1rem]"
+            >
+              The Visionary
+            </div>
+          </div>
 
-    <!-- Destination 3 -->
-    <div
-      class="absolute bottom-[15%] left-[25%] rounded-full overflow-hidden flex justify-center items-center cursor-pointer border-4 border-transparent transition-colors duration-300 ease-in-out hover:border-white"
-    >
-      <img
-        src="/assets/images/cosmic.png"
-        alt="Cosmic Chronicles"
-        class="w-[200px] h-[200px] rounded-full"
-      />
-      <div class="absolute bottom-[-20px] whitespace-nowrap font-bold text-[1.1rem]">
-        Cosmic Chronicles
-      </div>
-    </div>
+          <!-- Destination 3 -->
+          <div
+            class="absolute bottom-[15%] left-[25%] rounded-full overflow-hidden flex justify-center items-center cursor-pointer border-4 border-transparent transition-colors duration-300 ease-in-out hover:border-white"
+          >
+            <img
+              src="/assets/images/cosmic.png"
+              alt="Cosmic Chronicles"
+              class="w-[200px] h-[200px] rounded-full"
+            />
+            <div
+              class="absolute bottom-[-20px] whitespace-nowrap font-bold text-[1.1rem]"
+            >
+              Cosmic Chronicles
+            </div>
+          </div>
 
-    <!-- Destination 4 -->
-    <div
-      class="absolute bottom-[15%] right-[25%] rounded-full overflow-hidden flex justify-center items-center cursor-pointer border-4 border-transparent transition-colors duration-300 ease-in-out hover:border-white"
-    >
-      <img
-        src="/assets/images/chief.png"
-        alt="Chief Architect"
-        class="w-[200px] h-[200px] rounded-full"
-      />
-      <div class="absolute bottom-[-20px] whitespace-nowrap font-bold text-[1.1rem]">
-        Chief Architect
-      </div>
-    </div>
+          <!-- Destination 4 -->
+          <div
+            class="absolute bottom-[15%] right-[25%] rounded-full overflow-hidden flex justify-center items-center cursor-pointer border-4 border-transparent transition-colors duration-300 ease-in-out hover:border-white"
+          >
+            <img
+              src="/assets/images/chief.png"
+              alt="Chief Architect"
+              class="w-[200px] h-[200px] rounded-full"
+            />
+            <div
+              class="absolute bottom-[-20px] whitespace-nowrap font-bold text-[1.1rem]"
+            >
+              Chief Architect
+            </div>
+          </div>
 
-    <!-- Curved Dotted lines using SVG -->
-    <svg
-      class="absolute top-[28%] left-[36%] z-0"
-      width="180"
-      height="180"
-    >
-      <path
-        d="M0,0 C80,0 100,120 180,120"
-        stroke="white"
-        stroke-width="2"
-        stroke-dasharray="5,5"
-        fill="none"
-      />
-    </svg>
+          <!-- Curved Dotted lines using SVG -->
+          <svg
+            class="absolute top-[28%] left-[36%] z-0"
+            width="180"
+            height="180"
+          >
+            <path
+              d="M0,0 C80,0 100,120 180,120"
+              stroke="white"
+              stroke-width="2"
+              stroke-dasharray="5,5"
+              fill="none"
+            />
+          </svg>
 
-    <svg
-      class="absolute top-[28%] right-[36%] z-0"
-      width="180"
-      height="180"
-    >
-      <path
-        d="M180,0 C100,0 80,120 0,120"
-        stroke="white"
-        stroke-width="2"
-        stroke-dasharray="5,5"
-        fill="none"
-      />
-    </svg>
+          <svg
+            class="absolute top-[28%] right-[36%] z-0"
+            width="180"
+            height="180"
+          >
+            <path
+              d="M180,0 C100,0 80,120 0,120"
+              stroke="white"
+              stroke-width="2"
+              stroke-dasharray="5,5"
+              fill="none"
+            />
+          </svg>
 
-    <svg
-      class="absolute bottom-[28%] left-[36%] z-0"
-      width="180"
-      height="180"
-    >
-      <path
-        d="M0,120 C80,120 100,0 180,0"
-        stroke="white"
-        stroke-width="2"
-        stroke-dasharray="5,5"
-        fill="none"
-      />
-    </svg>
+          <svg
+            class="absolute bottom-[28%] left-[36%] z-0"
+            width="180"
+            height="180"
+          >
+            <path
+              d="M0,120 C80,120 100,0 180,0"
+              stroke="white"
+              stroke-width="2"
+              stroke-dasharray="5,5"
+              fill="none"
+            />
+          </svg>
 
-    <svg
-      class="absolute bottom-[28%] right-[36%] z-0"
-      width="180"
-      height="180"
-    >
-      <path
-        d="M180,120 C100,120 80,0 0,0"
-        stroke="white"
-        stroke-width="2"
-        stroke-dasharray="5,5"
-        fill="none"
-      />
-    </svg>
-  </div>
-</section>
-
+          <svg
+            class="absolute bottom-[28%] right-[36%] z-0"
+            width="180"
+            height="180"
+          >
+            <path
+              d="M180,120 C100,120 80,0 0,0"
+              stroke="white"
+              stroke-width="2"
+              stroke-dasharray="5,5"
+              fill="none"
+            />
+          </svg>
+        </div>
+      </section>
+      <section
+        class="story-of-jantar-manatr bg-no-repeat bg-cover bg-bottom h-auto"
+        style="background-image: url('./assets/images/backgrounds/Cosmic.jpg')"
+      >
+        <div
+          class="container lg:py-16 py-8 grid md:grid-cols-2 grid-cols-1 lg:gap-24 gap-12 content-center items-center"
+        >
+          <div class="">
+            <img src="/assets/images/store-of-janrmantr.png" class="" />
+          </div>
+          <div>
+            <h2
+              class="lg:text-4xl text-2xl font-light font-cathy leading-none text-white"
+            >
+              The Story of <br />Jantar Mantar
+            </h2>
+            <p class="mt-8 text-white text-sm font-cocoFat font-bold">
+              The Jantar Mantar has a compelling presence in Jaipur. Its history
+              feels palpable to those who explore its well-organized
+              instruments. Every stone, every instrument has a story to tell and
+              at every turn, there is something to transport you back in time.
+            </p>
+            <a
+              href="#"
+              class="lg:text-lg mt-7 inline-block text-sm font-light font-cocoFat text-white underline"
+              >know more</a
+            >
+          </div>
+        </div>
+      </section>
+      <section
+        class="about-us bg-no-repeat bg-cover bg-bottom h-auto"
+        style="background-image: url('./assets/images/backgrounds/Cosmic.jpg')"
+      >
+        <div class="container lg:py-16 py-8">
+          <h2
+            class="lg:text-4xl text-center text-2xl lg:py-16 py-8 font-light font-cathy leading-none text-white"
+          >
+            About us
+          </h2>
+          <div
+            class="grid lg:grid-cols-2 grid-cols-1 justify-center content-center"
+          >
+            <div>
+              <div class="grid grid-cols-2 gap-8">
+                <div>
+                  <img src="./assets/images/Rainjha.png" class="w-full" />
+                </div>
+                <div>
+                  <p class="lg:text-1-xl text-xl font-cocoBold text-white mb-4">
+                    Hello, I am
+                  </p>
+                  <h2
+                    class="lg:text-2xl text-1xl font-cocoBold text-white uppercase leading-none"
+                  >
+                    RAIN JHA
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="grid grid-cols-2 gap-8">
+                <div class="w-full order-2">
+                  <img src="./assets/images/vedant.png" class="w-full" />
+                </div>
+                <div class="w-full order-1 content-end text-right">
+                  <p class="lg:text-1-xl text-xl font-cocoBold text-white mb-4">
+                    Hello, I am
+                  </p>
+                  <h2
+                    class="lg:text-2xl text-1xl font-cocoBold text-white uppercase leading-none"
+                  >
+                    VEDANT <br class="lg:block hidden" />VENKATESH
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="text-xl text-center font-cocoBold text-white mt-8 lg:w-3/4 w-full m-auto">
+            Medieval history meets observational astronomy, stone meets sky at
+            this unique observatory built three centuries ago. For Vedant and
+            Rain, friends and fellow travellers since kindergarten, this project
+            builds on their shared interest to enliven history and demystify
+            science.
+            <p class="text-xl text-center font-cocoBold lg:w-3/4 w-full text-white mt-4 m-auto"> To bring to life for students and visitors, each of the 19
+            instruments — their history, their physics, and the universe in
+            between.</p>
+          </p>
+        </div>
+      </section>
     </main>
+    <script>
+      // Toggle mobile menu visibility
+      const mobileMenuButton = document.getElementById('mobile-menu-button')
+      const navbarMenu = document.getElementById('navbar-menu')
+
+      mobileMenuButton.addEventListener('click', function () {
+        navbarMenu.classList.toggle('hidden')
+      })
+
+      // Toggle submenu on mobile
+      const submenuToggles = document.querySelectorAll('.mobile-submenu-toggle')
+
+      submenuToggles.forEach(function (toggle) {
+        toggle.addEventListener('click', function (e) {
+          const submenu = this.nextElementSibling
+          submenu.classList.toggle('hidden')
+        })
+      })
+
+      // Close submenu and navigate when a link is clicked on mobile
+      const submenuLinks = document.querySelectorAll('.dropdown-menu a')
+
+      submenuLinks.forEach(function (link) {
+        link.addEventListener('click', function () {
+          // Hide all submenus
+          document
+            .querySelectorAll('.dropdown-menu')
+            .forEach(function (submenu) {
+              submenu.classList.add('hidden')
+            })
+          // Optionally close the mobile menu after navigating
+          navbarMenu.classList.add('hidden')
+        })
+      })
+    </script>
   </body>
 </html>
