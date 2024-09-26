@@ -3,12 +3,12 @@ h1 {
     font-size: 57px !important;
 }
 .preserving-heritage-main-bg-image {
-    background-image: url('../images/backgrounds/History Page.jpg');
+    background-image: url('../images/backgrounds/preserving-heritage.png');
 }
-/* Experts Explain */
-.expert-detail-card-background {
-    background-image: url('../images/backgrounds/History-BG.jpg');
+/* Experts Explain and Credits and Sources */
+.experts-and-sources-detail-card-background {
+    background-image: url('../images/backgrounds/card-background.png');
 }
-.experts-explain-bg-image {
-    background-image: url('../images/backgrounds/History Page.jpg');
+.experts-explain-and-credits-sources-main-bg-image {
+    background-image: url('../images/backgrounds/experts-explain-and-credits.png');
 }
