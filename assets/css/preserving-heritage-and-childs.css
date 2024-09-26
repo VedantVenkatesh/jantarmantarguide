@@ -1,0 +1,22 @@
+/* Preserving Heritage */
+h1 {
+    font-size: 57px !important;
+}
+.preserving-heritage-main-bg-image {
+    background-image: url('../images/backgrounds/History Page.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+/* Experts Explain */
+.expert-detail-card-background {
+    background-image: url('../images/backgrounds/History BG.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.experts-explain-bg-image {
+    background-image: url('../images/backgrounds/History Page.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
