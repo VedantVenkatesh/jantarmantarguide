@@ -993,6 +993,10 @@ video {
   text-align: end;
 }
 
+.font-coco {
+  font-family: CocoGothic_trial;
+}
+
 .font-cocoBold {
   font-family: CocoGothic-Bold_trial;
 }
