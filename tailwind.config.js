@@ -20,7 +20,7 @@ module.exports = {
       colors: {
         white: '#ffffff',
         black: '#000000',
-        la: '#FF0000',
+        red: '#FF0000',
       },
       fontSize: {
         sm: '0.938rem',

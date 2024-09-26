@@ -148,14 +148,8 @@ h6 {
   display: none; /* Hide dropdown by default */
   position: absolute; /* Position the dropdown */
 }
-.hero-banner {
-  position: relative;
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-}
-
 .lead {
   font-size: 1.5rem;
   font-family: 'Sans-serif';
 }
+
