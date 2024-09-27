@@ -720,10 +720,6 @@ video {
   margin-top: 4rem;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
 .mt-4 {
   margin-top: 1rem;
 }
@@ -877,12 +873,6 @@ video {
   gap: 2rem;
 }
 
-.space-x-6 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
@@ -936,6 +926,10 @@ video {
   background-position: bottom;
 }
 
+.bg-top {
+  background-position: top;
+}
+
 .bg-no-repeat {
   background-repeat: no-repeat;
 }
@@ -946,10 +940,6 @@ video {
 
 .p-5 {
   padding: 1.25rem;
-}
-
-.p-8 {
-  padding: 2rem;
 }
 
 .px-3 {
@@ -1063,10 +1053,6 @@ video {
 
 .tracking-\[\.15em\] {
   letter-spacing: .15em;
-}
-
-.tracking-\[\.25em\] {
-  letter-spacing: .25em;
 }
 
 .text-white {
@@ -1433,12 +1419,14 @@ section.about-us:before {
   max-width: 15%;
 }
 
+.timeline-events--content .timeline8 .starline,
 .timeline-events--content .timeline2 .starline {
   transform: rotateY(0deg);
   left: 0;
   right: unset;
 }
 
+.timeline-events--content .timeline8 .line-wrap,
 .timeline-events--content .timeline3 .line-wrap,
 .timeline-events--content .timeline2 .line-wrap {
   width: 100px;
@@ -1461,7 +1449,7 @@ section.about-us:before {
 }
 
 .timeline-events--content .timeline4 .starline {
-  top: -58.25%;
+  top: -65%;
   right: -18%;
 }
 
@@ -1487,7 +1475,7 @@ section.about-us:before {
 
 .timeline-events--content .timeline6 .starline {
   top: -70px;
-  transform: rotateY(360deg);
+  transform: rotateY(0deg);
   right: unset;
   left: -87px;
 }
@@ -1496,6 +1484,39 @@ section.about-us:before {
   right: 15%;
   top: 0;
   max-width: 15%;
+}
+
+.timeline-events--content .timeline8 {
+  bottom: -65%;
+  max-width: 14%;
+  left: 0;
+  right: unset;
+}
+
+.timeline-events--content .timeline9 {
+  bottom: -118%;
+  left: 9%;
+  max-width: 15%;
+}
+
+.timeline9 .starline.signle-starline {
+  top: -30px;
+  right: -50%;
+}
+
+.timeline9 .starline.signle-starline .star {
+  left: -2px;
+  top: 160px;
+}
+
+.timeline9 .starline.signle-starline .line-wrap {
+  height: 150px;
+}
+
+.timeline-events--content .timeline10 {
+  bottom: -112%;
+  left: 36%;
+  max-width: 14%;
 }
 
 .timeline-events--content .timeline-text .timeline-yr {
