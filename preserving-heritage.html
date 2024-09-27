@@ -7,7 +7,6 @@
     <title>Preserving Heritage</title>
     <!-- External CSS -->
     <link rel="stylesheet" href="assets/css/tailwind.min.css" />
-    <link rel="stylesheet" href="assets/css/preserving-heritage-and-children.css" />
     <link rel="stylesheet" href="dist/styles.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
     <style>
@@ -23,15 +22,43 @@
     </style>
   </head>
   <body class="bg-gray-100">
-    <header class="bg-gray-900 p-8">
-      <div class="container mx-auto ">
-        <nav class="flex items-center justify-between text-white uppercase">
-          <!-- Main Navbar -->
-          <ul class="space-x-6 items-center flex justify-between w-full text-lg">
+    <header class="bg-gray-900 p-4">
+      <div class="container mx-auto">
+        <!-- Mobile Menu Button -->
+        <div class="flex items-center justify-between md:hidden">
+          <div class="lg:hidden flex text-2xl text-white">Jantar mantar</div>
+          <button
+            id="mobile-menu-button"
+            class="text-white focus:outline-none"
+            aria-label="Toggle navigation"
+          >
+            <svg
+              class="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Navigation Links -->
+        <nav class="md:flex items-center justify-center text-white uppercase">
+          <ul
+            id="navbar-menu"
+            class="hidden md:flex md:items-center md:justify-between items-start w-full text-lg flex-col md:flex-row space-y-4 md:space-y-0"
+          >
             <li>
               <a
                 href="index.html"
-                class="text-white hover:text-gray-400 px-3 py-2 font-cocoBold font-bold tracking-[.25em]"
+                class="text-white hover:text-gray-400 px-3 py-2 font-cocoBold font-bold tracking-[.15em]"
                 id="homeLink"
                 >Home</a
               >
@@ -41,13 +68,14 @@
             <li class="relative group">
               <a
                 href="#history"
-                class="text-white hover:text-gray-400 px-3 py-2 font-cocoBold font-bold tracking-[.25em]"
+                class="text-white hover:text-gray-400 px-3 py-2 font-cocoBold font-bold tracking-[.15em]"
                 id="historyLink"
                 >History</a
               >
               <!-- Dropdown Menu -->
+              <button class="mobile-submenu-toggle md:hidden">></button>
               <ul
-                class="dropdown-menu bg-gray-800 text-white py-2 absolute mt-2 rounded-md shadow-lg"
+                class="dropdown-menu hidden group-hover:block bg-gray-800 text-white py-2 absolute mt-1 rounded-md shadow-lg font-cocoBold font-bold w-max tracking-[.15em]"
               >
                 <li>
                   <a href="#" class="block px-4 py-2 hover:bg-gray-700"
@@ -73,14 +101,16 @@
             </li>
 
             <!-- Jantar Mantar with Dropdown -->
-            <li class="relative group">
+            <li class="relative group flex">
               <a
                 href="#jantar-mantar"
-                class="text-white hover:text-gray-400 px-3 py-2 font-cocoBold font-bold tracking-[.25em]"
-                >Jantar Mantar</a
+                class="text-white flex-wrap hover:text-gray-400 px-3 py-2 font-cocoBold font-bold tracking-[.15em]"
+                >Jantar
+                <p>Mantar</p></a
               >
+              <button class="mobile-submenu-toggle md:hidden">></button>
               <ul
-                class="dropdown-menu bg-gray-800 text-white py-2 absolute mt-2 rounded-md shadow-lg"
+                class="dropdown-menu hidden group-hover:block bg-gray-800 text-white mt-16 py-2 absolute left-0 rounded-md shadow-lg font-cocoBold font-bold tracking-[.15em] w-max"
               >
                 <li>
                   <a href="#" class="block px-4 py-2 hover:bg-gray-700"
@@ -104,7 +134,7 @@
             <li>
               <a
                 href="#"
-                class="text-white hover:text-gray-400 px-3 py-2 font-cocoBold font-bold tracking-[.25em]"
+                class="text-white hover:text-gray-400 px-3 py-2 font-cocoBold font-bold tracking-[.15em]"
                 id="galleryLink"
                 >Gallery</a
               >
@@ -114,7 +144,7 @@
             <li>
               <a
                 href="#"
-                class="text-white hover:text-gray-400 px-3 py-2 font-cocoBold font-bold tracking-[.25em] "
+                class="text-white hover:text-gray-400 px-3 py-2 font-cocoBold font-bold tracking-[.15em]"
                 id="visitLink"
                 >Visit</a
               >
@@ -124,11 +154,12 @@
             <li class="relative group">
               <a
                 href="preserving-heritage.html"
-                class="text-white hover:text-gray-400 px-3 py-2 font-cocoBold font-bold tracking-[.25em] "
+                class="text-white hover:text-gray-400 px-3 py-2 font-cocoBold font-bold tracking-[.15em]"
                 >Preserving Heritage</a
               >
+              <button class="mobile-submenu-toggle md:hidden">></button>
               <ul
-                class="dropdown-menu bg-gray-800 text-white py-2 absolute mt-2 rounded-md shadow-lg"
+                class="dropdown-menu hidden group-hover:block bg-gray-800 text-white py-2 absolute rounded-md shadow-lg font-cocoBold font-bold mt-1 w-max tracking-[.15em]"
               >
                 <li>
                   <a href="experts-explain.html" class="block px-4 py-2 hover:bg-gray-700"
@@ -141,12 +172,12 @@
                   >
                 </li>
                 <li>
-                  <a href="#" class="block px-4 py-2 hover:bg-gray-700"
+                  <a href="explore-jaipur.html" class="block px-4 py-2 hover:bg-gray-700"
                     >Explore Jaipur</a
                   >
                 </li>
                 <li>
-                  <a href="#" class="block px-4 py-2 hover:bg-gray-700"
+                  <a href="about-us.html" class="block px-4 py-2 hover:bg-gray-700"
                     >About Us</a
                   >
                 </li>
@@ -158,16 +189,51 @@
     </header>
 
     <!-- Body -->
-    <div class="preserving-heritage-main-bg-image bg-no-repeat bg-cover min-h-screen">
+    <div style = "background-image: url('assets/images/backgrounds/preserving-heritage.png');" class="bg-no-repeat bg-cover min-h-screen">
       <div class="container">
         <div class="lg:px-16 py-40">
-          <h1 class = "text-white uppercase lg:w-7/12 sm:w-full">Preserving the Legacy of Jantar Mantar</h1>
-          <p class = "text-white my-8">As a UNESCO World Heritage site, Jantar Mantar is not only an architectural wonder but also a priceless repository of scientific knowledge. The conservation of this monument involves a multi-faceted approach, combining modern restoration techniques with traditional craftsmanship. The preservation efforts are crucial to maintaining the structural integrity of the instruments while ensuring they remain functional for future generations of scholars and astronomers.</p>
-          <p class = "text-white my-8">Various initiatives by the Archaeological Survey of India (ASI) and local authorities have been put in place to protect Jantar Mantar from environmental damage and urban encroachment. Restoration projects focus on the wear and tear caused by time and weather, using authentic materials that retain the original look and feel of the monument.</p>
-          <p class = "text-white my-8">Educational programs and heritage walks are also regularly conducted to raise awareness about the significance of Jantar Mantar and promote cultural tourism, ensuring that this astronomical marvel continues to inspire curiosity and reverence among visitors.</p>
+          <h1 style = "font-size: 57px;" class = "text-white uppercase lg:w-7/12 sm:w-full">Preserving the Legacy of Jantar Mantar</h1>
+          <p class = "text-white my-8 text-lg font-coco font-medium">As a UNESCO World Heritage site, Jantar Mantar is not only an architectural wonder but also a priceless repository of scientific knowledge. The conservation of this monument involves a multi-faceted approach, combining modern restoration techniques with traditional craftsmanship. The preservation efforts are crucial to maintaining the structural integrity of the instruments while ensuring they remain functional for future generations of scholars and astronomers.</p>
+          <p class = "text-white my-8 text-lg font-coco font-medium">Various initiatives by the Archaeological Survey of India (ASI) and local authorities have been put in place to protect Jantar Mantar from environmental damage and urban encroachment. Restoration projects focus on the wear and tear caused by time and weather, using authentic materials that retain the original look and feel of the monument.</p>
+          <p class = "text-white my-8 text-lg font-coco font-medium">Educational programs and heritage walks are also regularly conducted to raise awareness about the significance of Jantar Mantar and promote cultural tourism, ensuring that this astronomical marvel continues to inspire curiosity and reverence among visitors.</p>
         </div>
       </div>
     </div>
 
+    <script>
+      // Toggle mobile menu visibility
+      const mobileMenuButton = document.getElementById('mobile-menu-button')
+      const navbarMenu = document.getElementById('navbar-menu')
+
+      mobileMenuButton.addEventListener('click', function () {
+        navbarMenu.classList.toggle('hidden')
+      })
+
+      // Toggle submenu on mobile
+      const submenuToggles = document.querySelectorAll('.mobile-submenu-toggle')
+
+      submenuToggles.forEach(function (toggle) {
+        toggle.addEventListener('click', function (e) {
+          const submenu = this.nextElementSibling
+          submenu.classList.toggle('hidden')
+        })
+      })
+
+      // Close submenu and navigate when a link is clicked on mobile
+      const submenuLinks = document.querySelectorAll('.dropdown-menu a')
+
+      submenuLinks.forEach(function (link) {
+        link.addEventListener('click', function () {
+          // Hide all submenus
+          document
+            .querySelectorAll('.dropdown-menu')
+            .forEach(function (submenu) {
+              submenu.classList.add('hidden')
+            })
+          // Optionally close the mobile menu after navigating
+          navbarMenu.classList.add('hidden')
+        })
+      })
+    </script>
   </body>
 </html>
