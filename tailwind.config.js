@@ -7,10 +7,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        coco: ['CocoGothic_trial', 'sans-serif'], // Add the CocoGothic font family
-        cocoBold: ['CocoGothic-Bold_trial', 'sans-serif'],
-        cocoFat: ['CocoGothic-Fat_trial', 'sans-serif'],
-        catchy: ['catchy-mager', 'sans-serif'], // Add the catchy-mager font family
+        coco: ['CocoGothic_trial'], // Add the CocoGothic font family
+        cocoBold: ['CocoGothic-Bold_trial'],
+        cocoFat: ['CocoGothic-Fat_trial'],
+        catchy: ['catchy-mager'], // Add the catchy-mager font family
       },
       spacing: {
         30: '1.875rem',
