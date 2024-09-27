@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>History</title>
+    <link rel="stylesheet" href="dist/styles.css" />
+    <link rel="stylesheet" href="assets/images/styles.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Slider Css */
+.swiper-wrapper {
+  width: 100%;
+  height: max-content !important;
+  padding-bottom: 64px !important;
+  -webkit-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+  position: relative;
+}
+.swiper-pagination-bullet {
+  background: #4f46e5;
+}
+.swiper-button-prev {
+  color:black !important;
+}
+.swiper-button-next {
+  color:black !important;
+}
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <header class="bg-gray-900 p-4">
+      <div class="container mx-auto">
+        <!-- Mobile Menu Button -->
+        <div class="flex items-center justify-between md:hidden">
+          <div class="lg:hidden flex text-2xl text-white">Jantar mantar</div>
+          <button
+            id="mobile-menu-button"
+            class="text-white focus:outline-none"
+            aria-label="Toggle navigation"
+          >
+            <svg
+              class="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Navigation Links -->
+        <nav class="md:flex items-center justify-center text-white uppercase">
+          <ul
+            id="navbar-menu"
+            class="hidden md:flex md:items-center md:justify-between items-start w-full text-lg flex-col md:flex-row space-y-4 md:space-y-0"
+          >
+            <li>
+              <a
+                href="#"
+                class="text-white hover:text-gray-400 px-3 py-2 font-cocoBold font-bold tracking-[.15em]"
+                id="homeLink"
+                >Home</a
+              >
+            </li>
+
+            <!-- History with Dropdown -->
+            <li class="relative group">
+              <a
+                href="#history"
+                class="text-white hover:text-gray-400 px-3 py-2 font-cocoBold font-bold tracking-[.15em]"
+                id="historyLink"
+                >History</a
+              >
+              <!-- Dropdown Menu -->
+              <button class="mobile-submenu-toggle md:hidden">></button>
+              <ul
+                class="dropdown-menu hidden group-hover:block bg-gray-800 text-white py-2 absolute mt-1 rounded-md shadow-lg font-cocoBold font-bold w-max tracking-[.15em]"
+              >
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-700"
+                    >Jaipur’s Royal Heritage</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-700"
+                    >COSMIC CHRONICLES</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-700"
+                    >The VISIONARY</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-700"
+                    >Chief Architect</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <!-- Jantar Mantar with Dropdown -->
+            <li class="relative group flex">
+              <a
+                href="#jantar-mantar"
+                class="text-white flex-wrap hover:text-gray-400 px-3 py-2 font-cocoBold font-bold tracking-[.15em]"
+                >Jantar
+                <p>Mantar</p></a
+              >
+              <button class="mobile-submenu-toggle md:hidden">></button>
+              <ul
+                class="dropdown-menu hidden group-hover:block bg-gray-800 text-white mt-16 py-2 absolute left-0 rounded-md shadow-lg font-cocoBold font-bold tracking-[.15em] w-max"
+              >
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-700"
+                    >STORY OF THE JANTAR MANTAR</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-700"
+                    >Astronomy in 1700</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-700"
+                    >INSTRUMENTS</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <!-- Gallery -->
+            <li>
+              <a
+                href="#"
+                class="text-white hover:text-gray-400 px-3 py-2 font-cocoBold font-bold tracking-[.15em]"
+                id="galleryLink"
+                >Gallery</a
+              >
+            </li>
+
+            <!-- Visit -->
+            <li>
+              <a
+                href="#"
+                class="text-white hover:text-gray-400 px-3 py-2 font-cocoBold font-bold tracking-[.15em]"
+                id="visitLink"
+                >Visit</a
+              >
+            </li>
+
+            <!-- Preserving Heritage with Dropdown -->
+            <li class="relative group">
+              <a
+                href="preserving-heritage.html"
+                class="text-white hover:text-gray-400 px-3 py-2 font-cocoBold font-bold tracking-[.15em]"
+                >Preserving Heritage</a
+              >
+              <button class="mobile-submenu-toggle md:hidden">></button>
+              <ul
+                class="dropdown-menu hidden group-hover:block bg-gray-800 text-white py-2 absolute rounded-md shadow-lg font-cocoBold font-bold mt-1 w-max tracking-[.15em]"
+              >
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-700"
+                    >Experts Explain</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-700"
+                    >Credits</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-700"
+                    >Explore Jaipur</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-700"
+                    >About Us</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section
+        class="hero-banner lg:h-auto bg-no-repeat bg-cover"
+        style="
+          background-image: url('./assets/images/backgrounds/History Page.jpg');
+        "
+      >
+        <div
+          class="container grid lg:grid-cols-2 grid-cols-1 lg:gap-8 lg:py-16 py-8"
+        >
+          <div>
+            <h1
+              class="text-white text-start font-medium font-cathy leading-none lg:text-[108px] text-[48px]"
+            >
+              Maharaja<br />
+              Sawai Jai Singh
+            </h1>
+            <p
+              class="text-white text-start font-medium font-coco lg:text-xl mt-6 text-sm"
+            >
+              Sawai Jai Singh II, or Jai Singh as he is commonly known today, is
+              one of Rajasthan’s most celebrated rulers. The name “Jai”means
+              victory, while “Singh”, which translates to lion, symbolises
+              bravery—a fitting title for a ruler from the valiant Rajput
+              warrior clan. The honorific “Sawai,” meaning "one and a quarter"
+              in Sanskrit, was officially bestowed upon him in 1712 to signify
+              that he was one and a quarter times superior to his peers. To
+              commemorate this, the rulers of Jaipur began the tradition of
+              flying two flags, one full-sized and the other a quarter-sized.
+            </p>
+          </div>
+
+          <div class="flex justify-center lg:justify-end">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="md:w-[576px] md:h-[576px] w-[320px] h-[320px] overflow-visible transform-none"
+            >
+              <style>
+                .segment {
+                  transition: fill 0.3s ease;
+                }
+                .segment:hover {
+                  fill: #ffcc00; /* Change to yellow on hover */
+                }
+                text {
+                  font-size: 11px; /* Changed from 12px to 11px */
+                  fill: white;
+                  text-anchor: middle;
+                  dominant-baseline: middle;
+                  transition: fill 0.3s ease;
+                }
+                text:hover {
+                  fill: blue; /* Text turns yellow on hover */
+                  opacity: 0.4;
+                }
+              </style>
+
+              <g style="transform: scale(1) translate(0px, 0px)">
+                <g transform="translate(288, 288)">
+                  <!-- Segment 1: Genius -->
+                  <path
+                    class="segment"
+                    d="M0 -288 A288 288 0 0 1 143.99999999999997 -249.41531628991834 L71.99999999999999 -124.70765814495917 A144 144 0 0 0 0 -144 Z"
+                    fill="#023f8a"
+                    opacity="1"
+                    pointer-events="auto"
+                  ></path>
+                  <text
+                    class="font-coco text-[14px]"
+                    x="55"
+                    y="-210"
+                    transform="rotate(0,75,-200)"
+                  >
+                    GENIUS
+                  </text>
+
+                  <!-- Segment 2: Astronomer -->
+                  <path
+                    class="segment"
+                    d="M143.99999999999997 -249.41531628991834 A288 288 0 0 1 249.4153162899183 -144.00000000000003 L124.70765814495915 -72.00000000000001 A144 144 0 0 0 71.99999999999999 -124.70765814495917 Z"
+                    fill="#00b5d7"
+                    opacity="1"
+                    pointer-events="auto"
+                  ></path>
+                  <text
+                    class="font-coco text-[14px]"
+                    x="160"
+                    y="-160"
+                    transform="rotate(0,160,-130)"
+                  >
+                    ASTRONOMER
+                  </text>
+
+                  <!-- Segment 3: Monarch of Jaipur -->
+                  <path
+                    class="segment"
+                    d="M249.4153162899183 -144.00000000000003 A288 288 0 0 1 288 -1.7634913907721887e-14 L144 -8.817456953860943e-15 A144 144 0 0 0 124.70765814495915 -72.00000000000001 Z"
+                    fill="#2f5f98"
+                    opacity="1"
+                    pointer-events="auto"
+                  ></path>
+                  <text class="font-coco text-[14px]">
+                    <tspan x="205" y="-60">MONARCH</tspan>
+                    <tspan x="205" y="-45">OF JAIPUR</tspan>
+                  </text>
+
+                  <!-- Segment 4: Visionary -->
+                  <path
+                    class="segment"
+                    d="M288 -1.7634913907721887e-14 A288 288 0 0 1 249.41531628991834 143.99999999999994 L124.70765814495917 71.99999999999997 A144 144 0 0 0 144 -8.817456953860943e-15 Z"
+                    fill="#0078b6"
+                    opacity="1"
+                    pointer-events="auto"
+                  ></path>
+                  <text class="font-coco text-[14px]" x="210" y="50">
+                    VISIONARY
+                  </text>
+
+                  <!-- Segment 5: Statesman -->
+                  <path
+                    class="segment"
+                    d="M249.41531628991834 143.99999999999994 A288 288 0 0 1 144.00000000000009 249.41531628991828 L72.00000000000004 124.70765814495914 A144 144 0 0 0 124.70765814495917 71.99999999999997 Z"
+                    fill="#023f8a"
+                    opacity="1"
+                    pointer-events="auto"
+                  ></path>
+                  <text
+                    class="font-coco text-[14px]"
+                    x="150"
+                    y="160"
+                    transform="rotate(0,130,180)"
+                  >
+                    STATESMAN
+                  </text>
+
+                  <!-- Segment 6: Legislator -->
+                  <path
+                    class="segment"
+                    d="M144.00000000000009 249.41531628991828 A288 288 0 0 1 1.631675202522618e-13 288 L8.15837601261309e-14 144 A144 144 0 0 0 72.00000000000004 124.70765814495914 Z"
+                    fill="#0078b6"
+                    opacity="1"
+                    pointer-events="auto"
+                  ></path>
+                  <text
+                    class="font-coco text-[14px]"
+                    x="60"
+                    y="220"
+                    transform="rotate(360,50,210)"
+                  >
+                    LEGISLATOR
+                  </text>
+
+                  <!-- Segment 7: Man of Science -->
+                  <path
+                    class="segment"
+                    d="M1.631675202522618e-13 288 A288 288 0 0 1 -143.99999999999983 249.41531628991845 L-71.99999999999991 124.70765814495923 A144 144 0 0 0 8.15837601261309e-14 144 Z"
+                    fill="#0096c7"
+                    opacity="1"
+                    pointer-events="auto"
+                  ></path>
+                  <text
+                    class="font-coco text-[14px]"
+                    x="-50"
+                    y="210"
+                    transform="rotate(360,-50,210)"
+                  >
+                    <tspan x="-50" y="210">MAN OF</tspan>
+                    <tspan x="-50" y="230">SCIENCE</tspan>
+                  </text>
+
+                  <!-- Segment 8: Scholar -->
+                  <path
+                    class="segment"
+                    d="M-143.99999999999983 249.41531628991845 A288 288 0 0 1 -249.41531628991825 144.0000000000001 L-124.70765814495913 72.00000000000006 A144 144 0 0 0 -71.99999999999991 124.70765814495923 Z"
+                    fill="#00b5d7"
+                    opacity="1"
+                    pointer-events="auto"
+                  ></path>
+                  <text
+                    class="font-coco text-[14px]"
+                    x="-160"
+                    y="160"
+                    transform="rotate(360,-130,180)"
+                  >
+                    SCHOLAR
+                  </text>
+
+                  <!-- Segment 9: Scientist -->
+                  <path
+                    class="segment"
+                    d="M-249.41531628991825 144.0000000000001 A288 288 0 0 1 -288 5.2904741723165653e-14 L-144 2.6452370861582827e-14 A144 144 0 0 0 -124.70765814495913 72.00000000000006 Z"
+                    fill="#2f5f98"
+                    opacity="1"
+                    pointer-events="auto"
+                  ></path>
+                  <text
+                    class="font-coco text-[14px]"
+                    x="-220"
+                    y="60"
+                    transform="rotate(360,-200,100)"
+                  >
+                    SCIENTIST
+                  </text>
+
+                  <!-- Segment 10: Patron of Art and Architecture -->
+                  <path
+                    class="segment"
+                    d="M-288 5.2904741723165653e-14 A288 288 0 0 1 -249.4153162899183 -144.00000000000003 L-124.70765814495915 -72.00000000000001 A144 144 0 0 0 -144 2.6452370861582827e-14 Z"
+                    fill="#0078b6"
+                    opacity="1"
+                    pointer-events="auto"
+                  ></path>
+                  <text class="font-coco text-[14px]" x="-220" y="-70">
+                    <tspan x="-220" dy="0">PATRON OF ART</tspan>
+                    <tspan x="-220" dy="15">AND</tspan>
+                    <tspan x="-220" dy="18">ARCHITECTURE</tspan>
+                  </text>
+
+                  <!-- Segment 11: Virtuoso -->
+                  <path
+                    class="segment"
+                    d="M-249.4153162899183 -144.00000000000003 A288 288 0 0 1 -144.00000000000017 -249.41531628991823 L-72.00000000000009 -124.70765814495911 A144 144 0 0 0 -124.70765814495915 -72.00000000000001 Z"
+                    fill="#023f8a"
+                    opacity="1"
+                    pointer-events="auto"
+                  ></path>
+                  <text
+                    class="font-coco text-[14px]"
+                    x="-160"
+                    y="-150"
+                    transform="rotate(360,-140,-130)"
+                  >
+                    DIMPLOMAT
+                  </text>
+
+                  <!-- Segment 12: Pillar of Strength -->
+                  <path
+                    class="segment"
+                    d="M-144.00000000000017 -249.41531628991823 A288 288 0 0 1 -3.0646605030252464e-13 -288 L-1.5323302515126232e-13 -144 A144 144 0 0 0 -72.00000000000009 -124.70765814495911 Z"
+                    fill="#0096c7"
+                    opacity="1"
+                    pointer-events="auto"
+                  ></path>
+                  <text class="font-coco text-[14px]" x="-50" y="-210">
+                    <tspan x="-60" y="-210">BUILDER</tspan>
+                  </text>
+                </g>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="container">
+          <p
+            class="text-white text-left font-medium font-coco lg:text-xl mt-6 text-sm"
+          >
+            Born on 3 November 1688, to Maharaja Bishan Singh of Amer and his
+            Rathor queen, Indra Kumari, Jai Singh ascended the throne at the age
+            of 12 following his father's death. With the support of experienced
+            advisors, he led Rajasthan from his new capital in Jaipur until his
+            death on 21 September 1743, at the age of 55. During his reign, he
+            founded the city of Jaipur and built five astronomical
+            observatories, the Jantar Mantar in Jaipur being the grandest.
+          </p>
+        </div>
+      </section>
+      <section class="slider bg-cover bg-no-repeat" style="
+          background-image: url('./assets/images/backgrounds/History Page.jpg');
+        ">
+        <!--HTML CODE-->
+        <div class="w-full relative container lg:py-24" >
+          <div class="swiper default-carousel swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div
+                  class="bg-indigo-50 h-[615px] flex justify-center items-center w-full bg-no-repeat bg-cover" style="
+          background-image: url('./assets/images/jntrmntr.png')"
+                >
+                 <div class="grid grid-cols-2 lg:gap-16 lg:w-10/12 m-auto">
+                  <div>
+                    <h2 class="lg:text-[62px] text-28px font-catchy font-light mb-14">Jai Singh the Scholar</h2>
+                    <p class="lg:text-xl text-sm font-coco font-light">Jai Singh II was not only a ruler but also an avid scholar with a deep love for knowledge. He was well-versed in Sanskrit, science, astronomy, architecture, literature, mathematics, art, and economics. His court was a vibrant hub of intellectuals and scholars proficient in the Dharma Shastras (ancient Indian jurisprudence), grammar, rituals, and astronomy. Jai Singh had several works translated from Arabic into Sanskrit and his extensive library contained works by renowned scholars such as Aryabhatt, Brahmagupta, Bhaskaracharya, Euclid, Ptolemy, and Nasir al-Din al-Tusi. </p>
+                  </div>
+                  <div class="w-full">
+                    <img src="./assets/images/newImage.png" class="lg:w-[400px] h-[500px] border-white border-4"/>
+                  </div>
+                 </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                 class="bg-indigo-50 h-[615px] flex justify-center items-center w-full bg-no-repeat bg-cover" style="
+          background-image: url('./assets/images/jntrmntr.png')"
+                >
+                  <span class="text-3xl font-semibold text-indigo-600"
+                    >Slide 2
+                  </span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="bg-indigo-50 h-[615px] flex justify-center items-center w-full bg-no-repeat bg-cover" style="
+          background-image: url('./assets/images/jntrmntr.png')"
+                >
+                 <div>
+
+                 </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex items-center gap-8 lg:justify-start justify-center"
+            >
+              <button
+                id="slider-button-left custom-button-left"
+                class="swiper-button-prev group !p-2 flex justify-center items-center  !w-12 !h-12 !top-2/4 !-translate-y-8 !left-5"
+                data-carousel-prev
+              >
+                <!-- <svg
+                  class="h-5 w-5 group-hover:text-white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="52"
+                  height="52"
+                  viewBox="0 0 16 16"
+                  fill="#000000"
+                >
+                  <path
+                    d="M10.0002 11.9999L6 7.99971L10.0025 3.99719"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /> -->
+                </svg>
+              </button>
+              <button
+                id="slider-button-right custom-button-right relative"
+                class="swiper-button-next group !p-2 flex justify-center items-center !w-12 !h-12 !top-2/4 !-translate-y-8 !right-5"
+                data-carousel-next
+              >
+                <!-- <svg
+                  class="h-5 w-5 group-hover:text-white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="52"
+                  height="52"
+                  viewBox="0 0 16 16"
+                  fill="#000000"
+                >
+                  <path
+                    d="M5.99984 4.00012L10 8.00029L5.99748 12.0028"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg> -->
+              </button>
+            </div>
+            <!-- <div class="swiper-pagination"></div> -->
+          </div>
+        </div>
+      </section>
+    </main>
+    
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="assets/js/header.js" type="text/javascript"></script>
+  
+  </body>
+</html>
