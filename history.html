@@ -5,30 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>History</title>
     <link rel="stylesheet" href="dist/styles.css" />
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
       rel="stylesheet"
     />
     <style>
       /* Slider Css */
-.swiper-wrapper {
-  width: 100%;
-  height: max-content !important;
-  padding-bottom: 64px !important;
-  -webkit-transition-timing-function: linear !important;
-  transition-timing-function: linear !important;
-  position: relative;
-}
-.swiper-pagination-bullet {
-  background: #4f46e5;
-}
-.swiper-button-prev {
-  color:black !important;
-}
-.swiper-button-next {
-  color:black !important;
-}
+      .swiper-wrapper {
+        width: 100%;
+        height: max-content !important;
+        padding-bottom: 64px !important;
+        -webkit-transition-timing-function: linear !important;
+        transition-timing-function: linear !important;
+        position: relative;
+      }
+      .swiper-pagination-bullet {
+        background: #4f46e5;
+      }
+      .swiper-button-prev {
+        color: black !important;
+      }
+      .swiper-button-next {
+        color: black !important;
+      }
+      /* Styles for the SVG pie chart and hover effects */
+      .segment {
+        transition: fill 0.3s ease, fill-opacity 0.3s ease;
+      }
+
+      text {
+        font-size: 3px; /* Default font size for mobile */
+        fill: white;
+        text-anchor: middle;
+        dominant-baseline: middle;
+        transition: fill 0.3s ease;
+      }
+      
     </style>
   </head>
   <body class="bg-gray-100">
@@ -197,17 +210,15 @@
         </nav>
       </div>
     </header>
-    <main>
-      <section
-        class="hero-banner lg:h-auto bg-no-repeat bg-cover"
-        style="
-          background-image: url('./assets/images/backgrounds/History Page.jpg');
-        "
-      >
-        <div
-          class="container grid lg:grid-cols-2 grid-cols-1 lg:gap-8 lg:py-16 py-8"
-        >
-          <div>
+    <main
+      class="hero-banner lg:h-auto bg-no-repeat bg-cover"
+      style="
+        background-image: url('./assets/images/backgrounds/History Page.jpg');
+      "
+    >
+      <section>
+        <div class="container grid lg:grid-cols-3 lg:gap-8 lg:pt-16 pt-8">
+          <div class="col-span-2 lg:mb-0 mb-8">
             <h1
               class="text-white text-start font-medium font-cathy leading-none lg:text-[108px] text-[48px]"
             >
@@ -228,227 +239,132 @@
               flying two flags, one full-sized and the other a quarter-sized.
             </p>
           </div>
-
           <div class="flex justify-center lg:justify-end">
             <svg
+              id="my-svg"
               xmlns="http://www.w3.org/2000/svg"
-              class="md:w-[576px] md:h-[576px] w-[320px] h-[320px] overflow-visible transform-none"
+              class="w-full h-auto md:w-[576px] md:h-[576px]"
+              viewBox="0 0 100 100"
+              preserveAspectRatio="xMidYMid meet"
             >
-              <style>
-                .segment {
-                  transition: fill 0.3s ease;
-                }
-                .segment:hover {
-                  fill: #ffcc00; /* Change to yellow on hover */
-                }
-                text {
-                  font-size: 11px; /* Changed from 12px to 11px */
-                  fill: white;
-                  text-anchor: middle;
-                  dominant-baseline: middle;
-                  transition: fill 0.3s ease;
-                }
-                text:hover {
-                  fill: blue; /* Text turns yellow on hover */
-                  opacity: 0.4;
-                }
-              </style>
+              <!-- Wrapper group for all elements -->
+              <g transform="translate(50, 50)">
+                <!-- Segment 1: GENIUS -->
+                <path
+                  class="segment"
+                  d="M0 -50 A50 50 0 0 1 25 -43 L12 -22 A25 25 0 0 0 0 -25 Z"
+                  fill="#023f8a"
+                  data-segment="genius"
+                ></path>
+                <text x="10" y="-37">GENIUS</text>
 
-              <g style="transform: scale(1) translate(0px, 0px)">
-                <g transform="translate(288, 288)">
-                  <!-- Segment 1: Genius -->
-                  <path
-                    class="segment"
-                    d="M0 -288 A288 288 0 0 1 143.99999999999997 -249.41531628991834 L71.99999999999999 -124.70765814495917 A144 144 0 0 0 0 -144 Z"
-                    fill="#023f8a"
-                    opacity="1"
-                    pointer-events="auto"
-                  ></path>
-                  <text
-                    class="font-coco text-[14px]"
-                    x="55"
-                    y="-210"
-                    transform="rotate(0,75,-200)"
-                  >
-                    GENIUS
-                  </text>
+                <!-- Segment 2: ASTRONOMER -->
+                <path
+                  class="segment"
+                  d="M25 -43 A50 50 0 0 1 43 -25 L22 -12 A25 25 0 0 0 12 -22 Z"
+                  fill="#00b5d7"
+                  data-segment="astronomer"
+                ></path>
+                <text x="28" y="-27">ASTRONOMER</text>
 
-                  <!-- Segment 2: Astronomer -->
-                  <path
-                    class="segment"
-                    d="M143.99999999999997 -249.41531628991834 A288 288 0 0 1 249.4153162899183 -144.00000000000003 L124.70765814495915 -72.00000000000001 A144 144 0 0 0 71.99999999999999 -124.70765814495917 Z"
-                    fill="#00b5d7"
-                    opacity="1"
-                    pointer-events="auto"
-                  ></path>
-                  <text
-                    class="font-coco text-[14px]"
-                    x="160"
-                    y="-160"
-                    transform="rotate(0,160,-130)"
-                  >
-                    ASTRONOMER
-                  </text>
+                <!-- Segment 3: MONARCH OF JAIPUR -->
+                <path
+                  class="segment"
+                  d="M43 -25 A50 50 0 0 1 50 0 L25 0 A25 25 0 0 0 22 -12 Z"
+                  fill="#2f5f98"
+                  data-segment="monarch"
+                ></path>
+                <text x="36" y="-10">MONARCH</text>
+                <text x="36" y="-7">OF JAIPUR</text>
 
-                  <!-- Segment 3: Monarch of Jaipur -->
-                  <path
-                    class="segment"
-                    d="M249.4153162899183 -144.00000000000003 A288 288 0 0 1 288 -1.7634913907721887e-14 L144 -8.817456953860943e-15 A144 144 0 0 0 124.70765814495915 -72.00000000000001 Z"
-                    fill="#2f5f98"
-                    opacity="1"
-                    pointer-events="auto"
-                  ></path>
-                  <text class="font-coco text-[14px]">
-                    <tspan x="205" y="-60">MONARCH</tspan>
-                    <tspan x="205" y="-45">OF JAIPUR</tspan>
-                  </text>
+                <!-- Segment 4: VISIONARY -->
+                <path
+                  class="segment"
+                  d="M50 0 A50 50 0 0 1 43 25 L22 12 A25 25 0 0 0 25 0 Z"
+                  fill="#0078b6"
+                  data-segment="visionary"
+                ></path>
+                <text x="37" y="10">VISIONARY</text>
 
-                  <!-- Segment 4: Visionary -->
-                  <path
-                    class="segment"
-                    d="M288 -1.7634913907721887e-14 A288 288 0 0 1 249.41531628991834 143.99999999999994 L124.70765814495917 71.99999999999997 A144 144 0 0 0 144 -8.817456953860943e-15 Z"
-                    fill="#0078b6"
-                    opacity="1"
-                    pointer-events="auto"
-                  ></path>
-                  <text class="font-coco text-[14px]" x="210" y="50">
-                    VISIONARY
-                  </text>
+                <!-- Segment 5: STATESMAN -->
+                <path
+                  class="segment"
+                  d="M43 25 A50 50 0 0 1 25 43 L12 22 A25 25 0 0 0 22 12 Z"
+                  fill="#023f8a"
+                  data-segment="statesman"
+                ></path>
+                <text x="28" y="27">STATESMAN</text>
 
-                  <!-- Segment 5: Statesman -->
-                  <path
-                    class="segment"
-                    d="M249.41531628991834 143.99999999999994 A288 288 0 0 1 144.00000000000009 249.41531628991828 L72.00000000000004 124.70765814495914 A144 144 0 0 0 124.70765814495917 71.99999999999997 Z"
-                    fill="#023f8a"
-                    opacity="1"
-                    pointer-events="auto"
-                  ></path>
-                  <text
-                    class="font-coco text-[14px]"
-                    x="150"
-                    y="160"
-                    transform="rotate(0,130,180)"
-                  >
-                    STATESMAN
-                  </text>
+                <!-- Segment 6: LEGISLATOR -->
+                <path
+                  class="segment"
+                  d="M25 43 A50 50 0 0 1 0 50 L0 25 A25 25 0 0 0 12 22 Z"
+                  fill="#0078b6"
+                  data-segment="legislator"
+                ></path>
+                <text x="11" y="38">LEGISLATOR</text>
 
-                  <!-- Segment 6: Legislator -->
-                  <path
-                    class="segment"
-                    d="M144.00000000000009 249.41531628991828 A288 288 0 0 1 1.631675202522618e-13 288 L8.15837601261309e-14 144 A144 144 0 0 0 72.00000000000004 124.70765814495914 Z"
-                    fill="#0078b6"
-                    opacity="1"
-                    pointer-events="auto"
-                  ></path>
-                  <text
-                    class="font-coco text-[14px]"
-                    x="60"
-                    y="220"
-                    transform="rotate(360,50,210)"
-                  >
-                    LEGISLATOR
-                  </text>
+                <!-- Segment 7: MAN OF SCIENCE -->
+                <path
+                  class="segment"
+                  d="M0 50 A50 50 0 0 1 -25 43 L-12 22 A25 25 0 0 0 0 25 Z"
+                  fill="#0096c7"
+                  data-segment="man-of-science"
+                ></path>
+                <text x="-10" y="35">MAN OF</text>
+                <text x="-10" y="38">SCIENCE</text>
 
-                  <!-- Segment 7: Man of Science -->
-                  <path
-                    class="segment"
-                    d="M1.631675202522618e-13 288 A288 288 0 0 1 -143.99999999999983 249.41531628991845 L-71.99999999999991 124.70765814495923 A144 144 0 0 0 8.15837601261309e-14 144 Z"
-                    fill="#0096c7"
-                    opacity="1"
-                    pointer-events="auto"
-                  ></path>
-                  <text
-                    class="font-coco text-[14px]"
-                    x="-50"
-                    y="210"
-                    transform="rotate(360,-50,210)"
-                  >
-                    <tspan x="-50" y="210">MAN OF</tspan>
-                    <tspan x="-50" y="230">SCIENCE</tspan>
-                  </text>
+                <!-- Segment 8: SCHOLAR -->
+                <path
+                  class="segment"
+                  d="M-25 43 A50 50 0 0 1 -43 25 L-22 12 A25 25 0 0 0 -12 22 Z"
+                  fill="#00b5d7"
+                  data-segment="scholar"
+                ></path>
+                <text x="-27" y="27">SCHOLAR</text>
 
-                  <!-- Segment 8: Scholar -->
-                  <path
-                    class="segment"
-                    d="M-143.99999999999983 249.41531628991845 A288 288 0 0 1 -249.41531628991825 144.0000000000001 L-124.70765814495913 72.00000000000006 A144 144 0 0 0 -71.99999999999991 124.70765814495923 Z"
-                    fill="#00b5d7"
-                    opacity="1"
-                    pointer-events="auto"
-                  ></path>
-                  <text
-                    class="font-coco text-[14px]"
-                    x="-160"
-                    y="160"
-                    transform="rotate(360,-130,180)"
-                  >
-                    SCHOLAR
-                  </text>
+                <!-- Segment 9: SCIENTIST -->
+                <path
+                  class="segment"
+                  d="M-43 25 A50 50 0 0 1 -50 0 L-25 0 A25 25 0 0 0 -22 12 Z"
+                  fill="#2f5f98"
+                  data-segment="scientist"
+                ></path>
+                <text x="-37" y="10">SCIENTIST</text>
 
-                  <!-- Segment 9: Scientist -->
-                  <path
-                    class="segment"
-                    d="M-249.41531628991825 144.0000000000001 A288 288 0 0 1 -288 5.2904741723165653e-14 L-144 2.6452370861582827e-14 A144 144 0 0 0 -124.70765814495913 72.00000000000006 Z"
-                    fill="#2f5f98"
-                    opacity="1"
-                    pointer-events="auto"
-                  ></path>
-                  <text
-                    class="font-coco text-[14px]"
-                    x="-220"
-                    y="60"
-                    transform="rotate(360,-200,100)"
-                  >
-                    SCIENTIST
-                  </text>
+                <!-- Segment 10: PATRON OF ART AND ARCHITECTURE -->
+                <path
+                  class="segment"
+                  d="M-50 0 A50 50 0 0 1 -43 -25 L-22 -12 A25 25 0 0 0 -25 0 Z"
+                  fill="#0078b6"
+                  data-segment="patron"
+                ></path>
+                <text x="-37" y="-12">PATRON OF</text>
+                <text x="-37" y="-9">ART</text>
+                <text x="-37" y="-6">ARCHITECTURE</text>
 
-                  <!-- Segment 10: Patron of Art and Architecture -->
-                  <path
-                    class="segment"
-                    d="M-288 5.2904741723165653e-14 A288 288 0 0 1 -249.4153162899183 -144.00000000000003 L-124.70765814495915 -72.00000000000001 A144 144 0 0 0 -144 2.6452370861582827e-14 Z"
-                    fill="#0078b6"
-                    opacity="1"
-                    pointer-events="auto"
-                  ></path>
-                  <text class="font-coco text-[14px]" x="-220" y="-70">
-                    <tspan x="-220" dy="0">PATRON OF ART</tspan>
-                    <tspan x="-220" dy="15">AND</tspan>
-                    <tspan x="-220" dy="18">ARCHITECTURE</tspan>
-                  </text>
+                <!-- Segment 11: DIPLOMAT -->
+                <path
+                  class="segment"
+                  d="M-43 -25 A50 50 0 0 1 -25 -43 L-12 -22 A25 25 0 0 0 -22 -12 Z"
+                  fill="#023f8a"
+                  data-segment="diplomat"
+                ></path>
+                <text x="-28" y="-28">DIPLOMAT</text>
 
-                  <!-- Segment 11: Virtuoso -->
-                  <path
-                    class="segment"
-                    d="M-249.4153162899183 -144.00000000000003 A288 288 0 0 1 -144.00000000000017 -249.41531628991823 L-72.00000000000009 -124.70765814495911 A144 144 0 0 0 -124.70765814495915 -72.00000000000001 Z"
-                    fill="#023f8a"
-                    opacity="1"
-                    pointer-events="auto"
-                  ></path>
-                  <text
-                    class="font-coco text-[14px]"
-                    x="-160"
-                    y="-150"
-                    transform="rotate(360,-140,-130)"
-                  >
-                    DIMPLOMAT
-                  </text>
-
-                  <!-- Segment 12: Pillar of Strength -->
-                  <path
-                    class="segment"
-                    d="M-144.00000000000017 -249.41531628991823 A288 288 0 0 1 -3.0646605030252464e-13 -288 L-1.5323302515126232e-13 -144 A144 144 0 0 0 -72.00000000000009 -124.70765814495911 Z"
-                    fill="#0096c7"
-                    opacity="1"
-                    pointer-events="auto"
-                  ></path>
-                  <text class="font-coco text-[14px]" x="-50" y="-210">
-                    <tspan x="-60" y="-210">BUILDER</tspan>
-                  </text>
-                </g>
+                <!-- Segment 12: BUILDER -->
+                <path
+                  class="segment"
+                  d="M-25 -43 A50 50 0 0 1 0 -50 L0 -25 A25 25 0 0 0 -12 -22 Z"
+                  fill="#0096c7"
+                  data-segment="builder"
+                ></path>
+                <text x="-10" y="-37">BUILDER</text>
               </g>
             </svg>
           </div>
         </div>
-        <div class="container">
+        <div class="container lg:mb-0 mb-12">
           <p
             class="text-white text-left font-medium font-coco lg:text-xl mt-6 text-sm"
           >
@@ -462,63 +378,157 @@
           </p>
         </div>
       </section>
-      <section class="slider bg-cover bg-no-repeat" style="
-          background-image: url('./assets/images/backgrounds/History Page.jpg');
-        ">
+      <section>
         <!--HTML CODE-->
-        <div class="w-full relative container lg:py-24" >
+        <div class="w-full relative container lg:py-24">
           <div class="swiper default-carousel swiper-container">
             <div class="swiper-wrapper">
+              <!-- Slide 1 -->
               <div class="swiper-slide">
                 <div
-                  class="bg-indigo-50 h-[615px] flex justify-center items-center w-full bg-no-repeat bg-cover" style="
-          background-image: url('./assets/images/jntrmntr.png')"
+                  class="bg-indigo-50 lg:h-[615px] h-auto flex justify-center items-center w-full bg-no-repeat bg-cover"
+                  style="background-image: url('./assets/images/jntrmntr.png')"
                 >
-                 <div class="grid grid-cols-2 lg:gap-16 lg:w-10/12 m-auto">
-                  <div>
-                    <h2 class="lg:text-[62px] text-28px font-catchy font-light mb-14">Jai Singh the Scholar</h2>
-                    <p class="lg:text-xl text-sm font-coco font-light">Jai Singh II was not only a ruler but also an avid scholar with a deep love for knowledge. He was well-versed in Sanskrit, science, astronomy, architecture, literature, mathematics, art, and economics. His court was a vibrant hub of intellectuals and scholars proficient in the Dharma Shastras (ancient Indian jurisprudence), grammar, rituals, and astronomy. Jai Singh had several works translated from Arabic into Sanskrit and his extensive library contained works by renowned scholars such as Aryabhatt, Brahmagupta, Bhaskaracharya, Euclid, Ptolemy, and Nasir al-Din al-Tusi. </p>
+                  <div
+                    class="grid grid-cols-1 lg:grid-cols-3 lg:gap-16 gap-4 lg:w-10/12 w-full p-8 lg:p-0 m-auto items-center"
+                  >
+                    <!-- Text Section -->
+                    <div class="col-span-2">
+                      <h2
+                        class="lg:text-[62px] text-[28px] font-catchy font-light lg:mb-14 mb-4"
+                      >
+                        Jai Singh the Scholar
+                      </h2>
+                      <p class="lg:text-xl text-sm font-coco font-light">
+                        Jai Singh II was not only a ruler but also an avid
+                        scholar with a deep love for knowledge. He was
+                        well-versed in Sanskrit, science, astronomy,
+                        architecture, literature, mathematics, art, and
+                        economics. His court was a vibrant hub of intellectuals
+                        and scholars proficient in the Dharma Shastras (ancient
+                        Indian jurisprudence), grammar, rituals, and astronomy.
+                        Jai Singh had several works translated from Arabic into
+                        Sanskrit and his extensive library contained works by
+                        renowned scholars such as Aryabhatt, Brahmagupta,
+                        Bhaskaracharya, Euclid, Ptolemy, and Nasir al-Din
+                        al-Tusi.
+                      </p>
+                    </div>
+                    <!-- Image Section -->
+                    <div class="w-full flex justify-end">
+                      <img
+                        src="./assets/images/newImage.png"
+                        alt="Jai Singh the Scholar"
+                        class="lg:w-[400px] h-[500px] object-cover border-white border-4"
+                      />
+                    </div>
                   </div>
-                  <div class="w-full">
-                    <img src="./assets/images/newImage.png" class="lg:w-[400px] h-[500px] border-white border-4"/>
-                  </div>
-                 </div>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <div
-                 class="bg-indigo-50 h-[615px] flex justify-center items-center w-full bg-no-repeat bg-cover" style="
-          background-image: url('./assets/images/jntrmntr.png')"
-                >
-                  <span class="text-3xl font-semibold text-indigo-600"
-                    >Slide 2
-                  </span>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div
-                  class="bg-indigo-50 h-[615px] flex justify-center items-center w-full bg-no-repeat bg-cover" style="
-          background-image: url('./assets/images/jntrmntr.png')"
-                >
-                 <div>
 
-                 </div>
+              <!-- Slide 2 -->
+              <div class="swiper-slide">
+                <div
+                  class="bg-indigo-50 lg:h-[615px] h-auto flex justify-center items-center w-full bg-no-repeat bg-cover"
+                  style="background-image: url('./assets/images/jntrmntr.png')"
+                >
+                  <div
+                    class="grid lg:grid-cols-3 lg:gap-16 gap-4 lg:w-10/12 p-8 lg:p-0 m-auto items-center"
+                  >
+                    <!-- Image Section -->
+                    <div class="w-full flex lg:justify-start">
+                      <img
+                        src="./assets/images/thevisionary.png"
+                        alt="Jai Singh the Scholar"
+                        class="lg:w-[400px] h-[500px] object-cover border-white border-4"
+                      />
+                    </div>
+                    <!-- Text Section -->
+                    <div class="lg:col-span-2">
+                      <h2
+                        class="lg:text-[62px] text-[28px] font-catchy leading-none font-light lg:mb-14 mb-4"
+                      >
+                        Jai Singh the Astronomer
+                      </h2>
+                      <p class="lg:text-xl text-sm font-coco font-light">
+                        Jai Singh's passion for astronomy shaped his legacy.
+                        Deeply invested in the latest advancements in the field,
+                        he commissioned the construction of five observatories,
+                        including the Jantar Mantar in Jaipur, all featuring
+                        original and highly accurate astronomical instruments.
+                        His personal library included influential works like
+                        John Flamsteed's Historia Coelestis Britannica, the
+                        Portuguese astronomer, Pere de la Hire’s Tabulae
+                        Astronomicae, Turkish astronomer, Ulugh Beg's Zij Ulugh
+                        Begi, and the ancient Greek scholar Ptolemy's Almagest.
+                        Jai Singh also composed his own astronomical treatise,
+                        Brahma Bodhini, demonstrating his scholarly
+                        contributions to the field.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="swiper-slide">
+                <div
+                  class="bg-indigo-50 lg:h-[615px] h-auto flex justify-center items-center w-full bg-no-repeat bg-cover"
+                  style="background-image: url('./assets/images/jntrmntr.png')"
+                >
+                  <div class="flex lg:w-10/12 p-8 lg:p-0 m-auto items-center">
+                    <!-- Text Section -->
+                    <div>
+                      <h2
+                        class="lg:text-[62px] text-[28px] font-catchy font-light lg:mb-14 mb-4"
+                      >
+                        Jai Singh the Statesman
+                      </h2>
+                      <p
+                        class="lg:text-xl text-sm font-coco lg:mb:12 mb-8 font-light"
+                      >
+                        Politically astute and diplomatic, Jai Singh II
+                        maintained a close relationship with Emperor Aurangzeb
+                        until the latter's death in 1707. After a period of
+                        political unrest, Jai Singh emerged as a key figure in
+                        the Mughal court, establishing strong ties with Emperor
+                        Muhammad Shah, who ruled from 1719 to 1748. Under
+                        Muhammad Shah’s patronage, Jai Singh secured permission
+                        to build the five Jantar Mantar observatories across
+                        northern India. In honour of the emperor, Jai Singh
+                        titled his collection of astronomical tables
+                        Zij-e-Muhammad-Shahi.
+                      </p>
+                      <p class="lg:text-xl text-sm font-coco font-light mb-8">
+                        Politically astute and diplomatic, Jai Singh II
+                        maintained a close relationship with Emperor Aurangzeb
+                        until the latter's death in 1707. After a period of
+                        political unrest, Jai Singh emerged as a key figure in
+                        the Mughal court, establishing strong ties with Emperor
+                        Muhammad Shah, who ruled from 1719 to 1748. Under
+                        Muhammad Shah’s patronage, Jai Singh secured permission
+                        to build the five Jantar Mantar observatories across
+                        northern India. In honour of the emperor, Jai Singh
+                        titled his collection of astronomical tables
+                        Zij-e-Muhammad-Shahi.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
+
+            <!-- Slider Navigation -->
             <div
-              class="flex items-center gap-8 lg:justify-start justify-center"
+              class="flex items-center gap-8 lg:justify-start justify-center mt-8"
             >
               <button
-                id="slider-button-left custom-button-left"
-                class="swiper-button-prev group !p-2 flex justify-center items-center  !w-12 !h-12 !top-2/4 !-translate-y-8 !left-5"
-                data-carousel-prev
+                id="slider-button-left"
+                class="swiper-button-prev group !p-2 flex justify-center items-center lg:!w-12 !w-1 !h-12 !top-2/4 !-translate-y-8 !left-5"
               >
                 <!-- <svg
                   class="h-5 w-5 group-hover:text-white"
                   xmlns="http://www.w3.org/2000/svg"
-                  width="52"
-                  height="52"
                   viewBox="0 0 16 16"
                   fill="#000000"
                 >
@@ -528,19 +538,17 @@
                     stroke-width="1.6"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                  /> -->
-                </svg>
+                  />
+                </svg> -->
               </button>
+
               <button
-                id="slider-button-right custom-button-right relative"
-                class="swiper-button-next group !p-2 flex justify-center items-center !w-12 !h-12 !top-2/4 !-translate-y-8 !right-5"
-                data-carousel-next
+                id="slider-button-right"
+                class="swiper-button-next group !p-2 flex justify-center items-center lg:!w-12 !w-1 !h-12 !top-2/4 !-translate-y-8 !right-5"
               >
                 <!-- <svg
                   class="h-5 w-5 group-hover:text-white"
                   xmlns="http://www.w3.org/2000/svg"
-                  width="52"
-                  height="52"
                   viewBox="0 0 16 16"
                   fill="#000000"
                 >
@@ -554,14 +562,12 @@
                 </svg> -->
               </button>
             </div>
-            <!-- <div class="swiper-pagination"></div> -->
           </div>
         </div>
       </section>
     </main>
-    
-      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-      <script src="assets/js/header.js" type="text/javascript"></script>
-  
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/header.js" type="text/javascript"></script>
   </body>
 </html>
