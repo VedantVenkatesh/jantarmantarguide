@@ -616,8 +616,8 @@ video {
   bottom: -20px;
 }
 
-.bottom-\[-30px\] {
-  bottom: -30px;
+.bottom-\[-40px\] {
+  bottom: -40px;
 }
 
 .bottom-\[15\%\] {
@@ -674,10 +674,6 @@ video {
 
 .top-\[28\%\] {
   top: 28%;
-}
-
-.bottom-\[-40px\] {
-  bottom: -40px;
 }
 
 .z-0 {
@@ -806,10 +802,6 @@ video {
 
 .h-\[80vh\] {
   height: 80vh;
-}
-
-.h-\[90vh\] {
-  height: 90vh;
 }
 
 .h-auto {
@@ -995,6 +987,10 @@ video {
 
 .bg-top {
   background-position: top;
+}
+
+.bg-repeat {
+  background-repeat: repeat;
 }
 
 .bg-no-repeat {
@@ -1282,7 +1278,7 @@ section.about-us:after {
   height: 500px;
   bottom: 0;
   left: -2rem;
-  background-image: url(/assets/images/line-left.png);
+  background-image: url(./assets/images/line-left.png);
   z-index: 9999;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1296,7 +1292,7 @@ section.about-us:before {
   height: 270px;
   top: 4rem;
   right: 0;
-  background-image: url(/assets/images/line-right.png);
+  background-image: url(./assets/images/line-right.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1541,7 +1537,6 @@ section.about-us:before {
 
 .timeline-events--content .timeline-text .timeline-yr-text {
   font-size: 1.15rem;
-  font-family: CocoGothic_trial;
 }
 
 .starline {
