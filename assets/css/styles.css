@@ -2,141 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'CocoGothic_trial';
-  src: url(../fonts/CocoGothic_trial/fontseot);
-  src: url(../fonts/CocoGothic_trial.eot?#iefix) format('embedded-opentype'),
-    url(../fonts/CocoGothic_trial.otf) format('otf'),
-    url(../fonts/CocoGothic_trial.ttf) format('truetype'),
-    url(../fonts/CocoGothic_trial.woff2) format('woff2'),
-    url(../fonts/CocoGothic_trial.svg#CocoGothic_trial) format('svg');
-}
-@font-face {
-  font-family: 'CocoGothic-Bold_trial';
-  src: url(../fonts/CocoGothic-Bold_trial.eot);
-  src: url(../fonts/CocoGothic-Bold_trial.eot?#iefix)
-      format('embedded-opentype'),
-    url(../fonts/CocoGothic-Bold_trial.otf) format('otf'),
-    url(../fonts/CocoGothic-Bold_trial.ttf) format('truetype'),
-    url(../fonts/CocoGothic-Bold_trial.svg#CocoGothic-Bold_trial) format('svg'),
-    url(../fonts/CocoGothic-Bold_trial.woff2) format('woff2'),
-    url(../fonts/CocoGothic-Bold_trial.woff) format('woff');
-}
-@font-face {
-  font-family: 'CocoGothic-Fat_trial';
-  src: url(../fonts/CocoGothic-Fat_trial.eot);
-  src: url(../fonts/CocoGothic-Fat_trial.eot?#iefix) format('embedded-opentype'),
-    url(../fonts/CocoGothic-Fat_trial.otf) format('otf'),
-    url(../fonts/CocoGothic-Fat_trial.ttf) format('ttf'),
-    url(../fonts/CocoGothic-Fat_trial.svg#CocoGothic-Fat_trial) format('svg'),
-    url(../fonts/CocoGothic-Fat_trial.woff) format('woff'),
-    url(../fonts/CocoGothic-Fat_trial.woff2) format('woff2');
-}
-@font-face {
-  font-family: 'CocoGothic-BoldItalic_trial';
-  src: url(../fonts/CocoGothic-BoldItalic_trial.eot);
-  src: url(../fonts/CocoGothic-BoldItalic_trial.eot?#iefix)
-      format('embedded-opentype'),
-    url(../fonts/CocoGothic-BoldItalic_trial.otf) format('otf'),
-    url(../fonts/CocoGothic-BoldItalic_trial.ttf) format('ttf'),
-    url(../fonts/CocoGothic-BoldItalic_trial.svg#CocoGothic-BoldItalic_trial)
-      format('svg'),
-    url(../fonts/CocoGothic-BoldItalic_trial.woff) format('woff'),
-    url(../fonts/CocoGothic-BoldItalic_trial.woff2) format('woff2');
-}
-@font-face {
-  font-family: 'CocoGothic-FatItalic_trial';
-  src: url(../fonts/CocoGothic-FatItalic_trial.eot);
-  src: url(../fonts/CocoGothic-FatItalic_trial.eot?#iefix)
-      format('embedded-opentype'),
-    url(../fonts/CocoGothic-FatItalic_trial.otf) format('otf'),
-    url(../fonts/CocoGothic-FatItalic_trial.ttf) format('ttf'),
-    url(../fonts/CocoGothic-FatItalic_trial.svg#CocoGothic-FatItalic_trial)
-      format('svg'),
-    url(../fonts/CocoGothic-FatItalic_trial.woff) format('woff'),
-    url(../fonts/CocoGothic-FatItalic_trial.woff2) format('woff2');
-}
-@font-face {
-  font-family: 'CocoGothic-Heavy_trial';
-  src: url(../fonts/CocoGothic-Heavy_trial.eot);
-  src: url(../fonts/CocoGothic-Heavy_trial.eot?#iefix)
-      format('embedded-opentype'),
-    url(../fonts/CocoGothic-Heavy_trial.otf) format('otf'),
-    url(../fonts/CocoGothic-Heavy_trial.ttf) format('ttf'),
-    url(../fonts/CocoGothic-Heavy_trial.svg#CocoGothic-Heavy_trial)
-      format('svg'),
-    url(../fonts/CocoGothic-Heavy_trial.woff) format('woff'),
-    url(../fonts/CocoGothic-Heavy_trial.woff2) format('woff2');
-}
-@font-face {
-  font-family: 'CocoGothic-HeavyItalic_trial';
-  src: url(../fonts/CocoGothic-HeavyItalic_trial.ttf) format('ttf');
-}
-@font-face {
-  font-family: 'CocoGothic-Italic_trial';
-  src: url(../fonts/CocoGothic-Italic_trial.ttf) format('ttf');
-}
-@font-face {
-  font-family: 'CocoGothic-Light_trial';
-  src: url(../fonts/CocoGothic-Light_trial.ttf) format('ttf');
-}
-@font-face {
-  font-family: 'CocoGothic-LightItalic_trial';
-  src: url(../fonts/CocoGothic-LightItalic_trial.ttf) format('ttf');
-}
-@font-face {
-  font-family: 'CocoGothic-UltraLight_trial';
-  src: url(../fonts/CocoGothic-UltraLight_trial.ttf) format('ttf');
-}
-@font-face {
-  font-family: 'CocoGothic-UltraLightItalic_trial';
-  src: url(../fonts/CocoGothic-UltraLightItalic_trial.ttf) format('ttf');
-}
-@font-face {
-  font-family: 'catchy-mager';
-  src: url(../fonts/catchy-mager.eot);
-  src: url(../fonts/catchy-mager.eot?#iefix) format('embedded-opentype'),
-    url(../fonts/catchy-mager.svg#catchy-mager) format('svg'),
-    url(../fonts/catchy-mager.otf) format('otf'),
-    url(../fonts/catchy-mager.ttf) format('truetype'),
-    url(../fonts/catchy-mager.woff) format('woff'),
-    url(../fonts/catchy-mager.woff2) format('woff2');
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,500;0,600;0,700;0,900;1,100;1,300;1,500;1,600;1,700;1,900&display=swap');
 
 .body {
   color: #000;
-  font-family: 'CocoGothic_trial';
+  font-family: 'Montserrat';
   font-size: 20px;
   line-height: 22px;
 }
 h1 {
-  font-family: 'catchy-mager';
+  font-family: 'Montserrat';
   font-size: 106px;
   line-height: 1.2;
   font-weight: bold;
 }
 h2 {
-  font-family: 'catchy-mager';
+  font-family: 'Montserrat';
   font-size: 50px;
   line-height: 1.5;
 }
 h3 {
-  font-family: 'catchy-mager';
+  font-family: 'Montserrat';
   font-size: 42px;
   line-height: 1.2;
 }
 h4 {
-  font-family: 'catchy-mager';
+  font-family: 'Montserrat';
   font-size: 20px;
   line-height: 1.2;
 }
 h5 {
-  font-family: 'catchy-mager';
+  font-family: 'Montserrat';
   font-size: 18px;
   line-height: 1.2;
 }
 h6 {
-  font-family: 'catchy-mager';
+  font-family: 'Montserrat';
   font-size: 16px;
   line-height: 1.7;
 }
