@@ -828,6 +828,10 @@ video {
   width: 2rem;
 }
 
+.w-\[100vw\] {
+  width: 100vw;
+}
+
 .w-\[200px\] {
   width: 200px;
 }
@@ -1493,7 +1497,6 @@ section.about-us:before {
 .timeline-events-wrappper {
   color: #fff;
   z-index: 10;
-  min-height: 1000px;
 }
 
 .timeline-events-wrappper h2 {
@@ -1501,9 +1504,6 @@ section.about-us:before {
 }
 
 .timeline-events-wrappper .bottom-image {
-  max-height: 60vh;
-  bottom: 0;
-  overflow: hidden;
   z-index: -1;
 }
 
@@ -1525,7 +1525,7 @@ section.about-us:before {
 .timeline-events--content .timeline2 {
   top: 58%;
   left: 10%;
-  max-width: 15%;
+  max-width: 14%;
 }
 
 .timeline-events--content .timeline8 .starline,
@@ -1558,22 +1558,24 @@ section.about-us:before {
 }
 
 .timeline-events--content .timeline4 .starline {
-  top: -65%;
-  right: -18%;
+  top: -54%;
+  right: -5%;
 }
 
 .timeline-events--content .timeline5 {
-  left: 69%;
+  left: 66%;
   max-width: 17%;
   margin-top: 2rem;
 }
 
 .timeline-events--content .timeline5 .starline {
-  top: -28%;
+  top: -33%;
+  right: 20%;
 }
 
 .timeline-events--content .timeline5 .line-wrap {
   height: 40px;
+  width: 100px;
 }
 
 .timeline-events--content .timeline6 {
@@ -1640,11 +1642,11 @@ section.about-us:before {
 .timeline-events--content .timeline11 {
   left: unset;
   right: 20%;
-  bottom: -170%;
+  bottom: -153%;
 }
 
 .timeline-events--content .timeline11 .starline {
-  top: -12%;
+  top: -14%;
   right: -42%;
 }
 
@@ -1660,7 +1662,34 @@ section.about-us:before {
 .timeline-events--content .timeline12 {
   right: 0;
   width: 14%;
-  bottom: -77%;
+  bottom: -83%;
+}
+
+.timeline-events--content .timeline13 {
+  left: 32%;
+  bottom: -150%;
+  max-width: 13%;
+}
+
+.timeline-events--content .timeline13 .starline {
+  top: 0;
+  transform: rotate(180deg);
+  right: -45%;
+}
+
+.timeline-events--content .timeline13 .starline .star {
+  top: 45px;
+  transform: rotate(70deg);
+}
+
+.timeline-events--content .timeline13 .line-wrap {
+  width: 150px;
+  height: 40px;
+}
+
+.timeline-events--content .timeline14 {
+  left: 48%;
+  bottom: -160%;
 }
 
 .timeline-events--content .timeline-text .timeline-yr {
@@ -1669,7 +1698,7 @@ section.about-us:before {
 }
 
 .timeline-events--content .timeline-text .timeline-yr-text {
-  font-size: 1.15rem;
+  font-size: 1rem;
 }
 
 .starline {
@@ -1722,7 +1751,7 @@ section.about-us:before {
 .starline .line-wrap {
   position: relative;
   left: 13px;
-  top: -5px;
+  top: -8px;
   height: 60px;
   width: 60px;
 }
@@ -1755,8 +1784,12 @@ section.about-us:before {
 }
 
 .starline.signle-starline .line-wrap {
-  height: 200px;
+  height: 150px;
   width: auto;
+}
+
+.story-of-jantar-manatr {
+  padding-top: 100px;
 }
 
 .hover\:border-white:hover {
