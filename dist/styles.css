@@ -760,10 +760,6 @@ video {
   margin-top: 2rem;
 }
 
-.mb-6 {
-  margin-bottom: 1.5rem;
-}
-
 .block {
   display: block;
 }
@@ -1568,7 +1564,7 @@ section.about-us:before {
 
 .timeline-events--content .timeline5 {
   left: 69%;
-  max-width: 18%;
+  max-width: 17%;
   margin-top: 2rem;
 }
 
@@ -1613,7 +1609,7 @@ section.about-us:before {
 }
 
 .timeline9 .starline.signle-starline {
-  top: -30px;
+  top: -25px;
   right: -50%;
 }
 
@@ -1627,9 +1623,44 @@ section.about-us:before {
 }
 
 .timeline-events--content .timeline10 {
-  bottom: -112%;
+  bottom: -114%;
   left: 36%;
   max-width: 14%;
+}
+
+.timeline10 .starline.signle-starline .line-wrap {
+  height: 110px;
+}
+
+.timeline10 .starline.signle-starline {
+  bottom: -14%;
+  right: -36%;
+}
+
+.timeline-events--content .timeline11 {
+  left: unset;
+  right: 20%;
+  bottom: -170%;
+}
+
+.timeline-events--content .timeline11 .starline {
+  top: -12%;
+  right: -42%;
+}
+
+.timeline-events--content .timeline11 .starline .line-wrap {
+  width: 250px;
+  height: 40px;
+}
+
+.timeline-events--content .timeline11 .starline .star {
+  top: 42px;
+}
+
+.timeline-events--content .timeline12 {
+  right: 0;
+  width: 14%;
+  bottom: -77%;
 }
 
 .timeline-events--content .timeline-text .timeline-yr {

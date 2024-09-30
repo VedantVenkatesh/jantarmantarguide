@@ -300,7 +300,7 @@ section.about-us:before {
 }  
 .timeline-events--content .timeline5 {
   left: 69%;
-  max-width: 18%;
+  max-width: 17%;
   margin-top: 2rem;
 } 
 .timeline-events--content .timeline5 .starline {
@@ -337,7 +337,7 @@ section.about-us:before {
   max-width: 15%;
 }
 .timeline9 .starline.signle-starline {
-  top: -30px;
+  top: -25px;
   right: -50%;
 }  
 .timeline9 .starline.signle-starline .star {
@@ -348,10 +348,38 @@ section.about-us:before {
   height: 150px;
 }  
 .timeline-events--content .timeline10 {
-  bottom: -112%;
+  bottom: -114%;
   left: 36%;
   max-width: 14%;
 }
+.timeline10 .starline.signle-starline .line-wrap {
+  height: 110px;
+}  
+.timeline10 .starline.signle-starline {
+  bottom: -14%;
+  right: -36%;
+}  
+.timeline-events--content .timeline11 {
+  left: unset;
+  right: 20%;
+  bottom: -170%;
+}  
+.timeline-events--content .timeline11 .starline {
+  top: -12%;
+  right: -42%;
+}  
+.timeline-events--content .timeline11 .starline .line-wrap {
+  width: 250px;
+  height: 40px;
+}
+.timeline-events--content .timeline11 .starline .star {  
+  top: 42px;
+}  
+.timeline-events--content .timeline12 {
+  right: 0;
+  width: 14%;
+  bottom: -77%;
+}  
 .timeline-events--content .timeline-text .timeline-yr {
   font-size: 40px;
   font-weight: bold;
