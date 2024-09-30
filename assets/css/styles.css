@@ -251,6 +251,7 @@ section.about-us:before {
 .timeline-events-wrappper .bottom-image {
   z-index: -1;
 }
+.history-section-wrapper .img-wrap svg,
 .timeline-events-wrappper .img-wrap svg {
   margin: auto;
 }
@@ -486,7 +487,52 @@ section.about-us:before {
   height: 150px;
   width: auto;
 }
-
 .story-of-jantar-manatr {
-  padding-top: 100px;
+  padding-top: 50px;
+}
+
+/*History section*/
+.history-section-wrapper {
+  padding: 3em 0;
+  color: #fff;
+  min-height: 650px;
+}
+.history-img-wrap .line,
+.history-img-wrap .link-item {
+  position: absolute;
+}
+.history-img-wrap .link1 {
+  top: -11%;
+  left: 18%;
+}
+.history-img-wrap .line1 {
+  top: 32%;
+  left: 29%;
+}
+.history-img-wrap .link2 {
+  right: 17.5%;
+  top: -11%;
+  z-index: 2;
+}
+.history-img-wrap .line2 {
+  top: 16%;
+  right: 30%;
+}
+.history-img-wrap .link3 {
+  left: 23%;
+  bottom: -22%;
+  transform: rotate(67deg);
+}
+.history-img-wrap .line3 {
+  left: 33%;
+  bottom: -28%;
+}
+.history-img-wrap .link4 {
+  right: 22%;
+  bottom: -13%;
+  transform: rotate(12deg);
+}
+.history-img-wrap .line4 {
+  bottom: -5%;
+  right: 38%;
 }
