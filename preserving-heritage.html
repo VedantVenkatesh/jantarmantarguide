@@ -9,17 +9,6 @@
     <link rel="stylesheet" href="assets/css/tailwind.min.css" />
     <link rel="stylesheet" href="dist/styles.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
-    <style>
-      /* Show dropdown on hover */
-      .group:hover .dropdown-menu {
-        display: block;
-      }
-      .dropdown-menu {
-        display: none;
-        position: absolute;
-        z-index: 10;
-      }
-    </style>
   </head>
   <body class="bg-gray-100">
     <header class="bg-gray-900 p-4">
@@ -57,7 +46,7 @@
           >
             <li>
               <a
-                href="index.html"
+                href="#"
                 class="text-white hover:text-gray-400 px-3 py-2 font-cocoBold font-bold tracking-[.15em]"
                 id="homeLink"
                 >Home</a
@@ -143,7 +132,7 @@
             <!-- Visit -->
             <li>
               <a
-                href="#"
+                href="visit.html"
                 class="text-white hover:text-gray-400 px-3 py-2 font-cocoBold font-bold tracking-[.15em]"
                 id="visitLink"
                 >Visit</a
@@ -200,40 +189,6 @@
       </div>
     </div>
 
-    <script>
-      // Toggle mobile menu visibility
-      const mobileMenuButton = document.getElementById('mobile-menu-button')
-      const navbarMenu = document.getElementById('navbar-menu')
-
-      mobileMenuButton.addEventListener('click', function () {
-        navbarMenu.classList.toggle('hidden')
-      })
-
-      // Toggle submenu on mobile
-      const submenuToggles = document.querySelectorAll('.mobile-submenu-toggle')
-
-      submenuToggles.forEach(function (toggle) {
-        toggle.addEventListener('click', function (e) {
-          const submenu = this.nextElementSibling
-          submenu.classList.toggle('hidden')
-        })
-      })
-
-      // Close submenu and navigate when a link is clicked on mobile
-      const submenuLinks = document.querySelectorAll('.dropdown-menu a')
-
-      submenuLinks.forEach(function (link) {
-        link.addEventListener('click', function () {
-          // Hide all submenus
-          document
-            .querySelectorAll('.dropdown-menu')
-            .forEach(function (submenu) {
-              submenu.classList.add('hidden')
-            })
-          // Optionally close the mobile menu after navigating
-          navbarMenu.classList.add('hidden')
-        })
-      })
-    </script>
+    <script src="assets/js/header.js" type="text/javascript"></script>
   </body>
 </html>

@@ -104,17 +104,47 @@
     url(../fonts/catchy-mager.woff) format('woff'),
     url(../fonts/catchy-mager.woff2) format('woff2');
 }
-
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    color: #000;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    line-height: 1.6;
+  }
+}
 html {
   scroll-behavior: smooth;
 }
-body {
+/* body {
   color: #000;
   font-family: 'Montserrat';
   font-size: 20px;
   line-height: 1.6;
+} */
+@layer components {
+  h1 {
+    @apply lg:text-[106px] text-[38px] text-white font-medium font-catchy leading-none;
+  }
+  h2 {
+    @apply lg:text-[56px] text-[32px] text-white font-medium font-catchy leading-[1.2];
+  }
+  h3 {
+    @apply lg:text-[42px] text-[26px] text-white font-medium font-catchy leading-[1.2];
+  }
+  h4 {
+    @apply lg:text-[36px] text-[22px] text-white font-medium font-catchy leading-[1.2];
+  }
+  h5 {
+    @apply lg:text-[32px] text-[20px] text-white font-medium font-catchy leading-[1.2];
+  }
+  h6 {
+    @apply lg:text-[28px] text-[18px] text-white font-medium font-catchy leading-[1.2];
+  }
 }
-h1 {
+/* h1 {
   font-family: 'catchy-mager';
   font-size: 106px;
   line-height: 1.2;
@@ -144,7 +174,7 @@ h6 {
   font-family: 'catchy-mager';
   font-size: 16px;
   line-height: 1.7;
-}
+} */
 /* Main Menu */
 /* Custom styles for hover dropdown */
 .navbar-nav .nav-item:hover .dropdown-menu {
@@ -250,7 +280,7 @@ section.about-us:before {
 }
 .timeline-events-wrappper h2 {
   padding: 2rem 0 1rem;
-}  
+}
 .timeline-events-wrappper .bottom-image {
   z-index: -1;
 }

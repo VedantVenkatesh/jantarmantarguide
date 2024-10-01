@@ -3,16 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Visit</title>
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="assets/css/tailwind.min.css" />
     <link rel="stylesheet" href="dist/styles.css" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/styles.css">
   </head>
-  <body>
+  <body class="bg-gray-100">
     <header class="bg-gray-900 p-4">
       <div class="container mx-auto">
         <!-- Mobile Menu Button -->
         <div class="flex items-center justify-between md:hidden">
-          <div class="lg:hidden flex text-2xl text-white"><a href="index.html">Jantar mantar</a></div>
+          <div class="lg:hidden flex text-2xl text-white">Jantar mantar</div>
           <button
             id="mobile-menu-button"
             class="text-white focus:outline-none"
@@ -36,10 +39,10 @@
         </div>
 
         <!-- Navigation Links -->
-        <nav class="md:flex  items-center justify-center mt-12 lg:mt-0 text-white uppercase">
+        <nav class="md:flex items-center justify-center text-white uppercase">
           <ul
             id="navbar-menu"
-            class="hidden h-100vh lg:h-auto md:flex md:items-center md:justify-between items-start w-full text-lg flex-col md:flex-row space-y-4 md:space-y-0"
+            class="hidden md:flex md:items-center md:justify-between items-start w-full text-lg flex-col md:flex-row space-y-4 md:space-y-0"
           >
             <li>
               <a
@@ -129,7 +132,7 @@
             <!-- Visit -->
             <li>
               <a
-                href="#"
+                href="visit.html"
                 class="text-white hover:text-gray-400 px-3 py-2 font-bold tracking-[.15em]"
                 id="visitLink"
                 >Visit</a
@@ -173,81 +176,67 @@
         </nav>
       </div>
     </header>
-    <section
-      class="hero-banner bg-no-repeat bg-cover"
-      style="background-image: url('./assets/images/architect.png')"
-    >
-      <div class="container lg:py-24 py-8">
-        <div
-          class="flex justify-start h-auto py-16 lg:px-20 px-8 bg-no-repeat bg-cover"
-          style="background-image: url('./assets/images/architect-bg.png')"
-        >
-          <div class="lg:w-[85%] w-full m-auto">
-            <h1 class="text-black lg:mb-8 mb-4">
-              CHIEF ARCHITECT OF THE JANTAR MANTAR
-            </h1>
-            <p class="font-regular text-black lg:text-lg text-sm lg:mb-8 mb-5">
-              Imagine a young scholar in the early 1700s in India who could read
-              and write in Sanskrit, Arabic and Persian. Then imagine a
-              mathematician and architect. Pandit Jagannath Samrat, chief
-              advisor to Sawai Jai Singh II was all this and more – he was also
-              as astronomer.
-            </p>
-            <p class="italic text-black lg:text-lg text-sm lg:mb-8 mb-5">
-              “Sawai Jai Singh, shortly after his ascension was summoned to the
-              imperial Mughal camp in the Deccan….While in the Deccan, one day,
-              after one such campaign, Jai Singh was riding back to camp with
-              his men. On the way, in one of the villages that he passed
-              through, Jai Singh met a young Brahmin scholar, Jagannath, the son
-              of Ganesa. Pandit Jagannath came from a traditional family of
-              astronomers. So impressed was Sawai Jai Sing with the young Pandit
-              that he not only requested him to accompany him to his camp, but
-              also persuaded him to come north with him to Amber, even bestowing
-              the title of ‘Samrat’ on him in deference to his supreme
-              learning.”
-            </p>
-            <p class="italic text-black lg:text-lg text-sm lg:mb-8 mb-5">
-              Mukherji, A.S., 2010. Jantar Mantar, Maharaja Sawai Jai Singh’s
-              Observatory in Delhi. Ambi Knowledge Resource. P13
-            </p>
-            <p class="font-regular text-black lg:text-lg text-sm lg:mb-8 mb-5">
-              Jagannath Samrat was instrumental in the construction of the
-              Jantar Mantar. He chose the site in Jaipur, had the ground
-              levelled, identified the directions and set about designing it,
-              along with his equally erudite ruler, Jai Singh.
-            </p>
-            <p class="font-regular text-black lg:text-lg text-sm lg:mb-8 mb-5">
-              Jagannath was fascinated by Euclid, the Greek mathematician (from
-              circa 300 BC) and the Father of Geometry. He translated Euclid's
-              Elements into Sanskrit in 1719 (from the Arabic translation of
-              Elements by Nasir al-Din al-Tusi) in a work titled Rekhāgaṇita.
-            </p>
-            <p class="font-regular text-black lg:text-lg text-sm lg:mb-8 mb-5">
-              Jai Singh had a collection of astrolabes, each exquisitely
-              crafted. He understood their value in the study of astronomy and
-              commissioned four manuals on astrolabes and other instruments.
-              Jagannath Samrat compiled the first of these manuals,
-              Yantraprakāra, on various astronomical instruments, measurements,
-              computations and observations. While the Arabic and Persian works
-              were in verse form, Jai Singh preferred prose for the translated
-              works.
-            </p>
-            <p class="font-regular text-black lg:text-lg text-sm lg:mb-8 mb-5">
-              Vidya Sagar Bhattacharya was the chief architect of Jaipur. He was
-              well-versed in urban planning and architecture and designed the
-              city to be symmetrical with wide arterial roads with intersecting
-              streets and lanes at right angles. The city’s layout was designed
-              according to Vastu Shastra, meaning the science of architecture¸ a
-              Hindu system of design that balances the five elements of nature
-              and elements from astronomy and astrology. It emphasizes harmony
-              and prosperity. Jaipur had temples, gardens, havelis and civic
-              buildings devoted to specific activities. They were also forts and
-              resting places for travellers.
-            </p>
+
+    <!-- Body -->
+    <div style = "background-image: url('assets/images/backgrounds/visit.png');" class="bg-no-repeat bg-cover min-h-screen">
+      <div class="container">
+        <div class="lg:px-16 py-16">
+          <h1 style = "font-size: 57px;" class = "text-white uppercase lg:w-7/12 sm:w-full">Visit</h1>
+          <p class = "text-white">As a UNESCO World Heritage site, Jantar Mantar is not only an architectural wonder but also a priceless repository of
+            scientific knowledge. The conservation of this monument involves a multi-faceted approach, combining modern restoration
+            techniques with traditional craftsmanship. The preservation efforts are crucial to maintaining the structural integrity of the
+            instruments while ensuring they remain functional for future generations of scholars and astronomers.</p>
+          <div class="my-8">
+            <h3 class = "text-white">Rajasthan Tourism:</h3>
+            <a href="https://www.tourism.rajasthan.gov.in/jantar-mantar.html" class = "text-white">https://www.tourism.rajasthan.gov.in/jantar-mantar.html</a>
+          </div>
+          <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 lg:pl-8">
+            <div class="lg:col-span-1 md:col-span-1 p-6" style = "background-color: rgba(255, 255, 255, 0.35);">
+              <h2 class="font-semibold text-white lg:text-1xl text-xl lg:mb-4 mb-2">Visiting Hours</h2>
+              <p class="font-regular text-white lg:text-lg text-sm">
+                Jantar Mantar is open from 9:00 AM to 5:00 PM, seven days a week.</p>
+            </div>
+            <div class="lg:col-span-3 md:col-span-3 p-6" style = "background-color: rgba(255, 255, 255, 0.35);">
+              <h2 class="font-semibold text-white lg:text-1xl text-xl lg:mb-4 mb-2">Ticket Information</h2>
+              <p class="font-regular text-white lg:text-lg text-sm">
+                Tickets can be purchased at the entrance or online. For international visitors,
+                the ticket price is ₹200, while for Indian visitors, the price is ₹50. A guided
+                tour or an audio guide is highly recommended to fully understand the
+                scientific and historical significance of the site; these arrangements may be
+                made on site. Tickets may be booked in advance at the website of the
+                Rajasthan Tourism Department at<p class = "text-white"><a href = "https://obms-tourist.rajasthan.gov.in/place-details/Jantar-Mantar">https://obms-tourist.rajasthan.gov.in/place-details/Jantar-Mantar</a></p>
+              </p>
+            </div>
+            <div class="lg:col-span-4 md:col-span-3 p-6" style = "background-color: rgba(255, 255, 255, 0.35);">
+              <h2 class="font-semibold text-white lg:text-1xl text-xl lg:mb-4 mb-2">Getting Here</h2>
+              <p class="font-regular text-white lg:text-lg text-sm">
+                Located in the heart of Jaipur, Jantar Mantar is easily accessible by car, taxi, or public transport. The monument
+                is close to other attractions such as the City Palace and Hawa Mahal, making it part of a perfect day of
+                exploration.
+              </p>
+            </div>
+            <div class="lg:col-span-4 md:col-span-3 p-6" style = "background-color: rgba(255, 255, 255, 0.35);">
+              <h2 class="font-semibold text-white lg:text-1xl text-xl lg:mb-4 mb-2">Experience More</h2>
+              <p class="font-regular text-white lg:text-lg text-sm">
+                Don’t miss the opportunity to explore the full array of astronomical instruments and learn about the cosmic
+                wonders that captivated the minds of ancient scholars.
+              </p>
+            </div>
+            <div class="lg:col-span-4 md:col-span-3 p-6" style = "background-color: rgba(255, 255, 255, 0.35);">
+              <h2 class="font-semibold text-white lg:text-1xl text-xl lg:mb-4 mb-2">Gift Shops in Jaipur</h2>
+              <ul class = "pl-4">
+                <li class = "list-disc font-regular text-white lg:text-lg text-sm">Bazaars at Amer Fort</li>
+                <li class = "list-disc font-regular text-white lg:text-lg text-sm">Museum Shop at City Palace</li>
+                <li class = "list-disc font-regular text-white lg:text-lg text-sm">Rajasthani Handcraft Emporium</li>
+                <li class = "list-disc font-regular text-white lg:text-lg text-sm">Rajasthan Khadi and Gram Udyog</li>
+                <li class = "list-disc font-regular text-white lg:text-lg text-sm">Shilpgram</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+
     <script src="assets/js/header.js" type="text/javascript"></script>
-  </body>
+</body>
 </html>

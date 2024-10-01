@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
-   <header class="bg-gray-900 p-4">
+    <header class="bg-gray-900 p-4">
       <div class="container mx-auto">
         <!-- Mobile Menu Button -->
         <div class="flex items-center justify-between md:hidden">
-          <div class="lg:hidden flex text-2xl text-white">Jantar mantar</div>
+          <div class="lg:hidden flex text-2xl text-white"><a href="index.html">Jantar mantar</a></div>
           <button
             id="mobile-menu-button"
             class="text-white focus:outline-none"
@@ -36,10 +36,10 @@
         </div>
 
         <!-- Navigation Links -->
-        <nav class="md:flex items-center justify-center text-white uppercase">
+        <nav class="md:flex  items-center justify-center mt-12 lg:mt-0 text-white uppercase">
           <ul
             id="navbar-menu"
-            class="hidden md:flex md:items-center md:justify-between items-start w-full text-lg flex-col md:flex-row space-y-4 md:space-y-0"
+            class="hidden h-100vh lg:h-auto md:flex md:items-center md:justify-between items-start w-full text-lg flex-col md:flex-row space-y-4 md:space-y-0"
           >
             <li>
               <a
@@ -174,14 +174,15 @@
       </div>
     </header>
     <main
-      class="hero-banner lg:h-auto bg-no-repeat bg-cover"
+      class="hero-banner relative lg:h-auto bg-no-repeat bg-cover"
       style="
         background-image: url('./assets/images/backgrounds/History Page.jpg');
       "
     >
-      <section class="container lg:py-16 py-8">
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+      <section class="container relative lg:py-16 py-8">
         <h1
-          class="font-medium text-white lg:text-[106px] text-[48px] lg:mb-8 mb-6"
+          class="lg:mb-8 mb-6"
         >
           THE VISIONARY
         </h1>
@@ -231,8 +232,8 @@
           Singh and are original, without parallel or precedent.
         </p>
       </section>
-      <section class="container">
-        <h3 class="text-white font-bold underline text-2xl lg:mb-8 mb-4">
+      <section class="container relative">
+        <h3 class="underline lg:mb-8 mb-4">
           Accredited Architects and Contributors
         </h3>
         <p class="font-regular text-white lg:text-lg text-sm lg:mb-16 mb-12">
@@ -242,31 +243,31 @@
         </p>
         <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 text-center gap-5">
           <div class="bg-[#ffffff]/25 p-6 rounded">
-            <h2
-              class="font-semibold text-white lg:text-1xl text-xl lg:mb-4 mb-2"
+            <h5
+              class="lg:mb-4 mb-2"
             >
               Jagannath Samrat
-            </h2>
+            </h5>
             <p class="font-regular text-white lg:text-lg text-sm">
               Chief Architect, Samrat advised on astronomy and design.
             </p>
           </div>
           <div class="bg-[#ffffff]/25 p-6 rounded">
-            <h2
-              class="font-semibold text-white lg:text-1xl text-xl lg:mb-4 mb-2"
+           <h5
+              class="lg:mb-4 mb-2"
             >
               Vidyadhar Bhattacharya
-            </h2>
+            </h5>
             <p class="font-regular text-white lg:text-lg text-sm">
               Chief architect and planner of the city of Jaipur.
             </p>
           </div>
           <div class="lg:col-span-2 md:col-span-1 bg-[#ffffff]/25 p-6 rounded">
-            <h2
-              class="font-semibold text-white lg:text-1xl text-xl lg:mb-4 mb-2"
+            <h5
+              class="lg:mb-4 mb-2"
             >
               Mohammed Sharif and Mohammed Mahdi
-            </h2>
+            </h5>
             <p class="font-regular text-white lg:text-lg text-sm">
               They were deputed by Jai Singh II to acquire manuscripts of great
               medieval Muslim astronomers. They also collected astrolabes and
@@ -274,11 +275,11 @@
             </p>
           </div>
           <div class="lg:col-span-2 md:col-span-1 bg-[#ffffff]/25 p-6 rounded">
-            <h2
-              class="font-semibold text-white lg:text-1xl text-xl lg:mb-4 mb-2"
+            <h5
+              class="lg:mb-4 mb-2"
             >
               Pere Manoel de Figueiredo
-            </h2>
+            </h5>
             <p class="font-regular text-white lg:text-lg text-sm">
               King Emmanuel of Portugal sent European scientist, Pere Manoel de
               Figueiredo to Jaipur in ~1730, equipped with several books and
@@ -287,32 +288,32 @@
             </p>
           </div>
           <div class="bg-[#ffffff]/25 p-6 rounded">
-            <h2
-              class="font-semibold text-white lg:text-1xl text-xl lg:mb-4 mb-2"
+           <h5
+              class="lg:mb-4 mb-2"
             >
               Pedro Da Sulva
-            </h2>
+            </h5>
             <p class="font-regular text-white lg:text-lg text-sm">
               A physician deputed to Jaipur by King Emmanuel of Portugal, along
               with Pere Manoel de Figueiredo.
             </p>
           </div>
           <div class="bg-[#ffffff]/25 p-6 rounded">
-            <h2
-              class="font-semibold text-white lg:text-1xl text-xl lg:mb-4 mb-2"
+           <h5
+              class="lg:mb-4 mb-2"
             >
               Antonne Gabelsperger
-            </h2>
+            </h5>
             <p class="font-regular text-white lg:text-lg text-sm">
               A Bavarian Jesuit joined Andre Strobl.
             </p>
           </div>
           <div class="lg:col-span-4 md:col-span-2 bg-[#ffffff]/25 p-6 rounded">
-            <h2
-              class="font-semibold text-white lg:text-1xl text-xl lg:mb-4 mb-2"
+           <h5
+              class="lg:mb-4 mb-2"
             >
               Father Andre Strobl and Claude Boudier
-            </h2>
+            </h5>
             <p class="font-regular text-white lg:text-lg text-sm">
               Two French Jesuit scholars were invited to Jaipur to advise on
               astronomy and scientific developments in Europe. Andre Stroble
@@ -321,15 +322,15 @@
           </div>
         </div>
         <div class="books-influenced lg:py-16 py-6">
-          <h3 class="text-white font-bold underline text-2xl lg:mb-8 mb-4">
+          <h3 class="underline lg:mb-8 mb-4">
             Books that influenced Jai Singh II:
           </h3>
           <div class="bg-[#ffffff]/25 p-6 mb-6">
-            <h3
-              class="font-semibold text-white lg:text-1xl text-xl lg:mb-4 mb-2"
+            <h4
+              class="lg:mb-4 mb-2"
             >
               SYNTAXIS
-            </h3>
+            </h4>
             <p class="font-regular text-white lg:text-lg text-sm">
               by Ptolemy. These were translated into Arabic in a book called
               Almagest. This was translated into Sanskrit under the name
@@ -337,11 +338,11 @@
             </p>
           </div>
           <div class="bg-[#ffffff]/25 p-6">
-            <h3
-              class="font-semibold text-white lg:text-1xl text-lg lg:mb-4 mb-2"
+            <h4
+              class=" lg:mb-4 mb-2"
             >
               ELEMENTS
-            </h3>
+            </h4>
             <p class="font-semibold text-white lg:text-lg text-sm">
               by Ptolemy. These were translated into Arabic in a book called
               Almagest. This was translated into Sanskrit under the name
