@@ -142,6 +142,9 @@ h6 {
   font-size: 16px;
   line-height: 1.7;
 }
+.hidden {
+  display: none;
+}
 /* Main Menu */
 /* Custom styles for hover dropdown */
 .navbar-nav .nav-item:hover .dropdown-menu {
