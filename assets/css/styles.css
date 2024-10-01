@@ -222,6 +222,20 @@ section.about-us:before {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.moon-face:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 750px;
+  height: 750px;
+  top: 0;
+  right: -18rem;
+  background-image: url('/assets/images/Phases-of-the-moon.gif'); /* Adjust path as needed */
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 9999; /* Ensure it appears behind the content */
+}
+
 .telescope-section:after {
   content: '';
   position: absolute;
