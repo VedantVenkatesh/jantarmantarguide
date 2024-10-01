@@ -104,14 +104,44 @@
     url(../fonts/catchy-mager.woff) format('woff'),
     url(../fonts/catchy-mager.woff2) format('woff2');
 }
-
-body {
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    color: #000;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    line-height: 1.6;
+  }
+}
+/* body {
   color: #000;
   font-family: 'Montserrat';
   font-size: 20px;
   line-height: 1.6;
+} */
+@layer components {
+  h1 {
+    @apply lg:text-[106px] text-[38px] text-white font-medium font-catchy leading-none;
+  }
+  h2 {
+    @apply lg:text-[56px] text-[32px] text-white font-medium font-catchy leading-[1.2];
+  }
+  h3 {
+    @apply lg:text-[42px] text-[26px] text-white font-medium font-catchy leading-[1.2];
+  }
+  h4 {
+    @apply lg:text-[36px] text-[22px] text-white font-medium font-catchy leading-[1.2];
+  }
+  h5 {
+    @apply lg:text-[32px] text-[20px] text-white font-medium font-catchy leading-[1.2];
+  }
+  h6 {
+    @apply lg:text-[28px] text-[18px] text-white font-medium font-catchy leading-[1.2];
+  }
 }
-h1 {
+/* h1 {
   font-family: 'catchy-mager';
   font-size: 106px;
   line-height: 1.2;
@@ -141,10 +171,7 @@ h6 {
   font-family: 'catchy-mager';
   font-size: 16px;
   line-height: 1.7;
-}
-.hidden {
-  display: none;
-}
+} */
 /* Main Menu */
 /* Custom styles for hover dropdown */
 .navbar-nav .nav-item:hover .dropdown-menu {
@@ -250,7 +277,7 @@ section.about-us:before {
 }
 .timeline-events-wrappper h2 {
   padding: 2rem 0 1rem;
-}  
+}
 .timeline-events-wrappper .bottom-image {
   z-index: -1;
 }
@@ -271,13 +298,13 @@ section.about-us:before {
   top: 58%;
   left: 10%;
   max-width: 14%;
-}  
+}
 .timeline-events--content .timeline8 .starline,
 .timeline-events--content .timeline2 .starline {
   transform: rotateY(0deg);
   left: 0;
   right: unset;
-}  
+}
 .timeline-events--content .timeline8 .line-wrap,
 .timeline-events--content .timeline3 .line-wrap,
 .timeline-events--content .timeline2 .line-wrap {
@@ -290,29 +317,29 @@ section.about-us:before {
 .timeline-events--content .timeline3 .starline {
   top: 25%;
   right: -38%;
-} 
+}
 .timeline-events--content .timeline4 {
   left: 45.55%;
   margin-top: 7.5rem;
   max-width: 14%;
-}  
+}
 .timeline-events--content .timeline4 .starline {
   top: -54%;
   right: -5%;
-}  
+}
 .timeline-events--content .timeline5 {
   left: 66%;
   max-width: 17%;
   margin-top: 2rem;
-} 
+}
 .timeline-events--content .timeline5 .starline {
   top: -33%;
   right: 20%;
-}  
+}
 .timeline-events--content .timeline5 .line-wrap {
   height: 40px;
   width: 100px;
-}  
+}
 .timeline-events--content .timeline6 {
   max-width: 18%;
   right: 75px;
@@ -343,14 +370,14 @@ section.about-us:before {
 .timeline9 .starline.signle-starline {
   top: -25px;
   right: -50%;
-}  
+}
 .timeline9 .starline.signle-starline .star {
   left: -2px;
   top: 160px;
-}  
+}
 .timeline9 .starline.signle-starline .line-wrap {
   height: 150px;
-}  
+}
 .timeline-events--content .timeline10 {
   bottom: -114%;
   left: 36%;
@@ -358,54 +385,54 @@ section.about-us:before {
 }
 .timeline10 .starline.signle-starline .line-wrap {
   height: 110px;
-}  
+}
 .timeline10 .starline.signle-starline {
   bottom: -14%;
   right: -36%;
-}  
+}
 .timeline-events--content .timeline11 {
   left: unset;
   right: 20%;
   bottom: -153%;
-}  
+}
 .timeline-events--content .timeline11 .starline {
   top: -14%;
   right: -42%;
-}  
+}
 .timeline-events--content .timeline11 .starline .line-wrap {
   width: 250px;
   height: 40px;
 }
-.timeline-events--content .timeline11 .starline .star {  
+.timeline-events--content .timeline11 .starline .star {
   top: 42px;
-}  
+}
 .timeline-events--content .timeline12 {
   right: 0;
   width: 14%;
   bottom: -83%;
-}    
+}
 .timeline-events--content .timeline13 {
   left: 32%;
   bottom: -150%;
   max-width: 13%;
-} 
+}
 .timeline-events--content .timeline13 .starline {
   top: 0;
   transform: rotate(180deg);
   right: -45%;
-}  
+}
 .timeline-events--content .timeline13 .starline .star {
   top: 45px;
   transform: rotate(70deg);
-}  
+}
 .timeline-events--content .timeline13 .line-wrap {
   width: 150px;
   height: 40px;
-}  
+}
 .timeline-events--content .timeline14 {
   left: 48%;
   bottom: -160%;
-} 
+}
 .timeline-events--content .timeline-text .timeline-yr {
   font-size: 40px;
   font-weight: bold;

@@ -554,6 +554,17 @@ video {
   display: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #000;
+  font-family: 'Montserrat';
+  font-size: 20px;
+  line-height: 1.6;
+}
+
 .container {
   width: 100%;
   margin-right: auto;
@@ -589,6 +600,96 @@ video {
 @media (min-width: 1536px) {
   .container {
     max-width: 1536px;
+  }
+}
+
+h1 {
+  font-family: catchy-mager;
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 1;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 106px;
+  }
+}
+
+h2 {
+  font-family: catchy-mager;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.2;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 56px;
+  }
+}
+
+h3 {
+  font-family: catchy-mager;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.2;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px) {
+  h3 {
+    font-size: 42px;
+  }
+}
+
+h4 {
+  font-family: catchy-mager;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.2;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px) {
+  h4 {
+    font-size: 36px;
+  }
+}
+
+h5 {
+  font-family: catchy-mager;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px) {
+  h5 {
+    font-size: 32px;
+  }
+}
+
+h6 {
+  font-family: catchy-mager;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px) {
+  h6 {
+    font-size: 28px;
   }
 }
 
@@ -1308,53 +1409,44 @@ video {
     url(../fonts/catchy-mager.woff2) format('woff2');
 }
 
-body {
+/* body {
   color: #000;
   font-family: 'Montserrat';
   font-size: 20px;
   line-height: 1.6;
-}
+} */
 
-h1 {
+/* h1 {
   font-family: 'catchy-mager';
   font-size: 106px;
   line-height: 1.2;
   font-weight: bold;
 }
-
 h2 {
   font-family: 'catchy-mager';
   font-size: 50px;
   line-height: 1.5;
 }
-
 h3 {
   font-family: 'catchy-mager';
   font-size: 42px;
   line-height: 1.2;
 }
-
 h4 {
   font-family: 'catchy-mager';
   font-size: 20px;
   line-height: 1.2;
 }
-
 h5 {
   font-family: 'catchy-mager';
   font-size: 18px;
   line-height: 1.2;
 }
-
 h6 {
   font-family: 'catchy-mager';
   font-size: 16px;
   line-height: 1.7;
-}
-
-.hidden {
-  display: none;
-}
+} */
 
 /* Main Menu */
 
@@ -2106,10 +2198,6 @@ section.about-us:before {
 
   .lg\:text-\[106px\] {
     font-size: 106px;
-  }
-
-  .lg\:text-\[108px\] {
-    font-size: 108px;
   }
 
   .lg\:text-\[56px\] {
