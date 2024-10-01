@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instruments</title>
+    <link rel="stylesheet" href="dist/styles.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="bg-gray-900 p-4">
+      <div class="container mx-auto">
+        <!-- Mobile Menu Button -->
+        <div class="flex items-center justify-between md:hidden">
+          <div class="md:hidden flex text-2xl text-white">
+            <a href="index.html"></a>Jantar mantar
+          </div>
+          <button
+            id="mobile-menu-button"
+            class="text-white focus:outline-none"
+            aria-label="Toggle navigation"
+          >
+            <svg
+              class="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Navigation Links -->
+        <nav
+          class="md:flex items-center justify-center mt-12 lg:mt-0 text-white uppercase"
+        >
+          <ul
+            id="navbar-menu"
+            class="hidden md:flex md:items-center md:justify-between items-start w-full text-lg flex-col md:flex-row space-y-4 md:space-y-0"
+          >
+            <li>
+              <a
+                href="index.html"
+                class="text-white hover:text-gray-400 px-3 py-2 font-bold tracking-[.15em]"
+                id="homeLink"
+                >Home</a
+              >
+            </li>
+
+            <!-- History with Dropdown -->
+            <li class="relative group">
+              <a
+                href="history.html"
+                class="text-white hover:text-gray-400 px-3 py-2 font-bold tracking-[.15em]"
+                id="historyLink"
+                >History</a
+              >
+              <!-- Dropdown Menu -->
+              <button class="mobile-submenu-toggle md:hidden">></button>
+              <ul
+                class="dropdown-menu hidden group-hover:block bg-gray-800 text-white py-2 absolute mt-1 rounded-md shadow-lg font-bold w-max tracking-[.15em]"
+              >
+                <li>
+                  <a
+                    href="jaipur.html"
+                    class="block px-4 py-2 hover:bg-gray-700"
+                    >Jaipur’s Royal Heritage</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="cosmicchronicals.html"
+                    class="block px-4 py-2 hover:bg-gray-700"
+                    >COSMIC CHRONICLES</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="thevisionary.html"
+                    class="block px-4 py-2 hover:bg-gray-700"
+                    >The VISIONARY</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="chiefarchitect.html"
+                    class="block px-4 py-2 hover:bg-gray-700"
+                    >Chief Architect</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <!-- Jantar Mantar with Dropdown -->
+            <li class="relative group flex">
+              <a
+                href="#jantar-mantar"
+                class="text-white flex-wrap hover:text-gray-400 px-3 py-2 font-bold tracking-[.15em]"
+                >Jantar
+                <p>Mantar</p></a
+              >
+              <button class="mobile-submenu-toggle md:hidden">></button>
+              <ul
+                class="dropdown-menu hidden group-hover:block bg-gray-800 text-white mt-16 py-2 absolute left-0 rounded-md shadow-lg font-bold tracking-[.15em] w-max"
+              >
+                <li>
+                  <a
+                    href="storyofjantarmantar.html"
+                    class="block px-4 py-2 hover:bg-gray-700"
+                    >STORY OF THE JANTAR MANTAR</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-700"
+                    >Astronomy in 1700</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="instruments.html"
+                    class="block px-4 py-2 hover:bg-gray-700"
+                    >INSTRUMENTS</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <!-- Gallery -->
+            <li>
+              <a
+                href="#"
+                class="text-white hover:text-gray-400 px-3 py-2 font-bold tracking-[.15em]"
+                id="galleryLink"
+                >Gallery</a
+              >
+            </li>
+
+            <!-- Visit -->
+            <li>
+              <a
+                href="#"
+                class="text-white hover:text-gray-400 px-3 py-2 font-bold tracking-[.15em]"
+                id="visitLink"
+                >Visit</a
+              >
+            </li>
+
+            <!-- Preserving Heritage with Dropdown -->
+            <li class="relative group">
+              <a
+                href="preserving-heritage.html"
+                class="text-white hover:text-gray-400 px-3 py-2 font-bold tracking-[.15em]"
+                >Preserving Heritage</a
+              >
+              <button class="mobile-submenu-toggle md:hidden">></button>
+              <ul
+                class="dropdown-menu hidden group-hover:block bg-gray-800 text-white py-2 absolute rounded-md shadow-lg font-bold mt-1 w-max tracking-[.15em]"
+              >
+                <li>
+                  <a
+                    href="experts-explain.html"
+                    class="block px-4 py-2 hover:bg-gray-700"
+                    >Experts Explain</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="credits-and-sources.html"
+                    class="block px-4 py-2 hover:bg-gray-700"
+                    >Credits</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="experts-explain.html"
+                    class="block px-4 py-2 hover:bg-gray-700"
+                    >Explore Jaipur</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="about-us.html"
+                    class="block px-4 py-2 hover:bg-gray-700"
+                    >About Us</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section
+      class="bg-no-repeat bg-cover h-[90vh]"
+      style="
+        background-image: url('./assets/images/backgrounds/instruments.png');
+      "
+    >
+      <div class="container flex justify-start items-start lg:py-24 py-16">
+        <div class="2xl:w-3/5 xl:w-4/5 lg:w-full md:w-1/2">
+          <h1>INSTRUMENTS</h1>
+          <p class="font-regular text-white lg:text-lg text-sm lg:mt-6 mt-3">
+            The instruments at Jaipur's Jantar Mantar function through geometric
+            precision to observe celestial bodies and measure time. Most
+            instruments use shadows cast by the sun or alignments of celestial
+            objects to calculate positions and movements.
+          </p>
+          <p class="font-regular text-white lg:text-lg text-sm lg:mt-6 mt-3">
+            The astronomical observatory featuring 19 large instruments.
+          </p>
+          <p class="font-regular text-white lg:text-lg text-sm lg:mt-2 mt-1">
+            Notable instruments include:
+          </p>
+          <ol class="text-white mt-8 lg:text-[16px] text-[12px] leading-loose">
+            <li>1. Samrat Yantra – The Giant Sundial</li>
+            <li>2. Jai Prakash Yantra – Hemispherical Altitude Instrument</li>
+            <li>3. Rashivalaya – Zodiac Instrument</li>
+            <li>4. Rama Yantra – Azimuth and Altitude Measurement</li>
+            <li>5. Dakshin Bhitti Yantra – Meridian Instrument</li>
+            <li>6. Digamsa Yantra – Azimuth and Weather Instrument</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <section class="bg-black">
+      <!--HTML CODE-->
+      <div class="w-full relative container lg:py-24">
+        <div class="swiper default-carousel swiper-container">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <div
+                class="lg:h-[615px] h-auto flex justify-center items-center w-full bg-no-repeat bg-cover"
+                style="
+                  background-image: url('./assets/images/backgrounds/History Page.jpg');
+                "
+              >
+                <div class="lg:w-10/12 w-full p-8 lg:p-0 m-auto flex flex-col">
+                  <!-- Heading Section -->
+                  <div class="text-left mb-8">
+                    <h2 class="text-white lg:text-4xl text-2xl font-bold">
+                      Samrat Yantra – The Giant Sundial
+                    </h2>
+                    <h6 class="text-white">
+                      Measures Time
+                    </h6>
+                  </div>
+
+                  <!-- Content Grid -->
+                  <div
+                    class="grid grid-cols-1 lg:grid-cols-4 gap-4 items-center"
+                  >
+                    <!-- Left Text Section -->
+                    <div class="lg:col-span-1 text-left">
+                      <p
+                        class="lg:text-sm text-white text-[11px] font-montserrat font-medium"
+                      >
+                        The Samrat Yantra, meaning "Supreme Instrument," is the
+                        largest sundial in the world, standing at an impressive
+                        27 meters high. It measures time with unparalleled
+                        accuracy—down to two seconds—and helps determine local
+                        solar time, or the time when the sun reaches its zenith.
+                      </p>
+                    </div>
+
+                    <!-- Image Section (Centered) -->
+                    <div class="flex justify-center items-center col-span-2">
+                      <img
+                        src="./assets/images/newImage.png"
+                        alt="Jai Singh the Scholar"
+                        class="w-full lg:w-[80%] max-h-[400px] object-cover"
+                      />
+                    </div>
+
+                    <!-- Right Text Section -->
+                    <div class="lg:col-span-1 text-left">
+                      <p
+                        class="lg:text-sm text-white text-[11px] font-montserrat font-medium"
+                      >
+                        The steep angle and massive size allow for precise
+                        readings of Jaipur’s time, making it one of the most
+                        significant instruments at Jantar Mantar.
+                        <br /><br />
+                        The shadow cast by the gnomon on the sundial’s quadrants
+                        moves every minute, making this instrument a marvel in
+                        timekeeping.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <div
+                class="lg:h-[615px] h-auto flex justify-center items-center w-full bg-no-repeat bg-cover"
+                style="
+                  background-image: url('./assets/images/backgrounds/History Page.jpg');
+                "
+              >
+                <div class="lg:w-10/12 w-full p-8 lg:p-0 m-auto flex flex-col">
+                  <!-- Heading Section -->
+                  <div class="text-left mb-8">
+                    <h2 class="text-white lg:text-4xl text-2xl font-bold">
+                      Jai Prakash Yantra – Hemispherical Altitude Instrument
+                    </h2>
+                    <h6 class="text-white">
+                      Measures Altitude
+                    </h6>
+                  </div>
+
+                  <!-- Content Grid -->
+                  <div
+                    class="grid grid-cols-1 lg:grid-cols-4 gap-4 items-center"
+                  >
+                    <!-- Left Text Section -->
+                    <div class="lg:col-span-1 text-left">
+                      <p
+                        class="lg:text-sm text-white text-[11px] font-montserrat font-medium"
+                      >
+                        The Jai Prakash Yantra consists of two hemispherical
+                        structures with markings that map the sky. Using this
+                        instrument, astronomers could determine the altitude of
+                        celestial bodies like stars, planets, and the sun.
+                      </p>
+                    </div>
+
+                    <!-- Image Section (Centered) -->
+                    <div class="flex justify-center items-center col-span-2">
+                      <img
+                        src="./assets/images/newImage.png"
+                        alt="Jai Singh the Scholar"
+                        class="w-full lg:w-[80%] max-h-[400px] object-cover"
+                      />
+                    </div>
+
+                    <!-- Right Text Section -->
+                    <div class="lg:col-span-1 text-left">
+                      <p
+                        class="lg:text-sm text-white text-[11px] font-montserrat font-medium"
+                      >
+                        It features cross-wires stretched over the hemispherical
+                        structure, which help pinpoint the exact position of
+                        objects in the sky.
+                      </p>
+                      <p
+                        class="lg:text-sm text-white text-[11px] font-montserrat font-medium"
+                      >
+                        By projecting the celestial sphere onto the interior
+                        surface of the bowl, this instrument provides precise
+                        measurements and offers a unique way to study the night
+                        sky.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <div
+                class="lg:h-[615px] h-auto flex justify-center items-center w-full bg-no-repeat bg-cover"
+                style="
+                  background-image: url('./assets/images/backgrounds/History Page.jpg');
+                "
+              >
+                <div class="lg:w-10/12 w-full p-8 lg:p-0 m-auto flex flex-col">
+                  <!-- Heading Section -->
+                  <div class="text-left mb-8">
+                    <h2 class="text-white lg:text-4xl text-2xl font-bold">
+                      Rashivalaya – Zodiac Instrument
+                    </h2>
+                    <h6 class="text-white">
+                      Measures Ecliptic Coordinates of Constellations
+                    </h6>
+                  </div>
+
+                  <!-- Content Grid -->
+                  <div
+                    class="grid grid-cols-1 lg:grid-cols-4 gap-4 items-center"
+                  >
+                    <!-- Left Text Section -->
+                    <div class="lg:col-span-1 text-left">
+                      <p
+                        class="lg:text-sm text-white text-[11px] font-montserrat font-medium"
+                      >
+                        The Rashivalaya is a specialised instrument designed to
+                        observe the ecliptic coordinates of the 12 zodiac
+                        constellations. It consists of 12 different devices, one
+                        for each sign of the zodiac. <br />
+                        The Rashivalaya helps track the movement of these
+                        constellations in relation to the Earth’s orbit and is
+                        used to calculate the celestial coordinates for each
+                        zodiac sign.
+                      </p>
+                    </div>
+
+                    <!-- Image Section (Centered) -->
+                    <div class="flex justify-center items-center col-span-2">
+                      <img
+                        src="./assets/images/newImage.png"
+                        alt="Jai Singh the Scholar"
+                        class="w-full lg:w-[80%] max-h-[400px] object-cover"
+                      />
+                    </div>
+
+                    <!-- Right Text Section -->
+                    <div class="lg:col-span-1 text-left">
+                      <p
+                        class="lg:text-sm text-white text-[11px] font-montserrat font-medium"
+                      >
+                        This instrument highlights the deep connection between
+                        astronomy and astrology in ancient India, where the
+                        study of stars and planets was used to predict celestial
+                        events and understand cosmic patterns.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 4 -->
+            <div class="swiper-slide">
+              <div
+                class="lg:h-[615px] h-auto flex justify-center items-center w-full bg-no-repeat bg-cover"
+                style="
+                  background-image: url('./assets/images/backgrounds/History Page.jpg');
+                "
+              >
+                <div class="lg:w-10/12 w-full p-8 lg:p-0 m-auto flex flex-col">
+                  <!-- Heading Section -->
+                  <div class="text-left mb-8">
+                    <h2 class="text-white lg:text-4xl text-2xl font-bold">
+                      Rama Yantra – Azimuth and Altitude Measurement
+                    </h2>
+                    <h6 class="text-white">
+                      Measures Azimuth and Altitude
+                    </h6>
+                  </div>
+
+                  <!-- Content Grid -->
+                  <div
+                    class="grid grid-cols-1 lg:grid-cols-4 gap-4 items-center"
+                  >
+                    <!-- Left Text Section -->
+                    <div class="lg:col-span-1 text-left">
+                      <p
+                        class="lg:text-sm text-white text-[11px] font-montserrat font-medium"
+                      >
+                        The Rama Yantra is a cylindrical instrument used to
+                        measure the altitude and azimuth (the horizontal angle)
+                        of celestial objects. It features two large circular
+                        walls with open spaces, allowing for precise alignment
+                        with stars and planets.
+                      </p>
+                    </div>
+
+                    <!-- Image Section (Centered) -->
+                    <div class="flex justify-center items-center col-span-2">
+                      <img
+                        src="./assets/images/newImage.png"
+                        alt="Jai Singh the Scholar"
+                        class="w-full lg:w-[80%] max-h-[400px] object-cover"
+                      />
+                    </div>
+
+                    <!-- Right Text Section -->
+                    <div class="lg:col-span-1 text-left">
+                      <p
+                        class="lg:text-sm text-white text-[11px] font-montserrat font-medium"
+                      >
+                        By using the vertical and horizontal lines marked on the
+                        instrument, astronomers could accurately determine the
+                        position of celestial bodies in the sky.
+                      </p>
+                      <p
+                        class="lg:text-sm text-white text-[11px] font-montserrat font-medium"
+                      >
+                        This tool, with its impressive design, reflects the
+                        scientific innovation of the time, providing detailed
+                        observations of the heavens.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 5 -->
+            <div class="swiper-slide">
+              <div
+                class="lg:h-[615px] h-auto flex justify-center items-center w-full bg-no-repeat bg-cover"
+                style="
+                  background-image: url('./assets/images/backgrounds/History Page.jpg');
+                "
+              >
+                <div class="lg:w-10/12 w-full p-8 lg:p-0 m-auto flex flex-col">
+                  <!-- Heading Section -->
+                  <div class="text-left mb-8">
+                    <h2 class="text-white lg:text-4xl text-2xl font-bold">
+                      Dakshin Bhitti Yantra – Meridian Instrument
+                    </h2>
+                    <h6 class="text-white">
+                      Measures Meridian, Altitude, and Zenith Distances
+                    </h6>
+                  </div>
+
+                  <!-- Content Grid -->
+                  <div
+                    class="grid grid-cols-1 lg:grid-cols-4 gap-4 items-center"
+                  >
+                    <!-- Left Text Section -->
+                    <div class="lg:col-span-1 text-left">
+                      <p
+                        class="lg:text-sm text-white text-[11px] font-montserrat font-medium"
+                      >
+                        The Dakshin Bhitti Yantra is a wall-based instrument
+                        used to observe the celestial meridian and measure the
+                        altitude and zenith distances of celestial objects.
+                        Positioned along the meridian line, this instrument
+                        helps track the movement of the sun and other objects as
+                        they cross the celestial equator.
+                      </p>
+                    </div>
+
+                    <!-- Image Section (Centered) -->
+                    <div class="flex justify-center items-center col-span-2">
+                      <img
+                        src="./assets/images/newImage.png"
+                        alt="Jai Singh the Scholar"
+                        class="w-full lg:w-[80%] max-h-[400px] object-cover"
+                      />
+                    </div>
+
+                    <!-- Right Text Section -->
+                    <div class="lg:col-span-1 text-left">
+                      <p
+                        class="lg:text-sm text-white text-[11px] font-montserrat font-medium"
+                      >
+                        By measuring the zenith distances (the angle between an
+                        object and the zenith, or directly overhead), it aids in
+                        calculating the latitude and time of observations with
+                        great precision.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 6 -->
+            <div class="swiper-slide">
+              <div
+                class="lg:h-[615px] h-auto flex justify-center items-center w-full bg-no-repeat bg-cover"
+                style="
+                  background-image: url('./assets/images/backgrounds/History Page.jpg');
+                "
+              >
+                <div class="lg:w-10/12 w-full p-8 lg:p-0 m-auto flex flex-col">
+                  <!-- Heading Section -->
+                  <div class="text-left mb-8">
+                    <h2 class="text-white lg:text-4xl text-2xl font-bold">
+                      Digamsa Yantra – Azimuth and Weather Instrument
+                    </h2>
+                    <h6 class="text-white">
+                      Measures Azimuth, Sunrise/Sunset Time, and Weather
+                      Forecasting
+                    </h6>
+                  </div>
+
+                  <!-- Content Grid -->
+                  <div
+                    class="grid grid-cols-1 lg:grid-cols-4 gap-4 items-center"
+                  >
+                    <!-- Left Text Section -->
+                    <div class="lg:col-span-1 text-left">
+                      <p
+                        class="lg:text-sm text-white text-[11px] font-montserrat font-medium"
+                      >
+                        The Digamsa Yantra is a circular instrument used to
+                        determine the azimuth (the direction of the sun) as well
+                        as the exact times of sunrise and sunset. This
+                        instrument is also valuable for weather forecasting, as
+                        it helps predict seasonal changes based on the sun’s
+                        movements.
+                      </p>
+                    </div>
+
+                    <!-- Image Section (Centered) -->
+                    <div class="flex justify-center items-center col-span-2">
+                      <img
+                        src="./assets/images/newImage.png"
+                        alt="Jai Singh the Scholar"
+                        class="w-full lg:w-[80%] max-h-[400px] object-cover"
+                      />
+                    </div>
+
+                    <!-- Right Text Section -->
+                    <div class="lg:col-span-1 text-left">
+                      <p
+                        class="lg:text-sm text-white text-[11px] font-montserrat font-medium"
+                      >
+                        The Digamsa Yantra’s simple yet effective design makes
+                        it an important tool for understanding daily solar
+                        cycles and changes in weather patterns, further
+                        emphasising the integration of astronomy and everyday
+                        life in ancient India.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slider Navigation -->
+          <div
+            class="flex items-center gap-8 lg:justify-start justify-center mt-8"
+          >
+            <button
+              id="slider-button-left"
+              class="swiper-button-prev group !p-2 flex justify-center items-center lg:!w-12 !w-1 !h-12 !top-2/4 !-translate-y-8 !left-5"
+            >
+              <!-- <svg
+                  class="h-5 w-5 group-hover:text-white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
+                  fill="#000000"
+                >
+                  <path
+                    d="M10.0002 11.9999L6 7.99971L10.0025 3.99719"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg> -->
+            </button>
+
+            <button
+              id="slider-button-right"
+              class="swiper-button-next group !p-2 flex justify-center items-center lg:!w-12 !w-1 !h-12 !top-2/4 !-translate-y-8 !right-5"
+            >
+              <!-- <svg
+                  class="h-5 w-5 group-hover:text-white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
+                  fill="#000000"
+                >
+                  <path
+                    d="M5.99984 4.00012L10 8.00029L5.99748 12.0028"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg> -->
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/header.js" type="text/javascript"></script>
+  </body>
+</html>
