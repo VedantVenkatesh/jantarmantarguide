@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/styles.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+   <header class="bg-gray-900 p-4">
+      <div class="container mx-auto">
+        <!-- Mobile Menu Button -->
+        <div class="flex items-center justify-between md:hidden">
+          <div class="lg:hidden flex text-2xl text-white">Jantar mantar</div>
+          <button
+            id="mobile-menu-button"
+            class="text-white focus:outline-none"
+            aria-label="Toggle navigation"
+          >
+            <svg
+              class="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Navigation Links -->
+        <nav class="md:flex items-center justify-center text-white uppercase">
+          <ul
+            id="navbar-menu"
+            class="hidden md:flex md:items-center md:justify-between items-start w-full text-lg flex-col md:flex-row space-y-4 md:space-y-0"
+          >
+            <li>
+              <a
+                href="index.html"
+                class="text-white hover:text-gray-400 px-3 py-2 font-bold tracking-[.15em]"
+                id="homeLink"
+                >Home</a
+              >
+            </li>
+
+            <!-- History with Dropdown -->
+            <li class="relative group">
+              <a
+                href="history.html"
+                class="text-white hover:text-gray-400 px-3 py-2 font-bold tracking-[.15em]"
+                id="historyLink"
+                >History</a
+              >
+              <!-- Dropdown Menu -->
+              <button class="mobile-submenu-toggle md:hidden">></button>
+              <ul
+                class="dropdown-menu hidden group-hover:block bg-gray-800 text-white py-2 absolute mt-1 rounded-md shadow-lg font-bold w-max tracking-[.15em]"
+              >
+                <li>
+                  <a href="jaipur.html" class="block px-4 py-2 hover:bg-gray-700"
+                    >Jaipur’s Royal Heritage</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-700"
+                    >COSMIC CHRONICLES</a
+                  >
+                </li>
+                <li>
+                  <a href="thevisionary.html" class="block px-4 py-2 hover:bg-gray-700"
+                    >The VISIONARY</a
+                  >
+                </li>
+                <li>
+                  <a href="chiefarchitect.html" class="block px-4 py-2 hover:bg-gray-700"
+                    >Chief Architect</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <!-- Jantar Mantar with Dropdown -->
+            <li class="relative group flex">
+              <a
+                href="#jantar-mantar"
+                class="text-white flex-wrap hover:text-gray-400 px-3 py-2 font-bold tracking-[.15em]"
+                >Jantar
+                <p>Mantar</p></a
+              >
+              <button class="mobile-submenu-toggle md:hidden">></button>
+              <ul
+                class="dropdown-menu hidden group-hover:block bg-gray-800 text-white mt-16 py-2 absolute left-0 rounded-md shadow-lg font-bold tracking-[.15em] w-max"
+              >
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-700"
+                    >STORY OF THE JANTAR MANTAR</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-700"
+                    >Astronomy in 1700</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-700"
+                    >INSTRUMENTS</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <!-- Gallery -->
+            <li>
+              <a
+                href="#"
+                class="text-white hover:text-gray-400 px-3 py-2 font-bold tracking-[.15em]"
+                id="galleryLink"
+                >Gallery</a
+              >
+            </li>
+
+            <!-- Visit -->
+            <li>
+              <a
+                href="#"
+                class="text-white hover:text-gray-400 px-3 py-2 font-bold tracking-[.15em]"
+                id="visitLink"
+                >Visit</a
+              >
+            </li>
+
+            <!-- Preserving Heritage with Dropdown -->
+            <li class="relative group">
+              <a
+                href="preserving-heritage.html"
+                class="text-white hover:text-gray-400 px-3 py-2 font-bold tracking-[.15em]"
+                >Preserving Heritage</a
+              >
+              <button class="mobile-submenu-toggle md:hidden">></button>
+              <ul
+                class="dropdown-menu hidden group-hover:block bg-gray-800 text-white py-2 absolute rounded-md shadow-lg font-bold mt-1 w-max tracking-[.15em]"
+              >
+                <li>
+                  <a href="experts-explain.html" class="block px-4 py-2 hover:bg-gray-700"
+                    >Experts Explain</a
+                  >
+                </li>
+                <li>
+                  <a href="credits-and-sources.html" class="block px-4 py-2 hover:bg-gray-700"
+                    >Credits</a
+                  >
+                </li>
+                <li>
+                  <a href="experts-explain.html" class="block px-4 py-2 hover:bg-gray-700"
+                    >Explore Jaipur</a
+                  >
+                </li>
+                <li>
+                  <a href="about-us.html" class="block px-4 py-2 hover:bg-gray-700"
+                    >About Us</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main
+      class="hero-banner lg:h-auto bg-no-repeat bg-cover"
+      style="
+        background-image: url('./assets/images/backgrounds/History Page.jpg');
+      "
+    >
+      <section class="container lg:py-16 py-8">
+        <h1
+          class="font-medium text-white lg:text-[106px] text-[48px] lg:mb-8 mb-6"
+        >
+          THE VISIONARY
+        </h1>
+        <p class="font-regular text-white lg:text-lg text-sm lg:mb-8 mb-5">
+          By the time Jai Singh commissioned the construction of the Jantar
+          Mantar in Jaipur between 1727 and 1734, the Mughal empire was
+          witnessing a period of transition. Aurangzeb had passed away in 1707,
+          and the Mughal empire was beginning to fragment under the weight of
+          regional powers. Jai Singh strategically maintained ties with the
+          Mughal court. He was appointed as a governor of key regions, including
+          Malwa and Agra.
+        </p>
+        <p class="font-regular text-white lg:text-lg text-sm lg:mb-8 mb-5">
+          Jai Singh combined Rajput architectural styles with cutting-edge
+          scientific knowledge from around the world, making his observatories
+          an advanced astronomical centre of its time, unique and without
+          parallel. They allowed people to observe celestial bodies, calculate
+          time, and predict eclipses with unprecedented precision, which were
+          used to determine the onset of the monsoons (important in an agrarian
+          economy), dates of eclipses, auspicious dates for travel and
+          ceremonies, and other dates that were important in the administration
+          of the princely state.
+        </p>
+        <p class="font-regular text-white lg:text-lg text-sm lg:mb-8 mb-5">
+          There are several reasons Jai Singh used large instruments. He and his
+          astronomers found that their instruments were able to calculate
+          positions of moons and celestial bodies with far greater accuracy than
+          the astrolabes and other instruments. In 1783, Colonel T.D. Pearse
+          found in India a copy of a Persian book from the 5th century titled,
+          “The Wonders of Creation.” The book contained records of the 7the
+          satellite of Saturn. Until then, the western world was aware of only 5
+          satellites of Saturn. The existence of the 7 satellites of Saturn were
+          confirmed in 1789 by Friedrich Wilhelm Herschel using a telescope of
+          40 feet focal length.
+        </p>
+        <p class="font-regular text-white lg:text-lg text-sm lg:mb-8 mb-5">
+          Jai Singh explains his approach in the Zij-i-Muhammad Shahi,
+        </p>
+        <p class="italic text-white lg:text-lg text-sm lg:mb-8 mb-5">
+          “Since the telescope is not readily available to an average man, we
+          are going to base our rules of computation for naked eye observations
+          only, which in turn, are based on earlier texts.”
+        </p>
+        <p class="font-regular text-white lg:text-lg text-sm">
+          Dr. V.N. Sharma, a scholar who has extensively studied the Jantar
+          Mantar opines that several of the instruments were designed by Jai
+          Singh and are original, without parallel or precedent.
+        </p>
+      </section>
+      <section class="container">
+        <h3 class="text-white font-bold underline text-2xl lg:mb-8 mb-4">
+          Accredited Architects and Contributors
+        </h3>
+        <p class="font-regular text-white lg:text-lg text-sm lg:mb-16 mb-12">
+          There were various influences on Jai Singh that eventually led to the
+          making of the Jantar Mantar. He reached out to mathematicians,
+          astronomers, historians and geometricians from all over the world.
+        </p>
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 text-center gap-5">
+          <div class="bg-[#ffffff]/25 p-6 rounded">
+            <h2
+              class="font-semibold text-white lg:text-1xl text-xl lg:mb-4 mb-2"
+            >
+              Jagannath Samrat
+            </h2>
+            <p class="font-regular text-white lg:text-lg text-sm">
+              Chief Architect, Samrat advised on astronomy and design.
+            </p>
+          </div>
+          <div class="bg-[#ffffff]/25 p-6 rounded">
+            <h2
+              class="font-semibold text-white lg:text-1xl text-xl lg:mb-4 mb-2"
+            >
+              Vidyadhar Bhattacharya
+            </h2>
+            <p class="font-regular text-white lg:text-lg text-sm">
+              Chief architect and planner of the city of Jaipur.
+            </p>
+          </div>
+          <div class="lg:col-span-2 md:col-span-1 bg-[#ffffff]/25 p-6 rounded">
+            <h2
+              class="font-semibold text-white lg:text-1xl text-xl lg:mb-4 mb-2"
+            >
+              Mohammed Sharif and Mohammed Mahdi
+            </h2>
+            <p class="font-regular text-white lg:text-lg text-sm">
+              They were deputed by Jai Singh II to acquire manuscripts of great
+              medieval Muslim astronomers. They also collected astrolabes and
+              other instruments used in the study of astronomy.
+            </p>
+          </div>
+          <div class="lg:col-span-2 md:col-span-1 bg-[#ffffff]/25 p-6 rounded">
+            <h2
+              class="font-semibold text-white lg:text-1xl text-xl lg:mb-4 mb-2"
+            >
+              Pere Manoel de Figueiredo
+            </h2>
+            <p class="font-regular text-white lg:text-lg text-sm">
+              King Emmanuel of Portugal sent European scientist, Pere Manoel de
+              Figueiredo to Jaipur in ~1730, equipped with several books and
+              instruments. Jai Singh had reached out to the Viceroy of Goa and
+              sought his assistance in approaching King Emmanuel.
+            </p>
+          </div>
+          <div class="bg-[#ffffff]/25 p-6 rounded">
+            <h2
+              class="font-semibold text-white lg:text-1xl text-xl lg:mb-4 mb-2"
+            >
+              Pedro Da Sulva
+            </h2>
+            <p class="font-regular text-white lg:text-lg text-sm">
+              A physician deputed to Jaipur by King Emmanuel of Portugal, along
+              with Pere Manoel de Figueiredo.
+            </p>
+          </div>
+          <div class="bg-[#ffffff]/25 p-6 rounded">
+            <h2
+              class="font-semibold text-white lg:text-1xl text-xl lg:mb-4 mb-2"
+            >
+              Antonne Gabelsperger
+            </h2>
+            <p class="font-regular text-white lg:text-lg text-sm">
+              A Bavarian Jesuit joined Andre Strobl.
+            </p>
+          </div>
+          <div class="lg:col-span-4 md:col-span-2 bg-[#ffffff]/25 p-6 rounded">
+            <h2
+              class="font-semibold text-white lg:text-1xl text-xl lg:mb-4 mb-2"
+            >
+              Father Andre Strobl and Claude Boudier
+            </h2>
+            <p class="font-regular text-white lg:text-lg text-sm">
+              Two French Jesuit scholars were invited to Jaipur to advise on
+              astronomy and scientific developments in Europe. Andre Stroble
+              reached Goa in 1740.
+            </p>
+          </div>
+        </div>
+        <div class="books-influenced lg:py-16 py-6">
+          <h3 class="text-white font-bold underline text-2xl lg:mb-8 mb-4">
+            Books that influenced Jai Singh II:
+          </h3>
+          <div class="bg-[#ffffff]/25 p-6 mb-6">
+            <h3
+              class="font-semibold text-white lg:text-1xl text-xl lg:mb-4 mb-2"
+            >
+              SYNTAXIS
+            </h3>
+            <p class="font-regular text-white lg:text-lg text-sm">
+              by Ptolemy. These were translated into Arabic in a book called
+              Almagest. This was translated into Sanskrit under the name
+              Siddhant Samrat during Jai Singh’s reign.
+            </p>
+          </div>
+          <div class="bg-[#ffffff]/25 p-6">
+            <h3
+              class="font-semibold text-white lg:text-1xl text-lg lg:mb-4 mb-2"
+            >
+              ELEMENTS
+            </h3>
+            <p class="font-semibold text-white lg:text-lg text-sm">
+              by Ptolemy. These were translated into Arabic in a book called
+              Almagest. This was translated into Sanskrit under the name
+              Siddhant Samrat during Jai Singh’s reign.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+     <script src="assets/js/header.js" type="text/javascript"></script>
+  </body>
+</html>

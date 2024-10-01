@@ -11,6 +11,7 @@ module.exports = {
         cocoBold: ['CocoGothic-Bold_trial'],
         cocoFat: ['CocoGothic-Fat_trial'],
         catchy: ['catchy-mager'], // Add the catchy-mager font family
+        montserrat: ['Montserrat'],
       },
       spacing: {
         30: '1.875rem',

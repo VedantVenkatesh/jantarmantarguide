@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,500;0,600;0,700;0,900;1,100;1,300;1,500;1,600;1,700;1,900&display=swap');
+
 @font-face {
   font-family: 'CocoGothic_trial';
   src: url(../fonts/CocoGothic_trial/fontseot);
@@ -103,11 +105,11 @@
     url(../fonts/catchy-mager.woff2) format('woff2');
 }
 
-.body {
+body {
   color: #000;
-  font-family: 'CocoGothic_trial';
+  font-family: 'Montserrat';
   font-size: 20px;
-  line-height: 22px;
+  line-height: 1.6;
 }
 h1 {
   font-family: 'catchy-mager';
@@ -170,7 +172,7 @@ section.about-us:after {
   height: 500px;
   bottom: 0;
   left: -2rem;
-  background-image: url(/assets/images/line-left.png);
+  background-image: url(./assets/images/line-left.png);
   z-index: 9999;
   background-repeat: no-repeat;
   background-size: cover;
@@ -183,7 +185,7 @@ section.about-us:before {
   height: 270px;
   top: 4rem;
   right: 0;
-  background-image: url(/assets/images/line-right.png);
+  background-image: url(./assets/images/line-right.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -242,17 +244,14 @@ section.about-us:before {
 .timeline-events-wrappper {
   color: #fff;
   z-index: 10;
-  min-height: 1000px;
 }
 .timeline-events-wrappper h2 {
   padding: 2rem 0 1rem;
 }  
 .timeline-events-wrappper .bottom-image {
-  max-height: 60vh;
-  bottom: 0;
-  overflow: hidden;
   z-index: -1;
 }
+.history-section-wrapper .img-wrap svg,
 .timeline-events-wrappper .img-wrap svg {
   margin: auto;
 }
@@ -268,7 +267,7 @@ section.about-us:before {
 .timeline-events--content .timeline2 {
   top: 58%;
   left: 10%;
-  max-width: 15%;
+  max-width: 14%;
 }  
 .timeline-events--content .timeline8 .starline,
 .timeline-events--content .timeline2 .starline {
@@ -295,19 +294,21 @@ section.about-us:before {
   max-width: 14%;
 }  
 .timeline-events--content .timeline4 .starline {
-  top: -65%;
-  right: -18%;
+  top: -54%;
+  right: -5%;
 }  
 .timeline-events--content .timeline5 {
-  left: 69%;
-  max-width: 18%;
+  left: 66%;
+  max-width: 17%;
   margin-top: 2rem;
 } 
 .timeline-events--content .timeline5 .starline {
-  top: -28%;
+  top: -33%;
+  right: 20%;
 }  
 .timeline-events--content .timeline5 .line-wrap {
   height: 40px;
+  width: 100px;
 }  
 .timeline-events--content .timeline6 {
   max-width: 18%;
@@ -337,7 +338,7 @@ section.about-us:before {
   max-width: 15%;
 }
 .timeline9 .starline.signle-starline {
-  top: -30px;
+  top: -25px;
   right: -50%;
 }  
 .timeline9 .starline.signle-starline .star {
@@ -348,17 +349,66 @@ section.about-us:before {
   height: 150px;
 }  
 .timeline-events--content .timeline10 {
-  bottom: -112%;
+  bottom: -114%;
   left: 36%;
   max-width: 14%;
 }
+.timeline10 .starline.signle-starline .line-wrap {
+  height: 110px;
+}  
+.timeline10 .starline.signle-starline {
+  bottom: -14%;
+  right: -36%;
+}  
+.timeline-events--content .timeline11 {
+  left: unset;
+  right: 20%;
+  bottom: -153%;
+}  
+.timeline-events--content .timeline11 .starline {
+  top: -14%;
+  right: -42%;
+}  
+.timeline-events--content .timeline11 .starline .line-wrap {
+  width: 250px;
+  height: 40px;
+}
+.timeline-events--content .timeline11 .starline .star {  
+  top: 42px;
+}  
+.timeline-events--content .timeline12 {
+  right: 0;
+  width: 14%;
+  bottom: -83%;
+}    
+.timeline-events--content .timeline13 {
+  left: 32%;
+  bottom: -150%;
+  max-width: 13%;
+} 
+.timeline-events--content .timeline13 .starline {
+  top: 0;
+  transform: rotate(180deg);
+  right: -45%;
+}  
+.timeline-events--content .timeline13 .starline .star {
+  top: 45px;
+  transform: rotate(70deg);
+}  
+.timeline-events--content .timeline13 .line-wrap {
+  width: 150px;
+  height: 40px;
+}  
+.timeline-events--content .timeline14 {
+  left: 48%;
+  bottom: -160%;
+} 
 .timeline-events--content .timeline-text .timeline-yr {
   font-size: 40px;
   font-weight: bold;
 }
 .timeline-events--content .timeline-text .timeline-yr-text {
-  font-size: 1.15rem;
-  font-family: CocoGothic_trial;
+  font-size: 1rem;
 }
 .starline {
   display: inline-block;
@@ -406,7 +456,7 @@ section.about-us:before {
 .starline .line-wrap {
   position: relative;
   left: 13px;
-  top: -5px;
+  top: -8px;
   height: 60px;
   width: 60px;
 }
@@ -434,6 +484,55 @@ section.about-us:before {
   transform: rotate(90deg);
 }
 .starline.signle-starline .line-wrap {
-  height: 200px;
+  height: 150px;
   width: auto;
+}
+.story-of-jantar-manatr {
+  padding-top: 50px;
+}
+
+/*History section*/
+.history-section-wrapper {
+  padding: 3em 0;
+  color: #fff;
+  min-height: 650px;
+}
+.history-img-wrap .line,
+.history-img-wrap .link-item {
+  position: absolute;
+}
+.history-img-wrap .link1 {
+  top: -11%;
+  left: 18%;
+}
+.history-img-wrap .line1 {
+  top: 32%;
+  left: 29%;
+}
+.history-img-wrap .link2 {
+  right: 17.5%;
+  top: -11%;
+  z-index: 2;
+}
+.history-img-wrap .line2 {
+  top: 16%;
+  right: 30%;
+}
+.history-img-wrap .link3 {
+  left: 23%;
+  bottom: -22%;
+  transform: rotate(67deg);
+}
+.history-img-wrap .line3 {
+  left: 33%;
+  bottom: -28%;
+}
+.history-img-wrap .link4 {
+  right: 22%;
+  bottom: -13%;
+  transform: rotate(12deg);
+}
+.history-img-wrap .line4 {
+  bottom: -5%;
+  right: 38%;
 }
