@@ -464,6 +464,12 @@ section.about-us:before {
   }
 }
 @media (min-width: 1301px) and (max-width: 1500px) {
+  .timeline-events-wrappper {
+    min-height: 800px;
+  }
+  .timeline-events-wrappper .container {
+    min-height: inherit;
+  }
   .timeline-events--content .timeline8 .line-wrap,
   .timeline-events--content .timeline3 .line-wrap,
   .timeline-events--content .timeline2 .line-wrap {
