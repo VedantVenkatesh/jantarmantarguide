@@ -1666,7 +1666,7 @@ section.about-us:before {
   margin: auto;
 }
 
-@media (min-width: 1201px) {
+@media (min-width: 1301px) {
   .timeline-events--content .timeline-text {
     position: absolute;
     display: inline-block;
@@ -1863,6 +1863,55 @@ section.about-us:before {
   }
 }
 
+@media (min-width: 1301px) and (max-width: 1500px) {
+  .timeline-events-wrappper {
+    min-height: 800px;
+  }
+
+  .timeline-events-wrappper .container {
+    min-height: inherit;
+  }
+
+  .timeline-events--content .timeline8 .line-wrap,
+  .timeline-events--content .timeline3 .line-wrap,
+  .timeline-events--content .timeline2 .line-wrap {
+    width: 70px;
+  }
+
+  .timeline4 .starline.signle-starline .line-wrap {
+    height: 140px;
+  }
+
+  .timeline-events--content .timeline5 .line-wrap {
+    height: 30px;
+    width: 80px;
+  }
+
+  .timeline-events--content .timeline5 .starline {
+    top: -22%;
+  }
+
+  .timeline-events--content .timeline7 {
+    right: 17%;
+  }
+
+  .timeline-events--content .timeline11 .starline .line-wrap {
+    width: 180px;
+  }
+
+  .timeline-events--content .timeline12 {
+    bottom: -65%;
+  }
+
+  .timeline9 .starline.signle-starline .star {
+    top: 130px;
+  }
+
+  .timeline9 .starline.signle-starline .line-wrap {
+    height: 130px;
+  }
+}
+
 .timeline-events--content .starline .jm-none,
 .timeline-events--content .starline.jm-none,
 .timeline-events--content .jm-none {
@@ -1955,6 +2004,14 @@ section.about-us:before {
   padding-top: 50px;
 }
 
+.timeline-event-mobile {
+  display: none;
+}
+
+.timeline-events-wrappper {
+  display: block;
+}
+
 /* mobile style for timeline event and history*/
 
 @media (max-width:991px) {
@@ -1963,7 +2020,7 @@ section.about-us:before {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   .timeline-events--content .timeline-text:nth-child(odd) {
     float: left;
     margin-top: -50px;
@@ -2006,6 +2063,14 @@ section.about-us:before {
     position: absolute;
     right: 0;
     cursor: pointer;
+  }
+
+  .timeline-event-mobile {
+    display: block;
+  }
+
+  .timeline-events-wrappper {
+    display: none;
   }
 }
 
