@@ -1955,6 +1955,14 @@ section.about-us:before {
   padding-top: 50px;
 }
 
+.timeline-event-mobile {
+  display: none;
+}
+
+.timeline-events-wrappper {
+  display: block;
+}
+
 /* mobile style for timeline event and history*/
 
 @media (max-width:991px) {
@@ -2006,6 +2014,14 @@ section.about-us:before {
     position: absolute;
     right: 0;
     cursor: pointer;
+  }
+
+  .timeline-event-mobile {
+    display: block;
+  }
+
+  .timeline-events-wrappper {
+    display: none;
   }
 }
 
