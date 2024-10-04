@@ -862,6 +862,10 @@ h6 {
   margin-top: 2rem;
 }
 
+.mt-\[50px\] {
+  margin-top: 50px;
+}
+
 .block {
   display: block;
 }
@@ -930,6 +934,10 @@ h6 {
   height: 100vh;
 }
 
+.h-\[100px\] {
+  height: 100px;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -977,6 +985,10 @@ h6 {
 
 .flex-auto {
   flex: 1 1 auto;
+}
+
+.flex-\[0_0_100\%\] {
+  flex: 0 0 100%;
 }
 
 .\!-translate-y-8 {
@@ -1058,6 +1070,15 @@ h6 {
 
 .gap-y-7 {
   row-gap: 1.75rem;
+}
+
+.gap-y-16 {
+  row-gap: 4rem;
+}
+
+.gap-x-16 {
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
 }
 
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
@@ -1247,6 +1268,18 @@ h6 {
   padding-top: 2rem;
 }
 
+.pt-\[50px\] {
+  padding-top: 50px;
+}
+
+.pt-\[30px\] {
+  padding-top: 30px;
+}
+
+.pt-\[35px\] {
+  padding-top: 35px;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1265,6 +1298,14 @@ h6 {
 
 .text-end {
   text-align: end;
+}
+
+.align-top {
+  vertical-align: top;
+}
+
+.align-bottom {
+  vertical-align: bottom;
 }
 
 .font-coco {
@@ -1309,6 +1350,14 @@ h6 {
 
 .text-xl {
   font-size: 1.25rem;
+}
+
+.text-4xl {
+  font-size: 3rem;
+}
+
+.text-base {
+  font-size: 1rem;
 }
 
 .font-bold {
@@ -2558,9 +2607,19 @@ section.about-us:before {
 
 /*End of Zoom in Keyframes */
 
+.before\:absolute::before {
+  content: var(--tw-content);
+  position: absolute;
+}
+
 .before\:left-0::before {
   content: var(--tw-content);
   left: 0px;
+}
+
+.before\:top-\[84px\]::before {
+  content: var(--tw-content);
+  top: 84px;
 }
 
 .before\:z-20::before {
@@ -2644,6 +2703,10 @@ section.about-us:before {
     grid-column: span 3 / span 3;
   }
 
+  .md\:mb-12 {
+    margin-bottom: 3rem;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -2692,6 +2755,10 @@ section.about-us:before {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
+  .md\:pb-12 {
+    padding-bottom: 3rem;
   }
 }
 
@@ -2786,6 +2853,10 @@ section.about-us:before {
 
   .lg\:mt-8 {
     margin-top: 2rem;
+  }
+
+  .lg\:mb-20 {
+    margin-bottom: 5rem;
   }
 
   .lg\:block {
@@ -2915,6 +2986,10 @@ section.about-us:before {
     gap: 2rem;
   }
 
+  .lg\:gap-12 {
+    gap: 3rem;
+  }
+
   .lg\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
@@ -2975,6 +3050,10 @@ section.about-us:before {
     padding-top: 8rem;
   }
 
+  .lg\:pb-20 {
+    padding-bottom: 5rem;
+  }
+
   .lg\:text-1xl {
     font-size: 1.375rem;
   }
@@ -3007,6 +3086,10 @@ section.about-us:before {
     font-size: 1.25rem;
   }
 
+  .lg\:text-1-xl {
+    font-size: 1.5rem;
+  }
+
   .lg\:before\:absolute::before {
     content: var(--tw-content);
     position: absolute;
@@ -3015,6 +3098,21 @@ section.about-us:before {
   .lg\:before\:top-\[2rem\]::before {
     content: var(--tw-content);
     top: 2rem;
+  }
+
+  .lg\:before\:top-\[54px\]::before {
+    content: var(--tw-content);
+    top: 54px;
+  }
+
+  .lg\:before\:top-\[104px\]::before {
+    content: var(--tw-content);
+    top: 104px;
+  }
+
+  .lg\:before\:top-\[84px\]::before {
+    content: var(--tw-content);
+    top: 84px;
   }
 }
 
@@ -3045,6 +3143,10 @@ section.about-us:before {
 
   .xl\:gap-36 {
     gap: 9rem;
+  }
+
+  .xl\:gap-24 {
+    gap: 6rem;
   }
 
   .xl\:py-24 {
