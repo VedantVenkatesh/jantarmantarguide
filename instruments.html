@@ -23,9 +23,9 @@
     <header class="bg-gray-900 p-4">
       <div class="container mx-auto">
         <!-- Mobile Menu Button -->
-        <div class="flex items-center justify-between md:hidden">
-          <div class="md:hidden flex text-2xl text-white">
-            <a href="index.html"></a>Jantar mantar
+        <div class="flex items-center justify-between lg:hidden">
+          <div class="lg:hidden flex text-2xl text-white">
+            <a href="index.html">Jantar mantar</a>
           </div>
           <button
             id="mobile-menu-button"
@@ -51,11 +51,11 @@
 
         <!-- Navigation Links -->
         <nav
-          class="md:flex items-center justify-center mt-12 lg:mt-0 text-white uppercase"
+          class="lg:flex items-center justify-center  text-white uppercase"
         >
           <ul
             id="navbar-menu"
-            class="hidden md:flex md:items-center md:justify-between items-start w-full text-lg flex-col md:flex-row space-y-4 md:space-y-0"
+            class="hidden h-screen lg:h-auto lg:flex lg:items-center justify-start pt-16 lg:pt-0 lg:justify-between w-full text-lg flex-col lg:flex-row space-y-4 lg:space-y-0"
           >
             <li>
               <a
@@ -75,9 +75,9 @@
                 >History</a
               >
               <!-- Dropdown Menu -->
-              <button class="mobile-submenu-toggle md:hidden">></button>
+              <button class="mobile-submenu-toggle lg:hidden">></button>
               <ul
-                class="dropdown-menu hidden group-hover:block bg-gray-800 text-white py-2 absolute mt-1 rounded-md shadow-lg font-bold w-max tracking-[.15em]"
+                class="dropdown-menu hidden group-hover:block bg-gray-800 text-white py-2 absolute mt-1 rounded-md shadow-lg font-bold lg:w-max w-full tracking-[.15em]"
               >
                 <li>
                   <a
@@ -118,14 +118,12 @@
                 >Jantar
                 <p>Mantar</p></a
               >
-              <button class="mobile-submenu-toggle md:hidden">></button>
+              <button class="mobile-submenu-toggle lg:hidden">></button>
               <ul
-                class="dropdown-menu hidden group-hover:block bg-gray-800 text-white mt-16 py-2 absolute left-0 rounded-md shadow-lg font-bold tracking-[.15em] w-max"
+                class="dropdown-menu hidden group-hover:block bg-gray-800 text-white mt-16 py-2 absolute left-0 rounded-md shadow-lg font-bold tracking-[.15em] lg:w-max w-full"
               >
                 <li>
-                  <a
-                    href="storyofjantarmantar.html"
-                    class="block px-4 py-2 hover:bg-gray-700"
+                  <a href="storyofjantarmantar.html" class="block px-4 py-2 hover:bg-gray-700"
                     >STORY OF THE JANTAR MANTAR</a
                   >
                 </li>
@@ -135,9 +133,7 @@
                   >
                 </li>
                 <li>
-                  <a
-                    href="instruments.html"
-                    class="block px-4 py-2 hover:bg-gray-700"
+                  <a href="instruments.html" class="block px-4 py-2 hover:bg-gray-700"
                     >INSTRUMENTS</a
                   >
                 </li>
@@ -171,9 +167,9 @@
                 class="text-white hover:text-gray-400 px-3 py-2 font-bold tracking-[.15em]"
                 >Preserving Heritage</a
               >
-              <button class="mobile-submenu-toggle md:hidden">></button>
+              <button class="mobile-submenu-toggle lg:hidden">></button>
               <ul
-                class="dropdown-menu hidden group-hover:block bg-gray-800 text-white py-2 absolute rounded-md shadow-lg font-bold mt-1 w-max tracking-[.15em]"
+                class="dropdown-menu hidden group-hover:block bg-gray-800 text-white py-2 absolute rounded-md shadow-lg font-bold mt-1 lg:w-max w-full tracking-[.15em]"
               >
                 <li>
                   <a
@@ -210,7 +206,7 @@
       </div>
     </header>
     <section
-      class="bg-no-repeat bg-cover h-[90vh]"
+      class="bg-no-repeat bg-cover lg:h-[90vh] md:h-[60vh]"
       style="
         background-image: url('./assets/images/backgrounds/instruments.png');
       "
@@ -243,13 +239,13 @@
     </section>
     <section class="bg-black">
       <!--HTML CODE-->
-      <div class="w-full relative container lg:py-24">
+      <div class="w-full relative container lg:py-24 py-8">
         <div class="swiper default-carousel swiper-container">
           <div class="swiper-wrapper">
             <!-- Slide 1 -->
             <div class="swiper-slide">
               <div
-                class="lg:h-[615px] h-auto flex justify-center items-center w-full bg-no-repeat bg-cover"
+                class="lg:h-[615px] h-auto flex justify-center items-center w-full bg-no-repeat bg-cover border-2 border-white"
                 style="
                   background-image: url('./assets/images/backgrounds/History Page.jpg');
                 "
@@ -267,7 +263,7 @@
 
                   <!-- Content Grid -->
                   <div
-                    class="grid grid-cols-1 lg:grid-cols-4 gap-4 items-center"
+                    class="grid grid-cols-1 lg:grid-cols-4 xl:gap-12 gap-4 items-center"
                   >
                     <!-- Left Text Section -->
                     <div class="lg:col-span-1 text-left">
@@ -285,9 +281,9 @@
                     <!-- Image Section (Centered) -->
                     <div class="flex justify-center items-center col-span-2">
                       <img
-                        src="./assets/images/newImage.png"
+                        src="./assets/images/1.png"
                         alt="Jai Singh the Scholar"
-                        class="w-full lg:w-[80%] max-h-[400px] object-cover"
+                        class="w-full object-cover"
                       />
                     </div>
 
@@ -313,7 +309,7 @@
             <!-- Slide 2 -->
             <div class="swiper-slide">
               <div
-                class="lg:h-[615px] h-auto flex justify-center items-center w-full bg-no-repeat bg-cover"
+                class="lg:h-[615px] h-auto flex justify-center items-center w-full bg-no-repeat bg-cover border-2 border-white"
                 style="
                   background-image: url('./assets/images/backgrounds/History Page.jpg');
                 "
@@ -331,7 +327,7 @@
 
                   <!-- Content Grid -->
                   <div
-                    class="grid grid-cols-1 lg:grid-cols-4 gap-4 items-center"
+                    class="grid grid-cols-1 lg:grid-cols-4 xl:gap-12 gap-4 items-center"
                   >
                     <!-- Left Text Section -->
                     <div class="lg:col-span-1 text-left">
@@ -348,9 +344,9 @@
                     <!-- Image Section (Centered) -->
                     <div class="flex justify-center items-center col-span-2">
                       <img
-                        src="./assets/images/newImage.png"
+                        src="./assets/images/Jantar_Mantar_2.png"
                         alt="Jai Singh the Scholar"
-                        class="w-full lg:w-[80%] max-h-[400px] object-cover"
+                        class="w-full object-cover"
                       />
                     </div>
 
@@ -380,7 +376,7 @@
             <!-- Slide 3 -->
             <div class="swiper-slide">
               <div
-                class="lg:h-[615px] h-auto flex justify-center items-center w-full bg-no-repeat bg-cover"
+                class="lg:h-[615px] h-auto flex justify-center items-center w-full bg-no-repeat bg-cover border-2 border-white"
                 style="
                   background-image: url('./assets/images/backgrounds/History Page.jpg');
                 "
@@ -398,7 +394,7 @@
 
                   <!-- Content Grid -->
                   <div
-                    class="grid grid-cols-1 lg:grid-cols-4 gap-4 items-center"
+                    class="grid grid-cols-1 lg:grid-cols-4 xl:gap-12 gap-4 items-center"
                   >
                     <!-- Left Text Section -->
                     <div class="lg:col-span-1 text-left">
@@ -419,9 +415,9 @@
                     <!-- Image Section (Centered) -->
                     <div class="flex justify-center items-center col-span-2">
                       <img
-                        src="./assets/images/newImage.png"
+                        src="./assets/images/Jantar_Mantar_3.png"
                         alt="Jai Singh the Scholar"
-                        class="w-full lg:w-[80%] max-h-[400px] object-cover"
+                        class="w-full object-cover"
                       />
                     </div>
 
@@ -443,7 +439,7 @@
             <!-- Slide 4 -->
             <div class="swiper-slide">
               <div
-                class="lg:h-[615px] h-auto flex justify-center items-center w-full bg-no-repeat bg-cover"
+                class="lg:h-[615px] h-auto flex justify-center items-center w-full bg-no-repeat bg-cover border-2 border-white"
                 style="
                   background-image: url('./assets/images/backgrounds/History Page.jpg');
                 "
@@ -461,7 +457,7 @@
 
                   <!-- Content Grid -->
                   <div
-                    class="grid grid-cols-1 lg:grid-cols-4 gap-4 items-center"
+                    class="grid grid-cols-1 lg:grid-cols-4 xl:gap-12 gap-4 items-center"
                   >
                     <!-- Left Text Section -->
                     <div class="lg:col-span-1 text-left">
@@ -479,9 +475,9 @@
                     <!-- Image Section (Centered) -->
                     <div class="flex justify-center items-center col-span-2">
                       <img
-                        src="./assets/images/newImage.png"
+                        src="./assets/images/Jantar_Mantar_4.png"
                         alt="Jai Singh the Scholar"
-                        class="w-full lg:w-[80%] max-h-[400px] object-cover"
+                        class="w-full object-cover"
                       />
                     </div>
 
@@ -509,7 +505,7 @@
             <!-- Slide 5 -->
             <div class="swiper-slide">
               <div
-                class="lg:h-[615px] h-auto flex justify-center items-center w-full bg-no-repeat bg-cover"
+                class="lg:h-[615px] h-auto flex justify-center items-center w-full bg-no-repeat bg-cover border-2 border-white"
                 style="
                   background-image: url('./assets/images/backgrounds/History Page.jpg');
                 "
@@ -527,7 +523,7 @@
 
                   <!-- Content Grid -->
                   <div
-                    class="grid grid-cols-1 lg:grid-cols-4 gap-4 items-center"
+                    class="grid grid-cols-1 lg:grid-cols-4 xl:gap-12 gap-4 items-center"
                   >
                     <!-- Left Text Section -->
                     <div class="lg:col-span-1 text-left">
@@ -546,9 +542,9 @@
                     <!-- Image Section (Centered) -->
                     <div class="flex justify-center items-center col-span-2">
                       <img
-                        src="./assets/images/newImage.png"
+                        src="./assets/images/Jantar_Mantar_5.png"
                         alt="Jai Singh the Scholar"
-                        class="w-full lg:w-[80%] max-h-[400px] object-cover"
+                        class="w-full object-cover"
                       />
                     </div>
 
@@ -570,7 +566,7 @@
             <!-- Slide 6 -->
             <div class="swiper-slide">
               <div
-                class="lg:h-[615px] h-auto flex justify-center items-center w-full bg-no-repeat bg-cover"
+                class="lg:h-[615px] h-auto flex justify-center items-center w-full bg-no-repeat bg-cover border-2 border-white"
                 style="
                   background-image: url('./assets/images/backgrounds/History Page.jpg');
                 "
@@ -589,7 +585,7 @@
 
                   <!-- Content Grid -->
                   <div
-                    class="grid grid-cols-1 lg:grid-cols-4 gap-4 items-center"
+                    class="grid grid-cols-1 lg:grid-cols-4 xl:gap-12 gap-4 items-center"
                   >
                     <!-- Left Text Section -->
                     <div class="lg:col-span-1 text-left">
@@ -608,9 +604,9 @@
                     <!-- Image Section (Centered) -->
                     <div class="flex justify-center items-center col-span-2">
                       <img
-                        src="./assets/images/newImage.png"
+                        src="./assets/images/Jantar_Mantar_6.png"
                         alt="Jai Singh the Scholar"
-                        class="w-full lg:w-[80%] max-h-[400px] object-cover"
+                        class="w-full object-cover"
                       />
                     </div>
 

@@ -47,9 +47,9 @@
     <header class="bg-gray-900 p-4">
       <div class="container mx-auto">
         <!-- Mobile Menu Button -->
-        <div class="flex items-center justify-between md:hidden">
-          <div class="md:hidden flex text-2xl text-white">
-            <a href="index.html"></a>Jantar mantar
+        <div class="flex items-center justify-between lg:hidden">
+          <div class="lg:hidden flex text-2xl text-white">
+            <a href="index.html">Jantar mantar</a>
           </div>
           <button
             id="mobile-menu-button"
@@ -75,11 +75,11 @@
 
         <!-- Navigation Links -->
         <nav
-          class="md:flex items-center justify-center mt-12 lg:mt-0 text-white uppercase"
+          class="lg:flex items-center justify-center  text-white uppercase"
         >
           <ul
             id="navbar-menu"
-            class="hidden md:flex md:items-center md:justify-between items-start w-full text-lg flex-col md:flex-row space-y-4 md:space-y-0"
+            class="hidden h-screen lg:h-auto lg:flex lg:items-center justify-start pt-16 lg:pt-0 lg:justify-between w-full text-lg flex-col lg:flex-row space-y-4 lg:space-y-0"
           >
             <li>
               <a
@@ -99,9 +99,9 @@
                 >History</a
               >
               <!-- Dropdown Menu -->
-              <button class="mobile-submenu-toggle md:hidden">></button>
+              <button class="mobile-submenu-toggle lg:hidden">></button>
               <ul
-                class="dropdown-menu hidden group-hover:block bg-gray-800 text-white py-2 absolute mt-1 rounded-md shadow-lg font-bold w-max tracking-[.15em]"
+                class="dropdown-menu hidden group-hover:block bg-gray-800 text-white py-2 absolute mt-1 rounded-md shadow-lg font-bold lg:w-max w-full tracking-[.15em]"
               >
                 <li>
                   <a
@@ -142,9 +142,9 @@
                 >Jantar
                 <p>Mantar</p></a
               >
-              <button class="mobile-submenu-toggle md:hidden">></button>
+              <button class="mobile-submenu-toggle lg:hidden">></button>
               <ul
-                class="dropdown-menu hidden group-hover:block bg-gray-800 text-white mt-16 py-2 absolute left-0 rounded-md shadow-lg font-bold tracking-[.15em] w-max"
+                class="dropdown-menu hidden group-hover:block bg-gray-800 text-white mt-16 py-2 absolute left-0 rounded-md shadow-lg font-bold tracking-[.15em] lg:w-max w-full"
               >
                 <li>
                   <a href="storyofjantarmantar.html" class="block px-4 py-2 hover:bg-gray-700"
@@ -191,9 +191,9 @@
                 class="text-white hover:text-gray-400 px-3 py-2 font-bold tracking-[.15em]"
                 >Preserving Heritage</a
               >
-              <button class="mobile-submenu-toggle md:hidden">></button>
+              <button class="mobile-submenu-toggle lg:hidden">></button>
               <ul
-                class="dropdown-menu hidden group-hover:block bg-gray-800 text-white py-2 absolute rounded-md shadow-lg font-bold mt-1 w-max tracking-[.15em]"
+                class="dropdown-menu hidden group-hover:block bg-gray-800 text-white py-2 absolute rounded-md shadow-lg font-bold mt-1 lg:w-max w-full tracking-[.15em]"
               >
                 <li>
                   <a
@@ -237,10 +237,8 @@
     >
       <section>
         <div class="container grid lg:grid-cols-3 lg:gap-8 lg:pt-16 pt-8">
-          <div class="col-span-2 lg:mb-0 mb-8">
-            <h1
-              class="text-start"
-            >
+          <div class="lg:col-span-2 lg:mb-0 mb-8">
+            <h1 class="text-start">
               Maharaja<br />
               Sawai Jai Singh
             </h1>
@@ -268,6 +266,15 @@
             >
               <!-- Wrapper group for all elements -->
               <g transform="translate(50, 50)">
+                <image
+                  href="./assets/images/history-circle-Image.png"
+                  x="-18"
+                  y="-18"
+                  height="36px"
+                  width="36px"
+                  class="rounded"
+                  clip-path="circle(50% at 50% 50%)"
+                />
                 <!-- Segment 1: GENIUS -->
                 <path
                   class="segment"
@@ -411,9 +418,7 @@
                   >
                     <!-- Text Section -->
                     <div class="col-span-2">
-                      <h2
-                        class="lg:mb-14 mb-4 text-black"
-                      >
+                      <h2 class="lg:mb-14 mb-4 text-black">
                         Jai Singh the Scholar
                       </h2>
                       <p class="lg:text-xl text-sm font-montserrat font-medium">
@@ -462,9 +467,7 @@
                     </div>
                     <!-- Text Section -->
                     <div class="lg:col-span-2">
-                      <h2
-                        class="text-black lg:mb-14 mb-4"
-                      >
+                      <h2 class="text-black lg:mb-14 mb-4">
                         Jai Singh the Astronomer
                       </h2>
                       <p class="lg:text-xl text-sm font-montserrat font-medium">
@@ -496,14 +499,10 @@
                   <div class="flex lg:w-10/12 p-8 lg:p-0 m-auto items-center">
                     <!-- Text Section -->
                     <div>
-                      <h2
-                        class="text-black lg:mb-14 mb-4"
-                      >
+                      <h2 class="text-black lg:mb-14 mb-4">
                         Jai Singh the Statesman
                       </h2>
-                      <p
-                        class="lg:text-xl text-sm font-medium lg:mb:12 mb-8"
-                      >
+                      <p class="lg:text-xl text-sm font-medium lg:mb:12 mb-8">
                         Politically astute and diplomatic, Jai Singh II
                         maintained a close relationship with Emperor Aurangzeb
                         until the latter's death in 1707. After a period of

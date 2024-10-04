@@ -6,14 +6,28 @@
     <title>Cosmic Chronicals</title>
     <link rel="stylesheet" href="dist/styles.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <style>
+      .start-after {
+        content: '';
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        background-image: url(./assets/images/Star.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      /* star-after {
+
+      } */
+    </style>
   </head>
   <body>
     <header class="bg-gray-900 p-4">
       <div class="container mx-auto">
         <!-- Mobile Menu Button -->
-        <div class="flex items-center justify-between md:hidden">
-          <div class="md:hidden flex text-2xl text-white">
-            <a href="index.html"></a>Jantar mantar
+        <div class="flex items-center justify-between lg:hidden">
+          <div class="lg:hidden flex text-2xl text-white">
+            <a href="index.html">Jantar mantar</a>
           </div>
           <button
             id="mobile-menu-button"
@@ -38,12 +52,10 @@
         </div>
 
         <!-- Navigation Links -->
-        <nav
-          class="md:flex items-center justify-center mt-12 lg:mt-0 text-white uppercase"
-        >
+        <nav class="lg:flex items-center justify-center text-white uppercase">
           <ul
             id="navbar-menu"
-            class="hidden md:flex md:items-center md:justify-between items-start w-full text-lg flex-col md:flex-row space-y-4 md:space-y-0"
+            class="hidden h-screen lg:h-auto lg:flex lg:items-center justify-start pt-16 lg:pt-0 lg:justify-between w-full text-lg flex-col lg:flex-row space-y-4 lg:space-y-0"
           >
             <li>
               <a
@@ -63,9 +75,9 @@
                 >History</a
               >
               <!-- Dropdown Menu -->
-              <button class="mobile-submenu-toggle md:hidden">></button>
+              <button class="mobile-submenu-toggle lg:hidden">></button>
               <ul
-                class="dropdown-menu hidden group-hover:block bg-gray-800 text-white py-2 absolute mt-1 rounded-md shadow-lg font-bold w-max tracking-[.15em]"
+                class="dropdown-menu hidden group-hover:block bg-gray-800 text-white py-2 absolute mt-1 rounded-md shadow-lg font-bold lg:w-max w-full tracking-[.15em]"
               >
                 <li>
                   <a
@@ -106,9 +118,9 @@
                 >Jantar
                 <p>Mantar</p></a
               >
-              <button class="mobile-submenu-toggle md:hidden">></button>
+              <button class="mobile-submenu-toggle lg:hidden">></button>
               <ul
-                class="dropdown-menu hidden group-hover:block bg-gray-800 text-white mt-16 py-2 absolute left-0 rounded-md shadow-lg font-bold tracking-[.15em] w-max"
+                class="dropdown-menu hidden group-hover:block bg-gray-800 text-white mt-16 py-2 absolute left-0 rounded-md shadow-lg font-bold tracking-[.15em] lg:w-max w-full"
               >
                 <li>
                   <a
@@ -159,9 +171,9 @@
                 class="text-white hover:text-gray-400 px-3 py-2 font-bold tracking-[.15em]"
                 >Preserving Heritage</a
               >
-              <button class="mobile-submenu-toggle md:hidden">></button>
+              <button class="mobile-submenu-toggle lg:hidden">></button>
               <ul
-                class="dropdown-menu hidden group-hover:block bg-gray-800 text-white py-2 absolute rounded-md shadow-lg font-bold mt-1 w-max tracking-[.15em]"
+                class="dropdown-menu hidden group-hover:block bg-gray-800 text-white py-2 absolute rounded-md shadow-lg font-bold mt-1 lg:w-max w-full tracking-[.15em]"
               >
                 <li>
                   <a
@@ -197,19 +209,519 @@
         </nav>
       </div>
     </header>
-    <main class="bg-no-repeat bg-cover h-[90vh]"
-      style="background-image: url('./assets/images/backgrounds/Cosmic.jpg');">
-  <section class="relative moon-face overflow-hidden h-full">
-    <div class="container flex justify-start items-start lg:py-24 py-16 h-full">
-      <div class="lg:w-4/5 w-full">
-        <h1>COSMIC CHRONICLES INDIA</h1>
-        <p class="font-regular w-3/5 text-white lg:text-lg text-sm lg:mt-12 mt-6">
-          India’s Gaganyaan and Chandrayaan missions have reaffirmed India’s position as a space powerhouse. There are many other milestones in India’s space journey -
-        </p>
-      </div>
-    </div>
-  </section>
-</main>
+    <main>
+      <section
+        class="relative moon-face bg-no-repeat bg-cover overflow-hidden xl:h-[90vh] md:h-[60vh] h-[40vh]]"
+        style="background-image: url('./assets/images/backgrounds/Cosmic.jpg')"
+      >
+        <div
+          class="container flex justify-start items-start lg:py-24 py-16 h-full"
+        >
+          <div class="lg:w-4/5 w-full">
+            <h1>COSMIC CHRONICLES INDIA</h1>
+            <p
+              class="font-regular w-3/5 text-white lg:text-lg text-sm lg:mt-12 mt-6"
+            >
+              India’s Gaganyaan and Chandrayaan missions have reaffirmed India’s
+              position as a space powerhouse. There are many other milestones in
+              India’s space journey -
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        class="bg-no-repeat bg-cover h-auto"
+        style="background-image: url('./assets/images/chronical-timeline.png')"
+      >
+        <article class="lg:pb-20 md:pb-12 pb-8">
+          <div
+            class="relative lg:before:absolute before:content-[''] before:bg-white before:h-0.5 z-50 before:z-20 lg:before:top-[84px] text-center before:w-full before:left-0 pt-[35px]"
+          >
+            <div
+              class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 xl:gap-24 lg:gap-12 gap-y-16 gap-x-16 w-5/6 m-auto bg-transparent"
+            >
+              <div class="relative">
+                <h6 class="h-[100px] lg:text-1-xl text-1xl">
+                  1963<span
+                    class="inline-block relative text-white w-full text-4xl"
+                    >&#9733;</span
+                  >
+                </h6>
+                <div class="flex-1">
+                  <p class="text-white lg:text-lg text-base">
+                    India's space journey began at TERLS in Thumba, near
+                    Thiruvananthapuram, close to the magnetic equator.
+                  </p>
+                  <p class="text-white lg:text-lg text-base mt-4">
+                    First sounding rocket, the Nike-Apache, launches from TERLS,
+                    procured from the USA.
+                  </p>
+                </div>
+              </div>
+              <div class="relative">
+                <h6 class="h-[100px] lg:text-1-xl text-1xl">
+                  1967<span
+                    class="inline-block relative text-white w-full text-4xl"
+                    >&#9733;</span
+                  >
+                </h6>
+                <div class="flex-1">
+                  <p class="text-white lg:text-lg text-base">
+                    Satellite Telecommunication Earth Station set up at
+                    Ahmedabad.
+                  </p>
+                  <p class="text-white lg:text-lg text-base mt-4">
+                    First indigenous sounding rocket, RH-75, launches
+                  </p>
+                </div>
+              </div>
+              <div class="relative">
+                <h6 class="h-[100px] lg:text-1-xl text-1xl">
+                  1975<span
+                    class="inline-block relative text-white w-full text-4xl"
+                    >&#9733;</span
+                  >
+                </h6>
+                <div class="flex-1">
+                  <p class="text-white lg:text-lg text-base">
+                    Aryabhata, first Indian satellite launches from the former
+                    Soviet Union.
+                  </p>
+                </div>
+              </div>
+              <div class="relative">
+                <h6 class="h-[100px] lg:text-1-xl text-1xl">
+                  1976<span
+                    class="inline-block relative text-white w-full text-4xl"
+                    >&#9733;</span
+                  >
+                </h6>
+                <div class="flex-1">
+                  <p class="text-white lg:text-lg text-base">
+                    ISRO and NASA develop space communication system for TV
+                    broadcasting.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="lg:pb-20 md:pb-12 pb-8">
+          <div
+            class="relative lg:before:absolute before:content-[''] before:bg-white before:h-0.5 z-50 before:z-20 lg:before:top-[84px] text-center before:w-full before:left-0 pt-[35px]"
+          >
+            <div
+              class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 xl:gap-24 lg:gap-12 gap-y-16 gap-x-16 w-5/6 m-auto bg-transparent"
+            >
+              <div class="relative">
+                <h6 class="h-[100px] lg:text-1-xl text-1xl">
+                  1981<span
+                    class="inline-block relative text-white w-full text-4xl"
+                    >&#9733;</span
+                  >
+                </h6>
+                <div class="flex-1">
+                  <p class="text-white lg:text-lg text-base">
+                    Launch of APPLE, an experimental geo-stationary
+                    communication satellite. Becomes the frontrunner for future
+                    communication satellites.
+                  </p>
+                </div>
+              </div>
+              <div class="relative">
+                <h6 class="h-[100px] lg:text-1-xl text-1xl">
+                  1980<span
+                    class="inline-block relative text-white w-full text-4xl"
+                    >&#9733;</span
+                  >
+                </h6>
+                <div class="flex-1">
+                  <p class="text-white lg:text-lg text-base">
+                    In 1980, the second experimental launch of SLV-3 when Rohini
+                    was successfully placed in orbit.
+                  </p>
+                </div>
+              </div>
+              <div class="relative">
+                <h6 class="h-[100px] lg:text-1-xl text-1xl">
+                  1979<span
+                    class="inline-block relative text-white w-full text-4xl"
+                    >&#9733;</span
+                  >
+                </h6>
+                <div class="flex-1">
+                  <p class="text-white lg:text-lg text-base">
+                    Bhaskara-I, first experimental satellite for Earth
+                    observations.
+                  </p>
+                  <p class="text-white lg:text-lg text-base mt-4">
+                    First experimental launch of SLV-3 with Rohini Technology
+                    Payload on board.
+                  </p>
+                </div>
+              </div>
+              <div class="relative">
+                <h6 class="h-[100px] lg:text-1-xl text-1xl">
+                  1977<span
+                    class="inline-block relative text-white w-full text-4xl"
+                    >&#9733;</span
+                  >
+                </h6>
+                <div class="flex-1">
+                  <p class="text-white lg:text-lg text-base">
+                    STEP, a joint project of ISRO and P&T for telecommunication
+                    experiments.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="lg:pb-20 md:pb-12 pb-8">
+          <div
+            class="relative lg:before:absolute before:content-[''] before:bg-white before:h-0.5 z-50 before:z-20 lg:before:top-[84px] text-center before:w-full before:left-0 pt-[35px]"
+          >
+            <div
+              class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 xl:gap-24 lg:gap-12 gap-y-16 gap-x-16 w-5/6 m-auto bg-transparent"
+            >
+              <div class="relative">
+                <h6 class="h-[100px] lg:text-1-xl text-1xl">
+                  1982<span
+                    class="inline-block relative text-white w-full text-4xl"
+                    >&#9733;</span
+                  >
+                </h6>
+                <div class="flex-1">
+                  <p class="text-white lg:text-lg text-base">
+                    Launch of INSAT-IA for the purposes of communication,
+                    broadcasting and meteorology.
+                  </p>
+                </div>
+              </div>
+              <div class="relative">
+                <h6 class="h-[100px] lg:text-1-xl text-1xl">
+                  1984<span
+                    class="inline-block relative text-white w-full text-4xl"
+                    >&#9733;</span
+                  >
+                </h6>
+                <div class="flex-1">
+                  <p class="text-white lg:text-lg text-base">
+                    First Indo-Soviet manned space mission launches. Rakesh
+                    Sharma, first Indian to go into space.
+                  </p>
+                </div>
+              </div>
+              <div class="relative">
+                <h6 class="h-[100px] lg:text-1-xl text-1xl">
+                  1987<span
+                    class="inline-block relative text-white w-full text-4xl"
+                    >&#9733;</span
+                  >
+                </h6>
+                <div class="flex-1">
+                  <p class="text-white lg:text-lg text-base">
+                    First developmental launch of ASLV, which supports a larger
+                    payload than the SLV-3 Planned as a low-cost option
+                  </p>
+                </div>
+              </div>
+              <div class="relative">
+                <h6 class="h-[100px] lg:text-1-xl text-1xl">
+                  1988<span
+                    class="inline-block relative text-white w-full text-4xl"
+                    >&#9733;</span
+                  >
+                </h6>
+                <div class="flex-1">
+                  <p class="text-white lg:text-lg text-base">
+                    First operational Indian Remote Sensing Satellite, IRS-1A.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="lg:pb-20 md:pb-12 pb-8">
+          <div
+            class="relative lg:before:absolute before:content-[''] before:bg-white before:h-0.5 z-50 before:z-20 lg:before:top-[84px] text-center before:w-full before:left-0 pt-[35px]"
+          >
+            <div
+              class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 xl:gap-24 lg:gap-12 gap-y-16 gap-x-16 w-5/6 m-auto bg-transparent"
+            >
+              <div class="relative">
+                <h6 class="h-[100px] lg:text-1-xl text-1xl">
+                  2007<span
+                    class="inline-block relative text-white w-full text-4xl"
+                    >&#9733;</span
+                  >
+                </h6>
+                <div class="flex-1">
+                  <p class="text-white lg:text-lg text-base">
+                    INSAT-4 CR weighing 2130kg, becomes India's heaviest
+                    satellite launch onboard GSLV-Fo4.
+                  </p>
+                </div>
+              </div>
+              <div class="relative">
+                <h6 class="h-[100px] lg:text-1-xl text-1xl">
+                  2001<span
+                    class="inline-block relative text-white w-full text-4xl"
+                    >&#9733;</span
+                  >
+                </h6>
+                <div class="flex-1">
+                  <p class="text-white lg:text-lg text-base">
+                    First developmental launch of GSLV-DI with GSAT-1 on board
+                    takes off from Sriharikota, Made for Geosynchronous
+                    communication satellites.
+                  </p>
+                </div>
+              </div>
+              <div class="relative">
+                <h6 class="h-[100px] lg:text-1-xl text-1xl">
+                  1999<span
+                    class="inline-block relative text-white w-full text-4xl"
+                    >&#9733;</span
+                  >
+                </h6>
+                <div class="flex-1">
+                  <p class="text-white lg:text-lg text-base">
+                    PSLV starts carrying foreign payloads along with ISRO's
+                    satellite Oceansat.
+                  </p>
+                </div>
+              </div>
+              <div class="relative">
+                <h6 class="h-[100px] lg:text-1-xl text-1xl">
+                  1994<span
+                    class="inline-block relative text-white w-full text-4xl"
+                    >&#9733;</span
+                  >
+                </h6>
+                <div class="flex-1">
+                  <p class="text-white lg:text-lg text-base">
+                    Second developmental launch of PSLV with IRS-P2. Satellite
+                    successfully placed in polar Sun-synchronous orbit. Becomes
+                    a favoured carrier for satellites of various countries due
+                    to its reliability and cost-eficiency.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="lg:pb-20 md:pb-12 pb-8">
+          <div
+            class="relative lg:before:absolute before:content-[''] before:bg-white before:h-0.5 z-50 before:z-20 lg:before:top-[84px] text-center before:w-full before:left-0 pt-[35px]"
+          >
+            <div
+              class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 xl:gap-24 lg:gap-12 gap-y-16 gap-x-16 w-5/6 m-auto bg-transparent"
+            >
+              <div class="relative">
+                <h6 class="h-[100px] lg:text-1-xl text-1xl">
+                  2008<span
+                    class="inline-block relative text-white w-full text-4xl"
+                    >&#9733;</span
+                  >
+                </h6>
+                <div class="flex-1">
+                  <p class="text-white lg:text-lg text-base">
+                    PSLV-C launches Chandrayaan-I from Sriharikota. Operational
+                    for 312 days till 28 August 2009.
+                  </p>
+                </div>
+              </div>
+              <div class="relative">
+                <h6 class="h-[100px] lg:text-1-xl text-1xl">
+                  2013<span
+                    class="inline-block relative text-white w-full text-4xl"
+                    >&#9733;</span
+                  >
+                </h6>
+                <div class="flex-1">
+                  <p class="text-white lg:text-lg text-base">
+                    PSLV C-25 launches Mars orbiter Mission spacecraft from
+                    Sriharikota.
+                  </p>
+                </div>
+              </div>
+              <div class="relative">
+                <h6 class="h-[100px] lg:text-1-xl text-1xl">
+                  2014<span
+                    class="inline-block relative text-white w-full text-4xl"
+                    >&#9733;</span
+                  >
+                </h6>
+                <div class="flex-1">
+                  <p class="text-white lg:text-lg text-base">
+                    India becomes the fourth space agency to reach Mars.
+                  </p>
+                </div>
+              </div>
+              <div class="relative">
+                <h6 class="h-[100px] lg:text-1-xl text-1xl">
+                  2016<span
+                    class="inline-block relative text-white w-full text-4xl"
+                    >&#9733;</span
+                  >
+                </h6>
+                <div class="flex-1">
+                  <p class="text-white lg:text-lg text-base">
+                    India tests its first indigenous Reusable Launch Vehicle
+                    (RLV)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="lg:pb-20 md:pb-12 pb-8">
+          <div
+            class="relative lg:before:absolute before:content-[''] before:bg-white before:h-0.5 z-50 before:z-20 lg:before:top-[84px] text-center before:w-full before:left-0 pt-[35px]"
+          >
+            <div
+              class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 xl:gap-24 lg:gap-12 gap-y-16 gap-x-16 w-5/6 m-auto bg-transparent"
+            >
+              <div class="relative">
+                <h6 class="h-[100px] lg:text-1-xl text-1xl">
+                  2020<span
+                    class="inline-block relative text-white w-full text-4xl"
+                    >&#9733;</span
+                  >
+                </h6>
+                <div class="flex-1">
+                  <p class="text-white lg:text-lg text-base">
+                    India's telecommunication satellite GSAT-30 is launched into
+                    a GTO from French Guiana.
+                  </p>
+                  <p class="text-white lg:text-lg text-base mt-4">
+                    PSLV successfuly launches EOS-01 and nine customer
+                    satellites from SDSC
+                  </p>
+                </div>
+              </div>
+              <div class="relative">
+                <h6 class="h-[100px] lg:text-1-xl text-1xl">
+                  2019<span
+                    class="inline-block relative text-white w-full text-4xl"
+                    >&#9733;</span
+                  >
+                </h6>
+                <div class="flex-1">
+                  <p class="text-white lg:text-lg text-base">
+                    GSLV MkIII-Mi rocket, carrying Chandrayaan-2 launches from
+                    SDSC
+                  </p>
+                </div>
+              </div>
+              <div class="relative">
+                <h6 class="h-[100px] lg:text-1-xl text-1xl">
+                  2018<span
+                    class="inline-block relative text-white w-full text-4xl"
+                    >&#9733;</span
+                  >
+                </h6>
+                <div class="flex-1">
+                  <p class="text-white lg:text-lg text-base">
+                    Indian Cabinet approves Indian human spaceflight initiative
+                    Gaganyaan.
+                  </p>
+                  <p class="text-white lg:text-lg text-base mt-4">
+                    PSLV-C46 successfully launches RISAT-2B satellite from SDSC
+                  </p>
+                </div>
+              </div>
+              <div class="relative">
+                <h6 class="h-[100px] lg:text-1xl text-1xl">
+                  2017<span
+                    class="inline-block relative text-white w-full text-4xl"
+                    >&#9733;</span
+                  >
+                </h6>
+                <div class="flex-1">
+                  <p class="text-white lg:text-lg text-base">GSAT-17 satellite Launch.</p>
+                  <p class="text-white lg:text-lg text-base mt-4">
+                    PSLV-C38/Cartosat-2 Series Satellite Mission launches from
+                    SDSC.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="lg:pb-20 md:pb-12 pb-8">
+          <div
+            class="relative lg:before:absolute before:content-[''] before:bg-white before:h-0.5 z-50 before:z-20 lg:before:top-[84px] text-center before:w-full before:left-0 pt-[35px]"
+          >
+            <div
+              class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 xl:gap-24 lg:gap-12 gap-y-16 gap-x-16 w-5/6 m-auto bg-transparent"
+            >
+              <div class="relative">
+                <h6 class="h-[100px] lg:text-1-xl text-1xl">
+                  2021<span
+                    class="inline-block relative text-white w-full text-4xl"
+                    >&#9733;</span
+                  >
+                </h6>
+                <div class="flex-1">
+                  <p class="text-white lg:text-lg text-base">
+                    EOS-03, an Earth observation satellite is launched by
+                    GSLV-FLO from SDSC.
+                  </p>
+                </div>
+              </div>
+              <div class="relative">
+                <h6 class="h-[100px] lg:text-1-xl text-1xl">
+                  2022<span
+                    class="inline-block relative text-white w-full text-4xl"
+                    >&#9733;</span
+                  >
+                </h6>
+                <div class="flex-1">
+                  <p class="text-white lg:text-lg text-base">
+                    In its second operational flight, LVM3 launch vehicle placed
+                    36 One Web satellites into their intended orbits.
+                  </p>
+                </div>
+              </div>
+              <div class="relative">
+                <h6 class="h-[100px] lg:text-1-xl text-1xl">
+                  2023<span
+                    class="inline-block relative text-white w-full text-4xl"
+                    >&#9733;</span
+                  >
+                </h6>
+                <div class="flex-1">
+                  <p class="text-white lg:text-lg text-base">
+                    PSLV-C54 has successfully launched EOS-06 satellite along
+                    with eight nano satellites into two different SSPOs.
+                  </p>
+                </div>
+              </div>
+              <div class="relative">
+                <h6 class="h-[100px] lg:text-1-xl text-1xl">
+                  2024<span
+                    class="inline-block relative text-white w-full text-4xl"
+                    >&#9733;</span
+                  >
+                </h6>
+                <div class="flex-1">
+                  <p class="text-white lg:text-lg text-base">
+                    LVM3-M4 vehicle successfully launched Chandrayaan-3, headed
+                    for the Moon, from SDSC. It soft-landed successfully
+                  </p>
+                  <p class="text-white lg:text-lg text-base mt-4">
+                    The launch of Aditya-Li by PSLV-C57 is accomplished
+                    successfully.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
 
     <script src="assets/js/header.js" type="text/javascript"></script>
   </body>

@@ -11,9 +11,9 @@
     <header class="bg-gray-900 p-4">
       <div class="container mx-auto">
         <!-- Mobile Menu Button -->
-        <div class="flex items-center justify-between md:hidden">
-          <div class="md:hidden flex text-2xl text-white">
-            <a href="index.html"></a>Jantar mantar
+        <div class="flex items-center justify-between lg:hidden">
+          <div class="lg:hidden flex text-2xl text-white">
+            <a href="index.html">Jantar mantar</a>
           </div>
           <button
             id="mobile-menu-button"
@@ -39,11 +39,11 @@
 
         <!-- Navigation Links -->
         <nav
-          class="md:flex items-center justify-center mt-12 lg:mt-0 text-white uppercase"
+          class="lg:flex items-center justify-center  text-white uppercase"
         >
           <ul
             id="navbar-menu"
-            class="hidden md:flex md:items-center md:justify-between items-start w-full text-lg flex-col md:flex-row space-y-4 md:space-y-0"
+            class="hidden h-screen lg:h-auto lg:flex lg:items-center justify-start pt-16 lg:pt-0 lg:justify-between w-full text-lg flex-col lg:flex-row space-y-4 lg:space-y-0"
           >
             <li>
               <a
@@ -63,9 +63,9 @@
                 >History</a
               >
               <!-- Dropdown Menu -->
-              <button class="mobile-submenu-toggle md:hidden">></button>
+              <button class="mobile-submenu-toggle lg:hidden">></button>
               <ul
-                class="dropdown-menu hidden group-hover:block bg-gray-800 text-white py-2 absolute mt-1 rounded-md shadow-lg font-bold w-max tracking-[.15em]"
+                class="dropdown-menu hidden group-hover:block bg-gray-800 text-white py-2 absolute mt-1 rounded-md shadow-lg font-bold lg:w-max w-full tracking-[.15em]"
               >
                 <li>
                   <a
@@ -106,14 +106,12 @@
                 >Jantar
                 <p>Mantar</p></a
               >
-              <button class="mobile-submenu-toggle md:hidden">></button>
+              <button class="mobile-submenu-toggle lg:hidden">></button>
               <ul
-                class="dropdown-menu hidden group-hover:block bg-gray-800 text-white mt-16 py-2 absolute left-0 rounded-md shadow-lg font-bold tracking-[.15em] w-max"
+                class="dropdown-menu hidden group-hover:block bg-gray-800 text-white mt-16 py-2 absolute left-0 rounded-md shadow-lg font-bold tracking-[.15em] lg:w-max w-full"
               >
                 <li>
-                  <a
-                    href="storyofjantarmantar.html"
-                    class="block px-4 py-2 hover:bg-gray-700"
+                  <a href="storyofjantarmantar.html" class="block px-4 py-2 hover:bg-gray-700"
                     >STORY OF THE JANTAR MANTAR</a
                   >
                 </li>
@@ -123,9 +121,7 @@
                   >
                 </li>
                 <li>
-                  <a
-                    href="instruments.html"
-                    class="block px-4 py-2 hover:bg-gray-700"
+                  <a href="instruments.html" class="block px-4 py-2 hover:bg-gray-700"
                     >INSTRUMENTS</a
                   >
                 </li>
@@ -159,9 +155,9 @@
                 class="text-white hover:text-gray-400 px-3 py-2 font-bold tracking-[.15em]"
                 >Preserving Heritage</a
               >
-              <button class="mobile-submenu-toggle md:hidden">></button>
+              <button class="mobile-submenu-toggle lg:hidden">></button>
               <ul
-                class="dropdown-menu hidden group-hover:block bg-gray-800 text-white py-2 absolute rounded-md shadow-lg font-bold mt-1 w-max tracking-[.15em]"
+                class="dropdown-menu hidden group-hover:block bg-gray-800 text-white py-2 absolute rounded-md shadow-lg font-bold mt-1 lg:w-max w-full tracking-[.15em]"
               >
                 <li>
                   <a
@@ -201,12 +197,15 @@
       class="hero-banner bg-no-repeat bg-cover"
       style="background-image: url('./assets/images/architect.png')"
     >
+       
       <div class="container lg:py-24 py-8">
+        
         <div
-          class="flex justify-start h-auto py-16 lg:px-20 px-8 bg-no-repeat bg-cover"
+          class="flex justify-start h-auto py-16 lg:px-20 px-8 bg-no-repeat bg-cover relative"
           style="background-image: url('./assets/images/architect-bg.png')"
         >
-          <div class="lg:w-[85%] w-full m-auto">
+        <div class="absolute inset-0 bg-white opacity-50"></div>
+          <div class="lg:w-[85%] w-full m-auto relative">
             <h1 class="text-black lg:mb-8 mb-4">
               CHIEF ARCHITECT OF THE JANTAR MANTAR
             </h1>
