@@ -942,6 +942,10 @@ h6 {
   height: 100vh;
 }
 
+.h-\[50vh\] {
+  height: 50vh;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -2699,6 +2703,18 @@ section.about-us:before {
 
   .md\:h-auto {
     height: auto;
+  }
+
+  .md\:h-\[40vh\] {
+    height: 40vh;
+  }
+
+  .md\:h-\[70vh\] {
+    height: 70vh;
+  }
+
+  .md\:h-\[60vh\] {
+    height: 60vh;
   }
 
   .md\:w-1\/2 {
