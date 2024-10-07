@@ -205,7 +205,7 @@ section.about-us:after {
   height: 500px;
   bottom: 0;
   left: -2rem;
-  background-image: url(./assets/images/line-left.png);
+  background-image: url('/assets/images/line-left.png');
   z-index: 9999;
   background-repeat: no-repeat;
   background-size: cover;
@@ -218,7 +218,7 @@ section.about-us:before {
   height: 270px;
   top: 4rem;
   right: 0;
-  background-image: url(./assets/images/line-right.png);
+  background-image: url('/assets/images/line-right.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
