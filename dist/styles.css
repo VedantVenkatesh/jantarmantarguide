@@ -926,10 +926,6 @@ h6 {
   width: 1.25rem;
 }
 
-.w-5\/6 {
-  width: 83.333333%;
-}
-
 .w-6 {
   width: 1.5rem;
 }
@@ -942,6 +938,10 @@ h6 {
   width: 100vw;
 }
 
+.w-\[90\%\] {
+  width: 90%;
+}
+
 .w-full {
   width: 100%;
 }
@@ -949,6 +949,10 @@ h6 {
 .w-max {
   width: -moz-max-content;
   width: max-content;
+}
+
+.min-w-32 {
+  min-width: 8rem;
 }
 
 .flex-auto {
@@ -1020,6 +1024,10 @@ h6 {
   gap: 3rem;
 }
 
+.gap-16 {
+  gap: 4rem;
+}
+
 .gap-4 {
   gap: 1rem;
 }
@@ -1030,15 +1038,6 @@ h6 {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-x-16 {
-  -moz-column-gap: 4rem;
-       column-gap: 4rem;
-}
-
-.gap-y-16 {
-  row-gap: 4rem;
 }
 
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
@@ -2567,6 +2566,16 @@ section.about-us:before {
   left: 8.3rem;
 }
 
+.before\:left-\[7rem\]::before {
+  content: var(--tw-content);
+  left: 7rem;
+}
+
+.before\:left-\[6\.5rem\]::before {
+  content: var(--tw-content);
+  left: 6.5rem;
+}
+
 .before\:z-20::before {
   content: var(--tw-content);
   z-index: 20;
@@ -2826,6 +2835,10 @@ section.about-us:before {
     width: 80%;
   }
 
+  .lg\:w-5\/6 {
+    width: 83.333333%;
+  }
+
   .lg\:w-7\/12 {
     width: 58.333333%;
   }
@@ -2845,6 +2858,10 @@ section.about-us:before {
   .lg\:w-max {
     width: -moz-max-content;
     width: max-content;
+  }
+
+  .lg\:w-auto {
+    width: auto;
   }
 
   .lg\:flex-1 {
@@ -2881,6 +2898,10 @@ section.about-us:before {
 
   .lg\:justify-between {
     justify-content: space-between;
+  }
+
+  .lg\:gap-0 {
+    gap: 0px;
   }
 
   .lg\:gap-12 {
