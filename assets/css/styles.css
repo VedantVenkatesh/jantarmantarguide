@@ -496,6 +496,9 @@ section.about-us:before {
   .timeline-events--content .timeline-text:first-child {
     margin-top: 0 !important;
   }
+  .mobile-bg {
+    background-position: top center;
+  }
 }
 @media (max-width: 1300px) {
   .timeline-events--content .timeline-text:nth-child(odd) {

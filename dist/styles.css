@@ -1108,6 +1108,10 @@ h6 {
   background-size: cover;
 }
 
+.bg-contain {
+  background-size: contain;
+}
+
 .bg-bottom {
   background-position: bottom;
 }
@@ -1216,6 +1220,10 @@ h6 {
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pb-12 {
+  padding-bottom: 3rem;
 }
 
 .text-left {
@@ -1925,6 +1933,10 @@ section.about-us:before {
 @media (max-width: 991px) {
   .timeline-events--content .timeline-text:first-child {
     margin-top: 0 !important;
+  }
+
+  .mobile-bg {
+    background-position: top center;
   }
 }
 
@@ -2931,6 +2943,11 @@ section.about-us:before {
   .lg\:py-24 {
     padding-top: 6rem;
     padding-bottom: 6rem;
+  }
+
+  .lg\:py-40 {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
   }
 
   .lg\:pb-20 {
