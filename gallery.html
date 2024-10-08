@@ -9,7 +9,20 @@
     <link rel="stylesheet" href="assets/css/tailwind.min.css" />
     <link rel="stylesheet" href="dist/styles.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
-    <link href=" https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lightgallery-bundle.min.css " rel="stylesheet">
+    <link href=" https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lightgallery-bundle.min.css" rel="stylesheet">
+    <style>
+      .grid-wrapper {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      }
+      .grid-wrapper .wide {
+        grid-column: span 2;
+      }
+      @media only screen and (max-width: 767px) {
+        .grid-wrapper .wide {
+          grid-column: span 1;
+        } 
+      }
+    </style>
   </head>
   <body class="bg-gray-100 bg-no-repeat bg-cover h-full">
     <header class="bg-gray-900 p-4">
@@ -201,71 +214,71 @@
     </header>
 
     <!-- Body -->
-    <div style = "background-image: url('./assets/images/backgrounds/Cosmic.jpg');" class = "bg-cover bg-no-repeat h-full gallery-background">
+    <div style = "background-image: url('./assets/images/backgrounds/Cosmic.jpg');" class = "bg-repeat h-full gallery-background mobile-bg">
       <h1 class="text-center text-white uppercase py-16">Gallery</h1>
       <div class="container">
         <div class="lg:px-16">
-          <div id="lightgallery" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+          <div id="lightgallery" class="grid gap-4 grid-wrapper">
             <!-- Images -->
             <a href="assets/images/Jantar-Mantar-Gallery/_OSB0184-Enhanced-NR.jpg" data-lg-size="1600-2400">
-                <img alt="Image 1" src="assets/images/Jantar-Mantar-Gallery/_OSB0184-Enhanced-NR.jpg" class="w-full object-cover" style = "height: 400px;"/>
+              <img alt="Image 1" src="assets/images/Jantar-Mantar-Gallery/_OSB0184-Enhanced-NR.jpg" class="w-full object-cover" style = "height: 300px;"/>
             </a>
-            <a href="assets/images/Jantar-Mantar-Gallery/_OSB0298.jpg" data-lg-size="1024-800">
-                <img alt="Image 2" src="assets/images/Jantar-Mantar-Gallery/_OSB0298.jpg" class="w-full h-auto object-cover" style = "height: 400px;" />
+            <a href="assets/images/Jantar-Mantar-Gallery/_OSB0298.jpg" data-lg-size="1024-800" class="wide">
+              <img alt="Image 2" src="assets/images/Jantar-Mantar-Gallery/_OSB0298.jpg" class="w-full h-auto object-cover" style = "height: 300px;" />
             </a>
             <a href="assets/images/Jantar-Mantar-Gallery/_OSB0279.jpg" data-lg-size="1600-2400">
-              <img alt="Image 3" src="assets/images/Jantar-Mantar-Gallery/_OSB0279.jpg" class="w-full h-auto object-cover" style = "height: 400px;" />
+              <img alt="Image 3" src="assets/images/Jantar-Mantar-Gallery/_OSB0279.jpg" class="w-full h-auto object-cover" style = "height: 300px;" />
             </a>
             <a href="assets/images/Jantar-Mantar-Gallery/_OSB0194-Enhanced-NR.jpg" data-lg-size="1024-800">
-                <img alt="Image 4" src="assets/images/Jantar-Mantar-Gallery/_OSB0194-Enhanced-NR.jpg" class="w-full h-auto object-cover" style = "height: 400px;" />
+              <img alt="Image 4" src="assets/images/Jantar-Mantar-Gallery/_OSB0194-Enhanced-NR.jpg" class="w-full h-auto object-cover" style = "height: 300px;" />
             </a>
             <a href="assets/images/Jantar-Mantar-Gallery/_OSB0206-Enhanced-NR.jpg" data-lg-size="1600-2400">
-              <img alt="Image 5" src="assets/images/Jantar-Mantar-Gallery/_OSB0206-Enhanced-NR.jpg" class="w-full h-auto object-cover" style = "height: 400px;" />
+              <img alt="Image 5" src="assets/images/Jantar-Mantar-Gallery/_OSB0206-Enhanced-NR.jpg" class="w-full h-auto object-cover" style = "height: 300px;" />
             </a>
             <a href="assets/images/Jantar-Mantar-Gallery/_OSB0281.jpg" data-lg-size="1024-800">
-                <img alt="Image 6" src="assets/images/Jantar-Mantar-Gallery/_OSB0281.jpg" class="w-full h-auto object-cover" style = "height: 400px;" />
+              <img alt="Image 6" src="assets/images/Jantar-Mantar-Gallery/_OSB0281.jpg" class="w-full h-auto object-cover" style = "height: 300px;" />
             </a>
             <a href="assets/images/Jantar-Mantar-Gallery/_OSB0216-Enhanced-NR.jpg" data-lg-size="1600-2400">
-              <img alt="Image 7" src="assets/images/Jantar-Mantar-Gallery/_OSB0216-Enhanced-NR.jpg" class="w-full h-auto object-cover" style = "height: 400px;" />
+              <img alt="Image 7" src="assets/images/Jantar-Mantar-Gallery/_OSB0216-Enhanced-NR.jpg" class="w-full h-auto object-cover" style = "height: 300px;" />
             </a>
             <a href="assets/images/Jantar-Mantar-Gallery/_OSB0217-Enhanced-NR.jpg" data-lg-size="1024-800">
-                <img alt="Image 8" src="assets/images/Jantar-Mantar-Gallery/_OSB0217-Enhanced-NR.jpg" class="w-full h-auto object-cover" style = "height: 400px;" />
+              <img alt="Image 8" src="assets/images/Jantar-Mantar-Gallery/_OSB0217-Enhanced-NR.jpg" class="w-full h-auto object-cover" style = "height: 300px;" />
             </a>
             <a href="assets/images/Jantar-Mantar-Gallery/_OSB0282.jpg" data-lg-size="1600-2400">
-              <img alt="Image 9" src="assets/images/Jantar-Mantar-Gallery/_OSB0282.jpg" class="w-full h-auto object-cover" style = "height: 400px;" />
+              <img alt="Image 9" src="assets/images/Jantar-Mantar-Gallery/_OSB0282.jpg" class="w-full h-auto object-cover" style = "height: 300px;" />
             </a>
-            <a href="assets/images/Jantar-Mantar-Gallery/_OSB0226-Enhanced-NR.jpg" data-lg-size="1024-800">
-              <img alt="Image 10" src="assets/images/Jantar-Mantar-Gallery/_OSB0226-Enhanced-NR.jpg" class="w-full h-auto object-cover" style = "height: 400px;" />
+            <a href="assets/images/Jantar-Mantar-Gallery/_OSB0226-Enhanced-NR.jpg" data-lg-size="1024-800" class="wide">
+              <img alt="Image 10" src="assets/images/Jantar-Mantar-Gallery/_OSB0226-Enhanced-NR.jpg" class="w-full h-auto object-cover" style = "height: 300px;" />
             </a>
-            <a href="assets/images/Jantar-Mantar-Gallery/_OSB0231-Enhanced-NR.jpg" data-lg-size="1600-2400">
-              <img alt="Image 11" src="assets/images/Jantar-Mantar-Gallery/_OSB0231-Enhanced-NR.jpg" class="w-full h-auto object-cover" style = "height: 400px;" />
+            <a href="assets/images/Jantar-Mantar-Gallery/_OSB0231-Enhanced-NR.jpg" data-lg-size="1600-2400" class="wide">
+              <img alt="Image 11" src="assets/images/Jantar-Mantar-Gallery/_OSB0231-Enhanced-NR.jpg" class="w-full h-auto object-cover" style = "height: 300px;" />
             </a>
-            <a href="assets/images/Jantar-Mantar-Gallery/_OSB0234.jpg" data-lg-size="1024-800">
-              <img alt="Image 12" src="assets/images/Jantar-Mantar-Gallery/_OSB0234.jpg" class="w-full h-auto object-cover" style = "height: 400px;" />
+            <a href="assets/images/Jantar-Mantar-Gallery/_OSB0346.jpg" data-lg-size="1024-800">
+              <img alt="Image 12" src="assets/images/Jantar-Mantar-Gallery/_OSB0346.jpg" class="w-full h-auto object-cover" style = "height: 300px;" />
             </a>
-            <a href="assets/images/Jantar-Mantar-Gallery/_OSB0236.jpg" data-lg-size="1600-2400">
-              <img alt="Image 13" src="assets/images/Jantar-Mantar-Gallery/_OSB0236.jpg" class="w-full h-auto object-cover" style = "height: 400px;" />
+            <a href="assets/images/Jantar-Mantar-Gallery/_OSB0236.jpg" data-lg-size="1600-2400" class = "wide">
+              <img alt="Image 13" src="assets/images/Jantar-Mantar-Gallery/_OSB0236.jpg" class="w-full h-auto object-cover" style = "height: 300px;" />
             </a>
             <a href="assets/images/Jantar-Mantar-Gallery/_OSB0244.jpg" data-lg-size="1024-800">
-              <img alt="Image 14" src="assets/images/Jantar-Mantar-Gallery/_OSB0244.jpg" class="w-full h-auto object-cover" style = "height: 400px;" />
+              <img alt="Image 14" src="assets/images/Jantar-Mantar-Gallery/_OSB0244.jpg" class="w-full h-auto object-cover" style = "height: 300px;" />
             </a>
-            <a href="assets/images/Jantar-Mantar-Gallery/_OSB0246.jpg" data-lg-size="1600-2400">
-              <img alt="Image 15" src="assets/images/Jantar-Mantar-Gallery/_OSB0246.jpg" class="w-full h-auto object-cover" style = "height: 400px;" />
+            <a href="assets/images/Jantar-Mantar-Gallery/_OSB0348.jpg" data-lg-size="1600-2400">
+              <img alt="Image 15" src="assets/images/Jantar-Mantar-Gallery/_OSB0348.jpg" class="w-full h-auto object-cover" style = "height: 300px;" />
             </a>
             <a href="assets/images/Jantar-Mantar-Gallery/_OSB0290.jpg" data-lg-size="1024-800">
-              <img alt="Image 16" src="assets/images/Jantar-Mantar-Gallery/_OSB0290.jpg" class="w-full h-auto object-cover" style = "height: 400px;" />
-            </a>
-            <a href="assets/images/Jantar-Mantar-Gallery/_OSB0251.jpg" data-lg-size="1600-2400">
-              <img alt="Image 17" src="assets/images/Jantar-Mantar-Gallery/_OSB0251.jpg" class="w-full h-auto object-cover" style = "height: 400px;" />
+              <img alt="Image 16" src="assets/images/Jantar-Mantar-Gallery/_OSB0290.jpg" class="w-full h-auto object-cover" style = "height: 300px;" />
             </a>
             <a href="assets/images/Jantar-Mantar-Gallery/_OSB0254.jpg" data-lg-size="1024-800">
-              <img alt="Image 18" src="assets/images/Jantar-Mantar-Gallery/_OSB0254.jpg" class="w-full h-auto object-cover" style = "height: 400px;" />
+              <img alt="Image 17" src="assets/images/Jantar-Mantar-Gallery/_OSB0254.jpg" class="w-full h-auto object-cover" style = "height: 300px;" />
+            </a>
+            <a href="assets/images/Jantar-Mantar-Gallery/_OSB0251.jpg" data-lg-size="1600-2400" class = "wide">
+              <img alt="Image 18" src="assets/images/Jantar-Mantar-Gallery/_OSB0251.jpg" class="w-full h-auto object-cover" style = "height: 300px;" />
             </a>
             <a href="assets/images/Jantar-Mantar-Gallery/_OSB0256.jpg" data-lg-size="1600-2400">
-              <img alt="Image 19" src="assets/images/Jantar-Mantar-Gallery/_OSB0256.jpg" class="w-full h-auto object-cover" style = "height: 400px;" />
+              <img alt="Image 19" src="assets/images/Jantar-Mantar-Gallery/_OSB0256.jpg" class="w-full h-auto object-cover" style = "height: 300px;" />
             </a>
             <a href="assets/images/Jantar-Mantar-Gallery/_OSB0295.jpg" data-lg-size="1024-800">
-              <img alt="Image 20" src="assets/images/Jantar-Mantar-Gallery/_OSB0295.jpg" class="w-full h-auto object-cover" style = "height: 400px;" />
+              <img alt="Image 20" src="assets/images/Jantar-Mantar-Gallery/_OSB0295.jpg" class="w-full h-auto object-cover" style = "height: 300px;" />
             </a>
           </div>
         </div>
