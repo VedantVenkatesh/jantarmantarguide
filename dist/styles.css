@@ -938,6 +938,10 @@ h6 {
   height: 100vh;
 }
 
+.h-\[60vh\] {
+  height: 60vh;
+}
+
 .min-h-72 {
   min-height: 18rem;
 }
@@ -1024,16 +1028,6 @@ h6 {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.translate-y-0 {
-  --tw-translate-y: 0px;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-y-12 {
-  --tw-translate-y: 3rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -1096,10 +1090,6 @@ h6 {
 
 .gap-16 {
   gap: 4rem;
-}
-
-.gap-2 {
-  gap: 0.5rem;
 }
 
 .gap-4 {
@@ -1503,18 +1493,14 @@ h6 {
   transition-duration: 150ms;
 }
 
-.transition-all {
-  transition-property: all;
+.transition-opacity {
+  transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
 
 .duration-1000 {
   transition-duration: 1000ms;
-}
-
-.ease-out {
-  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
 @font-face {
@@ -1713,6 +1699,14 @@ html {
 
 .animate-fade-in-right {
   animation: fadeInRight 1s ease-in-out forwards;
+}
+
+/* Cosmic Chronicals Line For Very Small Device */
+
+@media screen and (max-width:400px) {
+  .small-device:before {
+    left: 6.1rem;
+  }
 }
 
 /* Main Menu */

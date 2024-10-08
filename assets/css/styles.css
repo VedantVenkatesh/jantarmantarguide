@@ -191,7 +191,12 @@ html {
   animation: fadeInRight 1s ease-in-out forwards;
 }
 
-
+/* Cosmic Chronicals Line For Very Small Device */
+@media screen and (max-width:400px) {
+  .small-device:before {
+    left: 6.1rem;
+  }
+}
 /* Main Menu */
 /* Custom styles for hover dropdown */
 .navbar-nav .nav-item:hover .dropdown-menu {
