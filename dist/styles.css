@@ -741,6 +741,30 @@ h6 {
   top: 6rem;
 }
 
+.left-2\/4 {
+  left: 50%;
+}
+
+.-top-\[52px\] {
+  top: -52px;
+}
+
+.left-\[38\%\] {
+  left: 38%;
+}
+
+.left-\[35\%\] {
+  left: 35%;
+}
+
+.left-\[26\%\] {
+  left: 26%;
+}
+
+.left-\[11\%\] {
+  left: 11%;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -870,6 +894,10 @@ h6 {
   margin-top: 2rem;
 }
 
+.mr-24 {
+  margin-right: 6rem;
+}
+
 .block {
   display: block;
 }
@@ -946,8 +974,28 @@ h6 {
   height: 100vh;
 }
 
+.h-\[362px\] {
+  height: 362px;
+}
+
 .min-h-screen {
   min-height: 100vh;
+}
+
+.min-h-52 {
+  min-height: 13rem;
+}
+
+.min-h-40 {
+  min-height: 10rem;
+}
+
+.min-h-80 {
+  min-height: 20rem;
+}
+
+.min-h-72 {
+  min-height: 18rem;
 }
 
 .\!w-1 {
@@ -1012,6 +1060,10 @@ h6 {
 
 .w-\[80\%\] {
   width: 80%;
+}
+
+.w-\[73\%\] {
+  width: 73%;
 }
 
 .flex-auto {
@@ -1102,6 +1154,10 @@ h6 {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
@@ -1311,6 +1367,26 @@ h6 {
   padding-bottom: 54px;
 }
 
+.py-\[0px\] {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.py-\[10px\] {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.py-\[9px\] {
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+.py-\[8px\] {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
 .pb-24 {
   padding-bottom: 6rem;
 }
@@ -1401,6 +1477,10 @@ h6 {
 
 .text-xl {
   font-size: 1.25rem;
+}
+
+.text-\[24px\] {
+  font-size: 24px;
 }
 
 .font-bold {
@@ -2773,6 +2853,11 @@ section.about-us:before {
   top: 35px;
 }
 
+.after\:top-\[54px\]::after {
+  content: var(--tw-content);
+  top: 54px;
+}
+
 .after\:h-\[216px\]::after {
   content: var(--tw-content);
   height: 216px;
@@ -2781,6 +2866,66 @@ section.about-us:before {
 .after\:h-\[235px\]::after {
   content: var(--tw-content);
   height: 235px;
+}
+
+.after\:h-\[192px\]::after {
+  content: var(--tw-content);
+  height: 192px;
+}
+
+.after\:h-\[282px\]::after {
+  content: var(--tw-content);
+  height: 282px;
+}
+
+.after\:h-\[188px\]::after {
+  content: var(--tw-content);
+  height: 188px;
+}
+
+.after\:h-\[234px\]::after {
+  content: var(--tw-content);
+  height: 234px;
+}
+
+.after\:h-\[250px\]::after {
+  content: var(--tw-content);
+  height: 250px;
+}
+
+.after\:h-\[255px\]::after {
+  content: var(--tw-content);
+  height: 255px;
+}
+
+.after\:h-\[257px\]::after {
+  content: var(--tw-content);
+  height: 257px;
+}
+
+.after\:h-\[258px\]::after {
+  content: var(--tw-content);
+  height: 258px;
+}
+
+.after\:h-\[259px\]::after {
+  content: var(--tw-content);
+  height: 259px;
+}
+
+.after\:h-\[362px\]::after {
+  content: var(--tw-content);
+  height: 362px;
+}
+
+.after\:h-\[380px\]::after {
+  content: var(--tw-content);
+  height: 380px;
+}
+
+.after\:h-\[381px\]::after {
+  content: var(--tw-content);
+  height: 381px;
 }
 
 .after\:w-\[180px\]::after {
@@ -2898,6 +3043,10 @@ section.about-us:before {
 }
 
 @media (min-width: 768px) {
+  .md\:left-\[26\%\] {
+    left: 26%;
+  }
+
   .md\:col-span-1 {
     grid-column: span 1 / span 1;
   }
@@ -2926,6 +3075,14 @@ section.about-us:before {
     height: 60vh;
   }
 
+  .md\:min-h-52 {
+    min-height: 13rem;
+  }
+
+  .md\:min-h-40 {
+    min-height: 10rem;
+  }
+
   .md\:w-1\/2 {
     width: 50%;
   }
@@ -2951,6 +3108,31 @@ section.about-us:before {
     left: 11.4rem;
   }
 
+  .md\:after\:h-\[234px\]::after {
+    content: var(--tw-content);
+    height: 234px;
+  }
+
+  .md\:after\:h-\[370px\]::after {
+    content: var(--tw-content);
+    height: 370px;
+  }
+
+  .md\:after\:h-\[382px\]::after {
+    content: var(--tw-content);
+    height: 382px;
+  }
+
+  .md\:after\:h-\[362px\]::after {
+    content: var(--tw-content);
+    height: 362px;
+  }
+
+  .md\:after\:h-\[260px\]::after {
+    content: var(--tw-content);
+    height: 260px;
+  }
+
   .md\:after\:w-\[180px\]::after {
     content: var(--tw-content);
     width: 180px;
@@ -2958,6 +3140,16 @@ section.about-us:before {
 }
 
 @media (min-width: 1024px) {
+  @media (min-width: 768px) {
+    .lg\:md\:min-h-52 {
+      min-height: 13rem;
+    }
+  }
+
+  .lg\:left-\[35\%\] {
+    left: 35%;
+  }
+
   .lg\:col-span-1 {
     grid-column: span 1 / span 1;
   }
@@ -3066,6 +3258,10 @@ section.about-us:before {
     height: auto;
   }
 
+  .lg\:min-h-52 {
+    min-height: 13rem;
+  }
+
   .lg\:\!w-12 {
     width: 3rem !important;
   }
@@ -3117,6 +3313,10 @@ section.about-us:before {
   .lg\:w-max {
     width: -moz-max-content;
     width: max-content;
+  }
+
+  .lg\:w-\[83\%\] {
+    width: 83%;
   }
 
   .lg\:flex-1 {
@@ -3279,6 +3479,10 @@ section.about-us:before {
     font-size: 1.25rem;
   }
 
+  .lg\:text-\[32px\] {
+    font-size: 32px;
+  }
+
   .lg\:before\:left-0::before {
     content: var(--tw-content);
     left: 0px;
@@ -3313,6 +3517,61 @@ section.about-us:before {
     content: var(--tw-content);
     height: 280px;
   }
+
+  .lg\:after\:h-\[208px\]::after {
+    content: var(--tw-content);
+    height: 208px;
+  }
+
+  .lg\:after\:h-\[203px\]::after {
+    content: var(--tw-content);
+    height: 203px;
+  }
+
+  .lg\:after\:h-\[180px\]::after {
+    content: var(--tw-content);
+    height: 180px;
+  }
+
+  .lg\:after\:h-\[252px\]::after {
+    content: var(--tw-content);
+    height: 252px;
+  }
+
+  .lg\:after\:h-\[295px\]::after {
+    content: var(--tw-content);
+    height: 295px;
+  }
+
+  .lg\:after\:h-\[282px\]::after {
+    content: var(--tw-content);
+    height: 282px;
+  }
+
+  .lg\:after\:h-\[300px\]::after {
+    content: var(--tw-content);
+    height: 300px;
+  }
+
+  .lg\:after\:h-\[302px\]::after {
+    content: var(--tw-content);
+    height: 302px;
+  }
+
+  .lg\:after\:h-\[301px\]::after {
+    content: var(--tw-content);
+    height: 301px;
+  }
+
+  .lg\:after\:h-\[262px\]::after {
+    content: var(--tw-content);
+    height: 262px;
+  }
+
+  .lg\:after\:h-\[292px\]::after {
+    content: var(--tw-content);
+    height: 292px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -3322,6 +3581,14 @@ section.about-us:before {
 
   .xl\:mt-6 {
     margin-top: 1.5rem;
+  }
+
+  .xl\:ml-8 {
+    margin-left: 2rem;
+  }
+
+  .xl\:mr-24 {
+    margin-right: 6rem;
   }
 
   .xl\:h-\[90vh\] {
@@ -3363,6 +3630,10 @@ section.about-us:before {
 }
 
 @media (min-width: 1536px) {
+  .\32xl\:left-\[38\%\] {
+    left: 38%;
+  }
+
   .\32xl\:w-3\/5 {
     width: 60%;
   }
