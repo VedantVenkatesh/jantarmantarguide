@@ -12,10 +12,12 @@
     <style>
       .details {
         bottom: 20%;
+        min-height: 685px;
       }
       @media only screen and (max-width: 767px) {
         .vedant-details {
           bottom: 18%;
+          min-height: fit-content;
         }
       }
     </style>
@@ -25,8 +27,10 @@
       <div class="container mx-auto">
         <!-- Mobile Menu Button -->
         <div class="flex items-center justify-between lg:hidden">
-          <div class="lg:hidden flex text-2xl text-white">
-            <a href="index.html">Jantar mantar</a>
+          <div class="lg:hidden flex text-xl text-white">
+            <a href="index.html" class="font-semibold">Jantar Mantar
+              <p class="text-right text-sm">Jaipur</p>
+            </a>
           </div>
           <button
             id="mobile-menu-button"
@@ -208,7 +212,7 @@
     </header>
 
     <!-- Body -->
-    <div style = "background-image: url('./assets/images/backgrounds/Cosmic.jpg');" class = "bg-cover bg-repeat">
+    <div style = "background-image: url('./assets/images/backgrounds/Cosmic.jpg');" class ="bg-contain bg-repeat mobile-bg">
       <div class="container">
         <div class="lg:px-16">
           <h1 class="text-center text-white uppercase py-16">About us</h1>
@@ -247,10 +251,11 @@
                   visitors to the museum. These are available at the museum
                   store. In June-July 2024, Vedant attended the Yale Young
                   Global Scholars Program (Politics, Culture and Literature) at
-                  New Haven, CT. A history buff, he has designed www.thedelhimonument.org;
-                  he visited, photographed and researched over 50
-                  monuments in Delhi. Vedant is a music student and has
-                  studied the piano for 11 years (western classical).</p>
+                  New Haven, CT.</p>
+                  <p class="font-regular lg:text-lg text-sm text-center pt-2"> A history buff, he has designed www.thedelhimonument.org;
+                    he visited, photographed and researched over 50
+                    monuments in Delhi. Vedant is a music student and has
+                    studied the piano for 11 years (western classical).</p>
               </div>
             </div>
           </div>
