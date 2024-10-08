@@ -14,8 +14,12 @@
     <header class="bg-gray-900 p-4">
       <div class="container mx-auto">
         <!-- Mobile Menu Button -->
-        <div class="flex items-center justify-between md:hidden">
-          <div class="lg:hidden flex text-2xl text-white">Jantar mantar</div>
+        <div class="flex items-center justify-between lg:hidden">
+          <div class="lg:hidden flex text-xl text-white">
+            <a href="index.html" class="font-semibold">Jantar Mantar
+              <p class="text-right text-sm">Jaipur</p>
+            </a>
+          </div>
           <button
             id="mobile-menu-button"
             class="text-white focus:outline-none"
@@ -39,15 +43,17 @@
         </div>
 
         <!-- Navigation Links -->
-        <nav class="md:flex items-center justify-center text-white uppercase">
+        <nav
+          class="lg:flex items-center justify-center  text-white uppercase"
+        >
           <ul
             id="navbar-menu"
-            class="hidden md:flex md:items-center md:justify-between items-start w-full text-lg flex-col md:flex-row space-y-4 md:space-y-0"
+            class="hidden h-screen lg:h-auto lg:flex lg:items-center justify-start pt-16 lg:pt-0 lg:justify-between w-full text-lg flex-col lg:flex-row space-y-4 lg:space-y-0"
           >
             <li>
               <a
                 href="index.html"
-                class="text-white hover:text-gray-400 px-3 py-2 font-cocoBold font-bold tracking-[.15em]"
+                class="text-white hover:text-gray-400 px-3 py-2 font-bold tracking-[.15em]"
                 id="homeLink"
                 >Home</a
               >
@@ -57,32 +63,40 @@
             <li class="relative group">
               <a
                 href="history.html"
-                class="text-white hover:text-gray-400 px-3 py-2 font-cocoBold font-bold tracking-[.15em]"
+                class="text-white hover:text-gray-400 px-3 py-2 font-bold tracking-[.15em]"
                 id="historyLink"
                 >History</a
               >
               <!-- Dropdown Menu -->
-              <button class="mobile-submenu-toggle md:hidden">></button>
+              <button class="mobile-submenu-toggle lg:hidden">></button>
               <ul
-                class="dropdown-menu hidden group-hover:block bg-gray-800 text-white py-2 absolute mt-1 rounded-md shadow-lg font-cocoBold font-bold w-max tracking-[.15em]"
+                class="dropdown-menu hidden group-hover:block bg-gray-800 text-white py-2 absolute mt-1 rounded-md shadow-lg font-bold lg:w-max w-full tracking-[.15em]"
               >
                 <li>
-                  <a href="jaipur.html" class="block px-4 py-2 hover:bg-gray-700"
+                  <a
+                    href="jaipur.html"
+                    class="block px-4 py-2 hover:bg-gray-700"
                     >Jaipur’s Royal Heritage</a
                   >
                 </li>
                 <li>
-                  <a href="cosmicchronicals.html" class="block px-4 py-2 hover:bg-gray-700"
+                  <a
+                    href="cosmicchronicals.html"
+                    class="block px-4 py-2 hover:bg-gray-700"
                     >COSMIC CHRONICLES</a
                   >
                 </li>
                 <li>
-                  <a href="thevisionary.html" class="block px-4 py-2 hover:bg-gray-700"
+                  <a
+                    href="thevisionary.html"
+                    class="block px-4 py-2 hover:bg-gray-700"
                     >The VISIONARY</a
                   >
                 </li>
                 <li>
-                  <a href="chiefarchitect.html" class="block px-4 py-2 hover:bg-gray-700"
+                  <a
+                    href="chiefarchitect.html"
+                    class="block px-4 py-2 hover:bg-gray-700"
                     >Chief Architect</a
                   >
                 </li>
@@ -92,22 +106,22 @@
             <!-- Jantar Mantar with Dropdown -->
             <li class="relative group flex">
               <a
-                href="storyofjantarmantar.html"
-                class="text-white flex-wrap hover:text-gray-400 px-3 py-2 font-cocoBold font-bold tracking-[.15em]"
+                href="#jantar-mantar"
+                class="text-white flex-wrap hover:text-gray-400 px-3 py-2 font-bold tracking-[.15em]"
                 >Jantar
                 <p>Mantar</p></a
               >
-              <button class="mobile-submenu-toggle md:hidden">></button>
+              <button class="mobile-submenu-toggle lg:hidden">></button>
               <ul
-                class="dropdown-menu hidden group-hover:block bg-gray-800 text-white mt-16 py-2 absolute left-0 rounded-md shadow-lg font-cocoBold font-bold tracking-[.15em] w-max"
+                class="dropdown-menu hidden group-hover:block bg-gray-800 text-white mt-16 py-2 absolute left-0 rounded-md shadow-lg font-bold tracking-[.15em] lg:w-max w-full"
               >
                 <li>
-                  <a href="#" class="block px-4 py-2 hover:bg-gray-700"
+                  <a href="storyofjantarmantar.html" class="block px-4 py-2 hover:bg-gray-700"
                     >STORY OF THE JANTAR MANTAR</a
                   >
                 </li>
                 <li>
-                  <a href="#" class="block px-4 py-2 hover:bg-gray-700"
+                  <a href="astronomyin1700.html" class="block px-4 py-2 hover:bg-gray-700"
                     >Astronomy in 1700</a
                   >
                 </li>
@@ -122,8 +136,8 @@
             <!-- Gallery -->
             <li>
               <a
-                href="#"
-                class="text-white hover:text-gray-400 px-3 py-2 font-cocoBold font-bold tracking-[.15em]"
+                href="gallery.html"
+                class="text-white hover:text-gray-400 px-3 py-2 font-bold tracking-[.15em]"
                 id="galleryLink"
                 >Gallery</a
               >
@@ -133,7 +147,7 @@
             <li>
               <a
                 href="visit.html"
-                class="text-white hover:text-gray-400 px-3 py-2 font-cocoBold font-bold tracking-[.15em]"
+                class="text-white hover:text-gray-400 px-3 py-2 font-bold tracking-[.15em]"
                 id="visitLink"
                 >Visit</a
               >
@@ -143,30 +157,38 @@
             <li class="relative group">
               <a
                 href="preserving-heritage.html"
-                class="text-white hover:text-gray-400 px-3 py-2 font-cocoBold font-bold tracking-[.15em]"
+                class="text-white hover:text-gray-400 px-3 py-2 font-bold tracking-[.15em]"
                 >Preserving Heritage</a
               >
-              <button class="mobile-submenu-toggle md:hidden">></button>
+              <button class="mobile-submenu-toggle lg:hidden">></button>
               <ul
-                class="dropdown-menu hidden group-hover:block bg-gray-800 text-white py-2 absolute rounded-md shadow-lg font-cocoBold font-bold mt-1 w-max tracking-[.15em]"
+                class="dropdown-menu hidden group-hover:block bg-gray-800 text-white py-2 absolute rounded-md shadow-lg font-bold mt-1 lg:w-max w-full tracking-[.15em]"
               >
                 <li>
-                  <a href="experts-explain.html" class="block px-4 py-2 hover:bg-gray-700"
+                  <a
+                    href="experts-explain.html"
+                    class="block px-4 py-2 hover:bg-gray-700"
                     >Experts Explain</a
                   >
                 </li>
                 <li>
-                  <a href="credits-and-sources.html" class="block px-4 py-2 hover:bg-gray-700"
+                  <a
+                    href="credits-and-sources.html"
+                    class="block px-4 py-2 hover:bg-gray-700"
                     >Credits</a
                   >
                 </li>
                 <li>
-                  <a href="explore-jaipur.html" class="block px-4 py-2 hover:bg-gray-700"
+                  <a
+                    href="explore-jaipur.html"
+                    class="block px-4 py-2 hover:bg-gray-700"
                     >Explore Jaipur</a
                   >
                 </li>
                 <li>
-                  <a href="about-us.html" class="block px-4 py-2 hover:bg-gray-700"
+                  <a
+                    href="about-us.html"
+                    class="block px-4 py-2 hover:bg-gray-700"
                     >About Us</a
                   >
                 </li>
@@ -178,9 +200,9 @@
     </header>
 
     <!-- Body -->
-    <div style = "background-image: url('assets/images/backgrounds/preserving-heritage.png');" class="bg-no-repeat bg-cover min-h-screen">
+    <div style = "background-image: url('assets/images/backgrounds/preserving-heritage.png');" class="bg-no-repeat bg-cover min-h-screen mobile-bg">
       <div class="container">
-        <div class="lg:px-16 py-40">
+        <div class="lg:px-16 py-16">
           <h1 class = "text-white uppercase">Preserving the Legacy of Jantar Mantar</h1>
           <p class = "text-white my-8 font-regular lg:text-lg text-sm">As a UNESCO World Heritage site, Jantar Mantar is not only an architectural wonder but also a priceless repository of scientific knowledge. The conservation of this monument involves a multi-faceted approach, combining modern restoration techniques with traditional craftsmanship. The preservation efforts are crucial to maintaining the structural integrity of the instruments while ensuring they remain functional for future generations of scholars and astronomers.</p>
           <p class = "text-white my-8 font-regular lg:text-lg text-sm">Various initiatives by the Archaeological Survey of India (ASI) and local authorities have been put in place to protect Jantar Mantar from environmental damage and urban encroachment. Restoration projects focus on the wear and tear caused by time and weather, using authentic materials that retain the original look and feel of the monument.</p>

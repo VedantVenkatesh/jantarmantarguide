@@ -22,6 +22,8 @@ module.exports = {
         white: '#ffffff',
         black: '#000000',
         red: '#FF0000',
+        'custom-bg': 'pink',
+        'custom-color': 'red',
       },
       fontSize: {
         sm: '0.938rem',
