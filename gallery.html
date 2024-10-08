@@ -314,27 +314,26 @@
           // Keeping the index value updated
           indexVar = index;
         })
-      })
-      nextFunction();
-      previousFunction();
+      })     
+      next.addEventListener('click', nextFunction);
+      previous.addEventListener('click', previousFunction);
+
       function nextFunction() {
-        next.addEventListener('click', function() {
-          carouselNav.forEach((singleCarouselImg) => {
-            borderCSSRemoval(singleCarouselImg);
-          })
-          borderCSS(carouselNav[indexVar + 1]);
-          indexVar++;
-        });
-      }
-      function previousFunction() {
-        previous.addEventListener('click', function() {
-          carouselNav.forEach((singleCarouselImg) => {
-            borderCSSRemoval(singleCarouselImg);
-          })
-          borderCSS(carouselNav[indexVar - 1]);
-          indexVar--;
+        carouselNav.forEach((singleCarouselImg) => {
+          borderCSSRemoval(singleCarouselImg);
         })
+        borderCSS(carouselNav[indexVar + 1]);
+        indexVar++;
       }
+
+      function previousFunction() {
+        carouselNav.forEach((singleCarouselImg) => {
+          borderCSSRemoval(singleCarouselImg);
+        })
+        borderCSS(carouselNav[indexVar - 1]);
+        indexVar--;
+      }
+
       function borderCSS(element) {
         element.style.border = '8px solid #fff';
       }
