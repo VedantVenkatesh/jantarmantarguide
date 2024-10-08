@@ -1156,6 +1156,10 @@ h6 {
   gap: 2rem;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1473,6 +1477,10 @@ h6 {
 
 .text-xl {
   font-size: 1.25rem;
+}
+
+.text-\[24px\] {
+  font-size: 24px;
 }
 
 .font-bold {
@@ -3469,6 +3477,10 @@ section.about-us:before {
 
   .lg\:text-xl {
     font-size: 1.25rem;
+  }
+
+  .lg\:text-\[32px\] {
+    font-size: 32px;
   }
 
   .lg\:before\:left-0::before {
