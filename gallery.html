@@ -9,7 +9,40 @@
     <link rel="stylesheet" href="assets/css/tailwind.min.css" />
     <link rel="stylesheet" href="dist/styles.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
-    <link href=" https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lightgallery-bundle.min.css " rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <style>
+      .carousel-main .carousel-cell {
+        height: 700px;
+      }
+
+      .carousel-nav .carousel-cell {
+        height: 180px;
+        width: 120px;
+      }
+      .flickity-button {
+        background: none;
+        color: #fff;
+        width: 80px;
+        height: 80px;
+      }
+      .flickity-button:hover {
+        background: none;
+      }
+      .flickity-prev-next-button.next {
+        right: -8%;
+      }
+      .flickity-prev-next-button.previous {
+        left: -8%;
+      }
+      @media only screen and (max-width: 767px) {
+        .carousel-main .carousel-cell {
+          height: 250px;
+        }
+        .gallery-background {
+          height: 100vh;
+        }
+      }
+  </style>
   </head>
   <body class="bg-gray-100 bg-no-repeat bg-cover h-full">
     <header class="bg-gray-900 p-4">
@@ -179,32 +212,115 @@
     </header>
 
     <!-- Body -->
-    <div id="animated-thumbnails">
-        <a href="https://images.unsplash.com/photo-1461301214746-1e109215d6d3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=240&q=80">
-            <img src="https://images.unsplash.com/photo-1461301214746-1e109215d6d3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=240&q=80" />
-        </a>
-        <a href="https://images.unsplash.com/photo-1586276393635-5ecd8a851acc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=240&q=80">
-            <img src="https://images.unsplash.com/photo-1586276393635-5ecd8a851acc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=240&q=80" />
-        </a>
-        <a href="https://images.unsplash.com/photo-1610448721566-47369c768e70?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=240&q=80">
-            <img src="https://images.unsplash.com/photo-1610448721566-47369c768e70?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=240&q=80" />
-        </a>
-        <a href="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=240&q=80">
-            <img src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=240&q=80" />
-        </a>
-        <a href="https://images.unsplash.com/photo-1476842384041-a57a4f124e2e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=240&q=80">
-            <img src="https://images.unsplash.com/photo-1610448721566-47369c768e70?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=240&q=80" />
-        </a>
-    </div>
-    <script src=" https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/lightgallery.min.js "></script>
+    <div style = "background-image: url('./assets/images/backgrounds/Cosmic.jpg');" class = "bg-cover bg-no-repeat h-full gallery-background">
+      <!-- <h1 class="text-center text-white uppercase py-16">Gallery</h1> -->
+      <div class="container">
+        <div class="lg:px-16">
+          <!-- Flickity HTML init -->
+          <div class="carousel carousel-main mb-16 pt-16" data-flickity='{"pageDots": false }'>
+            <div class="carousel-cell w-full"><img src="assets/images/Jantar-Mantar-Gallery/_OSB0184-Enhanced-NR.jpg" class="w-full h-full object-cover object-top"/></div>
+            <div class="carousel-cell w-full"><img src="assets/images/Jantar-Mantar-Gallery/_OSB0190-Enhanced-NR.jpg" class="w-full h-full"/></div>
+            <div class="carousel-cell w-full"><img src="assets/images/Jantar-Mantar-Gallery/_OSB0191-Enhanced-NR-1.jpg" class="w-full h-full"/></div>
+            <div class="carousel-cell w-full"><img src="assets/images/Jantar-Mantar-Gallery/_OSB0194-Enhanced-NR.jpg" class="w-full h-full"/></div>
+            <div class="carousel-cell w-full"><img src="assets/images/Jantar-Mantar-Gallery/_OSB0206-Enhanced-NR.jpg" class="w-full h-full"/></div>
+            <div class="carousel-cell w-full"><img src="assets/images/Jantar-Mantar-Gallery/_OSB0214.jpg" class="w-full h-full"/></div>
+            <div class="carousel-cell w-full"><img src="assets/images/Jantar-Mantar-Gallery/_OSB0216-Enhanced-NR.jpg" class="w-full h-full"/></div>
+            <div class="carousel-cell w-full"><img src="assets/images/Jantar-Mantar-Gallery/_OSB0217-Enhanced-NR.jpg" class="w-full h-full"/></div>
+            <div class="carousel-cell w-full"><img src="assets/images/Jantar-Mantar-Gallery/_OSB0225-Enhanced-NR.jpg" class="w-full h-full"/></div>
+            <div class="carousel-cell w-full"><img src="assets/images/Jantar-Mantar-Gallery/_OSB0226-Enhanced-NR.jpg" class="w-full h-full"/></div>  
+            <div class="carousel-cell w-full"><img src="assets/images/Jantar-Mantar-Gallery/_OSB0231-Enhanced-NR.jpg" class="w-full h-full"/></div>  
+            <div class="carousel-cell w-full"><img src="assets/images/Jantar-Mantar-Gallery/_OSB0234.jpg" class="w-full h-full"/></div>  
+            <div class="carousel-cell w-full"><img src="assets/images/Jantar-Mantar-Gallery/_OSB0236.jpg" class="w-full h-full"/></div>  
+            <div class="carousel-cell w-full"><img src="assets/images/Jantar-Mantar-Gallery/_OSB0244.jpg" class="w-full h-full"/></div>  
+            <div class="carousel-cell w-full"><img src="assets/images/Jantar-Mantar-Gallery/_OSB0246.jpg" class="w-full h-full"/></div>  
+            <div class="carousel-cell w-full"><img src="assets/images/Jantar-Mantar-Gallery/_OSB0249.jpg" class="w-full h-full"/></div>  
+            <div class="carousel-cell w-full"><img src="assets/images/Jantar-Mantar-Gallery/_OSB0251.jpg" class="w-full h-full"/></div>  
+            <div class="carousel-cell w-full"><img src="assets/images/Jantar-Mantar-Gallery/_OSB0254.jpg" class="w-full h-full"/></div>  
+            <div class="carousel-cell w-full"><img src="assets/images/Jantar-Mantar-Gallery/_OSB0256.jpg" class="w-full h-full"/></div>  
+            <div class="carousel-cell w-full"><img src="assets/images/Jantar-Mantar-Gallery/_OSB0261.jpg" class="w-full h-full"/></div>
+          </div>
+        </div>
+      </div>
+          
+      <div class="carousel carousel-nav"
+        data-flickity='{ "asNavFor": ".carousel-main", "contain": true, "pageDots": false }'>
+        <div class="carousel-cell w-full mr-3"><img src="assets/images/Jantar-Mantar-Gallery/_OSB0184-Enhanced-NR.jpg" class = "h-full"/></div>
+        <div class="carousel-cell w-full mr-3"><img src="assets/images/Jantar-Mantar-Gallery/_OSB0190-Enhanced-NR.jpg"class = "h-full"/></div>
+        <div class="carousel-cell w-full mr-3"><img src="assets/images/Jantar-Mantar-Gallery/_OSB0191-Enhanced-NR-1.jpg" class = "h-full"/></div>
+        <div class="carousel-cell w-full mr-3"><img src="assets/images/Jantar-Mantar-Gallery/_OSB0194-Enhanced-NR.jpg" class = "h-full"/></div>
+        <div class="carousel-cell w-full mr-3"><img src="assets/images/Jantar-Mantar-Gallery/_OSB0206-Enhanced-NR.jpg" class = "h-full"/></div>
+        <div class="carousel-cell w-full mr-3"><img src="assets/images/Jantar-Mantar-Gallery/_OSB0214.jpg" class = "h-full"/></div>
+        <div class="carousel-cell w-full mr-3"><img src="assets/images/Jantar-Mantar-Gallery/_OSB0216-Enhanced-NR.jpg" class = "h-full"/></div>
+        <div class="carousel-cell w-full mr-3"><img src="assets/images/Jantar-Mantar-Gallery/_OSB0217-Enhanced-NR.jpg" class = "h-full"/></div>
+        <div class="carousel-cell w-full mr-3"><img src="assets/images/Jantar-Mantar-Gallery/_OSB0225-Enhanced-NR.jpg" class = "h-full"/></div>
+        <div class="carousel-cell w-full mr-3"><img src="assets/images/Jantar-Mantar-Gallery/_OSB0226-Enhanced-NR.jpg" class = "h-full"/></div>
+        <div class="carousel-cell w-full mr-3"><img src="assets/images/Jantar-Mantar-Gallery/_OSB0231-Enhanced-NR.jpg" class = "h-full"/></div>  
+        <div class="carousel-cell w-full mr-3"><img src="assets/images/Jantar-Mantar-Gallery/_OSB0234.jpg" class = "h-full"/></div>  
+        <div class="carousel-cell w-full mr-3"><img src="assets/images/Jantar-Mantar-Gallery/_OSB0236.jpg" class = "h-full"/></div>  
+        <div class="carousel-cell w-full mr-3"><img src="assets/images/Jantar-Mantar-Gallery/_OSB0244.jpg" class = "h-full"/></div>  
+        <div class="carousel-cell w-full mr-3"><img src="assets/images/Jantar-Mantar-Gallery/_OSB0246.jpg" class = "h-full"/></div>  
+        <div class="carousel-cell w-full mr-3"><img src="assets/images/Jantar-Mantar-Gallery/_OSB0249.jpg" class = "h-full"/></div>  
+        <div class="carousel-cell w-full mr-3"><img src="assets/images/Jantar-Mantar-Gallery/_OSB0251.jpg" class = "h-full"/></div>  
+        <div class="carousel-cell w-full mr-3"><img src="assets/images/Jantar-Mantar-Gallery/_OSB0254.jpg" class = "h-full"/></div>  
+        <div class="carousel-cell w-full mr-3"><img src="assets/images/Jantar-Mantar-Gallery/_OSB0256.jpg" class = "h-full"/></div>  
+        <div class="carousel-cell w-full mr-3"><img src="assets/images/Jantar-Mantar-Gallery/_OSB0261.jpg" class = "h-full"/></div>
+      </div>
+    </div>  
+    
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://unpkg.com/flickity-as-nav-for@3/as-nav-for.js"></script>
     <script src="assets/js/header.js" type="text/javascript"></script>
     <script>
-      lightGallery(document.getElementById('animated-thumbnails'), {
-          animateThumb: false,
-          zoomFromOrigin: false,
-          allowMediaOverlap: true,
-          toggleThumb: true,
-      });
+    // White border on selection
+    document.addEventListener("DOMContentLoaded", function() {
+      const carouselNav = document.querySelectorAll('.carousel-nav .carousel-cell');
+      const previous = document.querySelector('.previous');
+      const next = document.querySelector('.next');
+      let indexVar = 0;
+
+      // Default settigs
+      borderCSS(carouselNav[0]);
+      // Main Functionality
+      carouselNav.forEach((singleCarouselNav, index) => {
+        singleCarouselNav.addEventListener('click', function() {
+          // CSS Removal on all images
+          carouselNav.forEach((singleCarouselImg) => {
+            borderCSSRemoval(singleCarouselImg);
+          })
+          // CSS Addition the SelectedImage
+          borderCSS(singleCarouselNav);
+          // Keeping the index value updated
+          indexVar = index;
+        })
+      })
+      nextFunction();
+      previousFunction();
+      function nextFunction() {
+        next.addEventListener('click', function() {
+          carouselNav.forEach((singleCarouselImg) => {
+            borderCSSRemoval(singleCarouselImg);
+          })
+          borderCSS(carouselNav[indexVar + 1]);
+          indexVar++;
+        });
+      }
+      function previousFunction() {
+        previous.addEventListener('click', function() {
+          carouselNav.forEach((singleCarouselImg) => {
+            borderCSSRemoval(singleCarouselImg);
+          })
+          borderCSS(carouselNav[indexVar - 1]);
+          indexVar--;
+        })
+      }
+      function borderCSS(element) {
+        element.style.border = '8px solid #fff';
+      }
+      function borderCSSRemoval(element) {
+        element.style.border = '';
+      }
+    });
     </script>
   </body>
 </html>
+
