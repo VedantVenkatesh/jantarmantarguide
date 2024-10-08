@@ -144,37 +144,54 @@ html {
     @apply lg:text-[28px] text-[18px] text-white font-medium font-catchy leading-[1.2];
   }
 }
-/* h1 {
-  font-family: 'catchy-mager';
-  font-size: 106px;
-  line-height: 1.2;
-  font-weight: bold;
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
-h2 {
-  font-family: 'catchy-mager';
-  font-size: 50px;
-  line-height: 1.5;
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
-h3 {
-  font-family: 'catchy-mager';
-  font-size: 42px;
-  line-height: 1.2;
+.fade-slide {
+  opacity: 0;
+  transform: translateY(50px); /* Optional initial vertical offset */
 }
-h4 {
-  font-family: 'catchy-mager';
-  font-size: 20px;
-  line-height: 1.2;
+
+.fade-in-left {
+  opacity: 0; /* Start invisible */
 }
-h5 {
-  font-family: 'catchy-mager';
-  font-size: 18px;
-  line-height: 1.2;
+
+.fade-in-right {
+  opacity: 0; /* Start invisible */
 }
-h6 {
-  font-family: 'catchy-mager';
-  font-size: 16px;
-  line-height: 1.7;
-} */
+
+/* These classes are applied via JS when the element is in view */
+.opacity-100 {
+  opacity: 1;
+}
+
+.animate-fade-in-left {
+  animation: fadeInLeft 1s ease-in-out forwards;
+}
+
+.animate-fade-in-right {
+  animation: fadeInRight 1s ease-in-out forwards;
+}
+
+
 /* Main Menu */
 /* Custom styles for hover dropdown */
 .navbar-nav .nav-item:hover .dropdown-menu {
