@@ -37,10 +37,10 @@ var swiper = new Swiper('.default-carousel', {
     clickable: true,
     dots: false,
   },
-  // autoplay: {
-  //   delay: 100000, // Delay in milliseconds (e.g., 3000ms = 3 seconds)
-  //   disableOnInteraction: false, // Keeps autoplay active even after user interaction
-  // },
+  autoplay: {
+    delay: 60000, // Delay in milliseconds (e.g., 3000ms = 3 seconds)
+    disableOnInteraction: false, // Keeps autoplay active even after user interaction
+  },
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',

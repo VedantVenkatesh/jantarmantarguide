@@ -910,16 +910,16 @@ h6 {
   height: 30vh;
 }
 
-.h-\[40vh\] {
-  height: 40vh;
-}
-
 .h-\[500px\] {
   height: 500px;
 }
 
 .h-\[50vh\] {
   height: 50vh;
+}
+
+.h-\[60vh\] {
+  height: 60vh;
 }
 
 .h-\[90vh\] {
@@ -936,10 +936,6 @@ h6 {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-\[60vh\] {
-  height: 60vh;
 }
 
 .min-h-72 {
@@ -1196,6 +1192,26 @@ h6 {
 
 .bg-white\/90 {
   background-color: rgb(255 255 255 / 0.9);
+}
+
+.bg-\[\#ffffff\]\/35 {
+  background-color: rgb(255 255 255 / 0.35);
+}
+
+.bg-\[\#ffffff\]\/15 {
+  background-color: rgb(255 255 255 / 0.15);
+}
+
+.bg-\[\#ffffff\]\/10 {
+  background-color: rgb(255 255 255 / 0.1);
+}
+
+.bg-\[\#ffffff\]\/5 {
+  background-color: rgb(255 255 255 / 0.05);
+}
+
+.bg-\[\#ffffff\]\/55 {
+  background-color: rgb(255 255 255 / 0.55);
 }
 
 .bg-contain {
@@ -1701,9 +1717,19 @@ html {
   animation: fadeInRight 1s ease-in-out forwards;
 }
 
+/* Swiper */
+
+.swiper-button-prev:after {
+  font-weight: bold !important;
+}
+
+.swiper-button-next:after {
+  font-weight: bold !important;
+}
+
 /* Cosmic Chronicals Line For Very Small Device */
 
-@media screen and (max-width:400px) {
+@media screen and (max-width: 400px) {
   .small-device:before {
     left: 6.1rem;
   }
@@ -2681,7 +2707,7 @@ section.about-us:before {
 
   .history-img-wrap .link-item:hover {
     animation: zoomin 5s ease-in infinite;
-    transition: all .2s ease;
+    transition: all 0.2s ease;
   }
 }
 
@@ -2718,7 +2744,7 @@ section.about-us:before {
 /**flipbook**/
 
 .flipbook-wrap {
-  background: rgba(255, 255, 255, .7);
+  background: rgba(255, 255, 255, 0.7);
   min-height: 250px;
   display: flex;
   justify-content: center;
@@ -2942,6 +2968,10 @@ section.about-us:before {
 
   .md\:col-span-3 {
     grid-column: span 3 / span 3;
+  }
+
+  .md\:mt-8 {
+    margin-top: 2rem;
   }
 
   .md\:inline-block {
@@ -3424,4 +3454,4 @@ section.about-us:before {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
   }
-}  
+}
