@@ -20,6 +20,9 @@
       .image-height {
         height: 300px;
       }
+      .lg-download {
+        display: none;
+      }
       @media only screen and (max-width: 767px) {
         .grid-wrapper .wide {
           grid-column: span 1;
@@ -251,7 +254,6 @@
           const img = document.createElement('img');
           img.src = `${basePath}image${i}.jpg`;
           img.classList.add('w-full', 'object-cover', 'object-top', 'image-height');
-          img.alt = `image${i}`;
           img.onload = function() {
             if (img.naturalHeight > img.naturalWidth) {
               link.classList.add('wide');
@@ -274,4 +276,3 @@
   </script>
   </body>
 </html>
-
