@@ -862,6 +862,10 @@ h6 {
   margin-top: 2rem;
 }
 
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
 .block {
   display: block;
 }
@@ -1194,26 +1198,6 @@ h6 {
   background-color: rgb(255 255 255 / 0.9);
 }
 
-.bg-\[\#ffffff\]\/35 {
-  background-color: rgb(255 255 255 / 0.35);
-}
-
-.bg-\[\#ffffff\]\/15 {
-  background-color: rgb(255 255 255 / 0.15);
-}
-
-.bg-\[\#ffffff\]\/10 {
-  background-color: rgb(255 255 255 / 0.1);
-}
-
-.bg-\[\#ffffff\]\/5 {
-  background-color: rgb(255 255 255 / 0.05);
-}
-
-.bg-\[\#ffffff\]\/55 {
-  background-color: rgb(255 255 255 / 0.55);
-}
-
 .bg-contain {
   background-size: contain;
 }
@@ -1241,6 +1225,11 @@ h6 {
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.object-top {
+  -o-object-position: top;
+     object-position: top;
 }
 
 .\!p-2 {
@@ -1318,6 +1307,10 @@ h6 {
   padding-bottom: 8px;
 }
 
+.pb-16 {
+  padding-bottom: 4rem;
+}
+
 .pb-24 {
   padding-bottom: 6rem;
 }
@@ -1344,6 +1337,14 @@ h6 {
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pr-2 {
+  padding-right: 0.5rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
 }
 
 .text-left {
@@ -1732,6 +1733,18 @@ html {
 @media screen and (max-width: 400px) {
   .small-device:before {
     left: 6.1rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .small-device:before {
+    left: 5.8rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .small-device:before {
+    left: 5rem;
   }
 }
 
@@ -3012,6 +3025,14 @@ section.about-us:before {
 
   .md\:p-20 {
     padding: 5rem;
+  }
+
+  .md\:pr-4 {
+    padding-right: 1rem;
+  }
+
+  .md\:text-1-xl {
+    font-size: 1.5rem;
   }
 
   .md\:before\:left-\[11\.4rem\]::before {
