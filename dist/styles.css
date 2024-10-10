@@ -862,6 +862,10 @@ h6 {
   margin-top: 2rem;
 }
 
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
 .block {
   display: block;
 }
@@ -1333,6 +1337,14 @@ h6 {
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pr-2 {
+  padding-right: 0.5rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
 }
 
 .text-left {
@@ -3013,6 +3025,10 @@ section.about-us:before {
 
   .md\:p-20 {
     padding: 5rem;
+  }
+
+  .md\:pr-4 {
+    padding-right: 1rem;
   }
 
   .md\:before\:left-\[11\.4rem\]::before {
