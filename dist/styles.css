@@ -1194,26 +1194,6 @@ h6 {
   background-color: rgb(255 255 255 / 0.9);
 }
 
-.bg-\[\#ffffff\]\/35 {
-  background-color: rgb(255 255 255 / 0.35);
-}
-
-.bg-\[\#ffffff\]\/15 {
-  background-color: rgb(255 255 255 / 0.15);
-}
-
-.bg-\[\#ffffff\]\/10 {
-  background-color: rgb(255 255 255 / 0.1);
-}
-
-.bg-\[\#ffffff\]\/5 {
-  background-color: rgb(255 255 255 / 0.05);
-}
-
-.bg-\[\#ffffff\]\/55 {
-  background-color: rgb(255 255 255 / 0.55);
-}
-
 .bg-contain {
   background-size: contain;
 }
@@ -1241,6 +1221,11 @@ h6 {
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.object-top {
+  -o-object-position: top;
+     object-position: top;
 }
 
 .\!p-2 {
@@ -1316,6 +1301,10 @@ h6 {
 .py-\[8px\] {
   padding-top: 8px;
   padding-bottom: 8px;
+}
+
+.pb-16 {
+  padding-bottom: 4rem;
 }
 
 .pb-24 {
@@ -1732,6 +1721,18 @@ html {
 @media screen and (max-width: 400px) {
   .small-device:before {
     left: 6.1rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .small-device:before {
+    left: 5.8rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .small-device:before {
+    left: 5rem;
   }
 }
 
