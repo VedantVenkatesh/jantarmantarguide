@@ -3031,6 +3031,10 @@ section.about-us:before {
     padding-right: 1rem;
   }
 
+  .md\:text-1-xl {
+    font-size: 1.5rem;
+  }
+
   .md\:before\:left-\[11\.4rem\]::before {
     content: var(--tw-content);
     left: 11.4rem;
