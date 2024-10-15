@@ -2395,7 +2395,7 @@ section.about-us:before {
   }
 
   .timeline-events--content .timeline11 .starline {
-    top: -14%;
+    top: -25%;
     right: -42%;
   }
 
@@ -3069,14 +3069,6 @@ section.about-us:before {
 }
 
 @media (min-width: 1024px) {
-  .lg\:absolute {
-    position: absolute;
-  }
-
-  .lg\:relative {
-    position: relative;
-  }
-
   .lg\:left-\[18rem\] {
     left: 18rem;
   }
@@ -3127,10 +3119,6 @@ section.about-us:before {
 
   .lg\:mt-12 {
     margin-top: 3rem;
-  }
-
-  .lg\:mt-16 {
-    margin-top: 4rem;
   }
 
   .lg\:mt-2 {
@@ -3429,10 +3417,6 @@ section.about-us:before {
   .lg\:after\:h-\[301px\]::after {
     content: var(--tw-content);
     height: 301px;
-  }
-
-  .group:hover .lg\:group-hover\:block {
-    display: block;
   }
 }
 
